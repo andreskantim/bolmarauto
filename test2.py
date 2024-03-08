@@ -9,7 +9,7 @@ server = ECMWFService("mars")
 # Define el año y el mes que deseas solicitar
 year = "2015"
 month = "04"
-target_path = f"/home/andreskantim/ecmwf/salidas/{year}{month}.grib"
+target_path = f"/home/andreskantim/ecmwf/salidas/prueba1/{year}{month}.grib"
 
     # Configura los parámetros de tu solicitud
 request_params = {
