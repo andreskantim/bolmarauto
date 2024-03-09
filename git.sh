@@ -6,6 +6,18 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
+# Directorio del repositorio de Git
+REPO_DIR="/home/andreskantim/ecmwf"
+
+# Cambiar al directorio del repositorio
+cd "$REPO_DIR"
+
+# Verificar si el cambio de directorio fue exitoso
+if [ $? -ne 0 ]; then
+    echo "Error al cambiar al directorio $REPO_DIR"
+    exit 1
+fi
+
 # Verificar el estado del repositorio primero
 git status
 
