@@ -2,7 +2,7 @@ import xarray as xr
 import matplotlib.pyplot as plt
 
 # Ruta al archivo GRIB
-archivo_grib = '/home/andreskantim/ecmwf/salidas/201501.grib'
+archivo_grib = '/home/andreskantim/ecmwf/datos/modelo/201501.grib'
 
 # Abre el archivo GRIB usando xarray y cfgrib como motor
 ds = xr.open_dataset(archivo_grib, engine='cfgrib')

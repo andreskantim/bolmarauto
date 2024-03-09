@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Actualiza el git del directorio ecmwf
+
 # Mejor descripción del commit como argumento
 if [ $# -eq 0 ]; then
     echo "Uso: $0 <mensaje del commit>"
@@ -7,7 +9,7 @@ if [ $# -eq 0 ]; then
 fi
 
 # Directorio del repositorio de Git
-REPO_DIR="/home/andreskantim/ecmwf"
+REPO_DIR="/home/andreskantim/ecmwf/scripts"
 
 # Cambiar al directorio del repositorio
 cd "$REPO_DIR"

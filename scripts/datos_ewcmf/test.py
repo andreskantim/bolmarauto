@@ -35,7 +35,7 @@ for day in range(1, num_days + 1):
     }
 
     # Define la ruta de destino para el archivo de salida
-    target_path = f"/home/andreskantim/ecmwf/salidas/{year}{month}{day_str}.grib"
+    target_path = f"/home/andreskantim/ecmwf/datos/modelo/{year}{month}{day_str}.grib"
 
     # Ejecuta la solicitud con los parámetros definidos
     print(f"Retrieving data for {year}-{month}-{day_str}")
