@@ -54,21 +54,3 @@ def extraer_secciones_aguas_costeras_y_modificar(nombre_archivo):
         texto_salida += zona_info + '\n\n'
 
     return texto_salida.strip()
-
-def escribir_informacion_en_archivo(informacion, nombre_archivo_salida):
-    with open(nombre_archivo_salida, 'w', encoding='utf-8') as archivo_salida:
-        archivo_salida.write(informacion)
-
-# Ruta al archivo de entrada
-nombre_archivo_entrada = '/home/andreskantim/ecmwf/datos/boletines/FQXX41MM/20150101_1200_FQXX41MM.txt'
-
-# Ruta al archivo de salida
-nombre_archivo_salida = '/home/andreskantim/ecmwf/datos/boletines/FQXX41MM/T_20150101_1200_FQXX41MM.txt'
-
-# Procesar el archivo de entrada
-informacion_modificada = extraer_secciones_aguas_costeras_y_modificar(nombre_archivo_entrada)
-
-# Escribir la información modificada en el archivo de salida
-escribir_informacion_en_archivo(informacion_modificada, nombre_archivo_salida)
-
-print(f"La información ha sido escrita en {nombre_archivo_salida}.")
