@@ -1,6 +1,6 @@
 from cargar_filtrar import extraer_secciones_aguas_costeras_y_modificar
 from separar import leer_palabras_clave
-
+#buscar libreria parsear 
 doc_viento = open("viento.txt", 'r')
 doc_mar_viento = open("mar_viento.txt", 'r')
 doc_mar_fondo = open("mar_fondo.txt", 'r')
