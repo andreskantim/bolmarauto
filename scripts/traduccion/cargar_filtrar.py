@@ -54,3 +54,28 @@ def extraer_secciones_aguas_costeras_y_modificar(nombre_archivo):
         texto_salida += zona_info + '\n\n'
 
     return texto_salida.strip()
+
+def extraer_secciones_del_documento(nombre_archivo_txt):
+    try:
+        with open(nombre_archivo_txt, 'r', encoding='utf-8') as archivo:
+            contenido = archivo.read()
+        
+        # Buscar el inicio de la primera y la segunda sección
+        I2 = contenido.find('%')
+        I3 = contenido.find('&')
+        
+        if I2 == -1 or I3 == -1:
+            raise ValueError("El documento no contiene los delimitadores esperados.")
+
+        # Extraer las secciones y eliminar líneas vacías
+        seccion1 = set(linea for linea in contenido[:I2].split('\n') if linea)
+        seccion2 = set(linea for linea in contenido[I2+1:I3].split('\n') if linea)  # +1 para no incluir '%'
+        seccion3 = set(linea for linea in contenido[I3+1:].split('\n') if linea)  # +1 para no incluir '&'
+
+        return seccion1, seccion2, seccion3
+    except FileNotFoundError:
+        print(f"El archivo {nombre_archivo_txt} no se encontró.")
+        return set(), set(), set()
+    except ValueError as e:
+        print(e)
+        return set(), set(), set()

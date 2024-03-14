@@ -1,57 +1,67 @@
-def leer_palabras_clave(nombre_archivo):
-    palabras_clave = set()
-    with open(nombre_archivo, 'r') as archivo:
-        for linea in archivo:
-            palabra = linea.strip()
-            if palabra == "%":
-                break  # Detiene la lectura al encontrar '%'
-            # Distinguir entre palabras clave literales y patrones
-            if palabra.startswith('{') and palabra.endswith('}'):
-                # Extrae el contenido dentro de las llaves y lo trata como un patrón regex
-                patron = palabra[1:-1]
-                palabras_clave.add(patron)
-            else:
-                palabras_clave.add(palabra)
-    return palabras_clave
+import regex as re
 
-palabras_viento = leer_palabras_clave('viento.txt')
-palabras_mar_viento = leer_palabras_clave('mar_viento.txt')
-palabras_mar_fondo = leer_palabras_clave('mar_fondo.txt')
-palabras_meteoros = leer_palabras_clave('meteoros.txt')
-palabras_visibilidad = leer_palabras_clave('visibilidad.txt')
+def leer_palabras_clave(doc):
+    palabras_clave = {}
+    for i in range(1, 6):
+        # Inicializa un set vacío para cada categoría de palabras clave
+        palabras_clave[i] = set()
+        # Asegura que el archivo esté en el diccionario antes de intentar leerlo
+        if i in doc:
+            # Itera sobre cada línea del archivo
+            for linea in doc[i]:
+                palabra = linea.strip()
+                if palabra == "%":
+                    break  # Detiene la lectura al encontrar '%'
+                else:
+                    # Trata cualquier otra línea como una palabra clave literal
+                    palabras_clave[i].add(palabra)
+    return palabras_clave  # Distinguir entre palabras clave literales y patrones
+                
+def fenomenos_seccion(seccion, neg_claves, claves):
+    grupos = {i: [] for i in range(1, 6)}
+    # Dividir la sección en líneas
+    lineas = seccion.split('\n')
+    for linea in lineas:
+        # Iterar sobre los grupos sin reordenarlos
+        for grupo_id in range(1, 6):
+            # Primero, verificar contra neg_claves
+            negado = False
+            for neg_clave in neg_claves[grupo_id]:
+                if neg_clave.startswith('{') and neg_clave.endswith('}'):
+                    patron = neg_clave[1:-1]
+                    if re.search(patron, linea, re.IGNORECASE):
+                        negado = True
+                        break
+                else:
+                    if neg_clave in linea:
+                        negado = True
+                        break
 
-# Este es el texto de ejemplo que quieres clasificar
-texto = """
-Esto es un ejemplo con palabra1 que debería ir al primer grupo.
-Esta frase contiene palabra4 y va al segundo grupo.
-Aquí tenemos palabra3 así que pertenece al primer grupo.
-Finalmente, esta frase tiene palabra6 y corresponde al segundo grupo.
-"""
+            if negado:
+                continue  # Si se encuentra una neg_clave, continuar con la siguiente línea sin añadir a grupos
 
-# Separa el texto en frases o porciones
-frases = texto.split('\n')  # Aquí usamos el salto de línea como delimitador
+            # Verificar ahora contra claves si la línea no fue negada
+            coincide = False
+            for clave in claves[grupo_id]:
+                if clave.startswith('{') and clave.endswith('}'):
+                    patron = clave[1:-1]
+                    if re.search(patron, linea, re.IGNORECASE):
+                        coincide = True
+                        break
+                else:
+                    if clave in linea:
+                        coincide = True
+                        break
 
-# Listas para almacenar las frases clasificadas
-grupo_1 = []
-grupo_2 = []
+            if coincide:
+                grupos[grupo_id].append(linea)
+                break  # Si se encuentra una coincidencia, no es necesario seguir buscando en otros grupos
 
-# Función para determinar a qué grupo pertenece una frase
-def clasificar_frase(frase, grupo_1, grupo_2):
-    palabras = set(frase.split())
-    if palabras_clave_grupo_1.intersection(palabras):
-        grupo_1.append(frase)
-    elif palabras_clave_grupo_2.intersection(palabras):
-        grupo_2.append(frase)
+    return grupos
 
-# Procesa cada frase
-for frase in frases:
-    clasificar_frase(frase, grupo_1, grupo_2)
-
-# Imprime los resultados
-print("Grupo 1:")
-for frase in grupo_1:
-    print(frase)
-
-print("\nGrupo 2:")
-for frase in grupo_2:
-    print(frase)
+def prueba_tres_primeras_posiciones_con_cuatro_datos(diccionario):
+    # Asegurarse de que las tres primeras posiciones tienen 4 elementos
+    for i in range(1, 4):  # Itera sobre las posiciones 1, 2 y 3
+        if len(diccionario[i]) != 4:
+            return False
+    return True
