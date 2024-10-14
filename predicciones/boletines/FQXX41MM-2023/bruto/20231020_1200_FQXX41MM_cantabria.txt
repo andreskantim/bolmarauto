@@ -1,0 +1,251 @@
+dwi  wind_max  wind_med  shww_max  shww_med mdts  shts_max  shts_med
+  6       9.0       7.0       7.0       6.0    7       8.0       6.0
+  5       8.0       7.0       7.0       6.0    7       9.0       6.0
+  6       9.0       7.0       6.0       6.0    7      10.0       8.0
+  6       9.0       7.0       6.0       5.0    7      11.0       8.0
+  6       8.0       7.0       6.0       5.0    7      10.0       9.0
+  5       8.0       6.0       6.0       5.0    7      11.0       7.0
+  5       8.0       6.0       6.0       5.0    7      12.0       7.0
+  5       7.0       6.0       5.0       4.0    7      11.0       7.0
+  6       7.0       6.0       5.0       4.0    7      10.0       7.0
+
+W o SW 7.0 o 8.0, localmente 9.0, amainando a 6.0 o 7.0, localmente 8.0 a partir del principio de la madrugada. 5.0 o 6.0, localmente 7.0, disminuyendo a 4.0 o 5.0 a partir de la mañana. Mar de fondo del NW 8.0, aumentando a 9.0 a partir de medianoche. 
+
+W o SW 7.0 o 8.0, localmente 9.0, amainando a 6.0 o 7.0, localmente 8.0 a partir del principio de la madrugada. Gruesa o muy gruesa, localmente arbolada, disminuyendo a fuerte marejada o gruesa a partir de la mañana. Mar de fondo del NW de 4 a 5 m, aumentando a de en torno a 5 m a partir de medianoche. 
+
+Angulo
+i: 0
+fen_ang_A: 6
+fen_ang_B: None
+i: 1
+fen_ang_A: 6
+fen_ang_B: 5
+i: 2
+fen_ang_A: 6
+fen_ang_B: 5
+i: 3
+fen_ang_A: 6
+fen_ang_B: 5
+i: 4
+fen_ang_A: 6
+fen_ang_B: 5
+i: 5
+fen_ang_A: 6
+fen_ang_B: 5
+i: 6
+fen_ang_A: 6
+fen_ang_B: 5
+i: 7
+fen_ang_A: 6
+fen_ang_B: 5
+i: 8
+fen_ang_A: 6
+fen_ang_B: 5
+cambio_dwi: []
+fen_dwi: ['W o SW']
+Valor 1
+i: 0
+fen_valor_med_A: 7.0
+fen_valor_med_B: 8.0
+fen_valor_max_A: 9.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 1
+fen_valor_med_A: 7.0
+fen_valor_med_B: 8.0
+fen_valor_max_A: 9.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 2
+fen_valor_med_A: 7.0
+fen_valor_med_B: 8.0
+fen_valor_max_A: 9.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 3
+fen_valor_med_A: 7.0
+fen_valor_med_B: 8.0
+fen_valor_max_A: 9.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 4
+fen_valor_med_A: 7.0
+fen_valor_med_B: 8.0
+fen_valor_max_A: 9.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 5
+fen_valor_med_A: 7.0
+fen_valor_med_B: 8.0
+fen_valor_max_A: 9.0
+fen_valor_max_B: None
+primer_valor_med_bajo: True
+i: 6
+fen_valor_med_A: 6.0
+fen_valor_med_B: 7.0
+fen_valor_max_A: 8.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 7
+fen_valor_med_A: 6.0
+fen_valor_med_B: 7.0
+fen_valor_max_A: 8.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 8
+fen_valor_med_A: 6.0
+fen_valor_med_B: 7.0
+fen_valor_max_A: 8.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+cambio_wind: [5]
+fen_wind: ['7.0 o 8.0, localmente 9.0', '6.0 o 7.0, localmente 8.0']
+cambios_totales: [5]
+Valor 2
+i: 0
+fen_valor_med_A: 6.0
+fen_valor_med_B: None
+fen_valor_max_A: 7.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 1
+fen_valor_med_A: 6.0
+fen_valor_med_B: None
+fen_valor_max_A: 7.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 2
+fen_valor_med_A: 6.0
+fen_valor_med_B: None
+fen_valor_max_A: 7.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 3
+fen_valor_med_A: 5.0
+fen_valor_med_B: 6.0
+fen_valor_max_A: 7.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 4
+fen_valor_med_A: 5.0
+fen_valor_med_B: 6.0
+fen_valor_max_A: 7.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 5
+fen_valor_med_A: 5.0
+fen_valor_med_B: 6.0
+fen_valor_max_A: 7.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 6
+fen_valor_med_A: 5.0
+fen_valor_med_B: 6.0
+fen_valor_max_A: 7.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 7
+fen_valor_med_A: 5.0
+fen_valor_med_B: 6.0
+fen_valor_max_A: 7.0
+fen_valor_max_B: None
+primer_valor_med_bajo: True
+i: 8
+fen_valor_med_A: 4.0
+fen_valor_med_B: None
+fen_valor_max_A: 5.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+cambio_shww: [7]
+fen_shww: ['Gruesa o muy gruesa, localmente arbolada', 'Fuerte marejada o gruesa']
+num_shww: ['5.0 o 6.0, localmente 7.0', '4.0 o 5.0']
+Angulo
+i: 0
+fen_ang_A: 7
+fen_ang_B: None
+i: 1
+fen_ang_A: 7
+fen_ang_B: None
+i: 2
+fen_ang_A: 7
+fen_ang_B: None
+i: 3
+fen_ang_A: 7
+fen_ang_B: None
+i: 4
+fen_ang_A: 7
+fen_ang_B: None
+i: 5
+fen_ang_A: 7
+fen_ang_B: None
+i: 6
+fen_ang_A: 7
+fen_ang_B: None
+i: 7
+fen_ang_A: 7
+fen_ang_B: None
+i: 8
+fen_ang_A: 7
+fen_ang_B: None
+cambio_mdts: []
+fen_mdts: ['NW']
+Valor shts
+0    6.0
+1    6.0
+2    8.0
+3    8.0
+4    9.0
+5    7.0
+6    7.0
+7    7.0
+8    7.0
+Name: shts_med, dtype: float64
+i: 0
+fen_valor_A: 6.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 1
+fen_valor_A: 6.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 2
+fen_valor_A: 6.0
+fen_valor_B: 8.0
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 3
+fen_valor_A: 6.0
+fen_valor_B: 8.0
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 4
+fen_valor_A: 9.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 5
+fen_valor_A: 7.0
+fen_valor_B: 9.0
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 6
+fen_valor_A: 7.0
+fen_valor_B: 9.0
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 7
+fen_valor_A: 7.0
+fen_valor_B: 9.0
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 8
+fen_valor_A: 7.0
+fen_valor_B: 9.0
+fen_valor_C: None
+primer_valor_med_bajo: False
+cambio_shts: [4]
+fen_shts: ['de 4 a 5 m', 'de en torno a 5 m']
+num_shts: ['8.0', '9.0']
+cambios_totales: [4]

@@ -1,0 +1,251 @@
+dwi  wind_max  wind_med  shww_max  shww_med mdts  shts_max  shts_med
+  4       4.0       3.0       2.0       1.0    7       3.0       2.0
+  1       3.0       2.0       2.0       1.0    7       3.0       2.0
+  2       4.0       3.0       2.0       1.0    7       3.0       2.0
+  3       4.0       2.0       2.0       1.0    7       4.0       2.0
+  3       4.0       3.0       2.0       1.0    7       4.0       2.0
+  3       4.0       3.0       2.0       2.0    7       4.0       2.0
+  4       3.0       2.0       2.0       1.0    7       3.0       2.0
+  5       4.0       2.0       2.0       1.0    7       3.0       2.0
+  2       4.0       3.0       2.0       1.0    7       4.0       2.0
+
+S 2.0 o 3.0, localmente 4.0, rolando a NE o E a partir del principio de la tarde, rolando a SE o S a partir del anochecer, rolando a SW a partir de la mañana, rolando a E al final. 1.0 o 2.0. Mar de fondo del NW 2.0. 
+
+S 2.0 o 3.0, localmente 4.0, rolando a NE o E a partir del principio de la tarde, rolando a SE o S a partir del anochecer, rolando a SW a partir de la mañana, rolando a E al final. Rizada o marejadilla. Mar de fondo del NW de 1 a 2 m. 
+
+Angulo
+i: 0
+fen_ang_A: 4
+fen_ang_B: None
+i: 1
+fen_ang_A: 1
+fen_ang_B: None
+i: 2
+fen_ang_A: 1
+fen_ang_B: 2
+i: 3
+fen_ang_A: 3
+fen_ang_B: None
+i: 4
+fen_ang_A: 3
+fen_ang_B: None
+i: 5
+fen_ang_A: 3
+fen_ang_B: None
+i: 6
+fen_ang_A: 3
+fen_ang_B: 4
+i: 7
+fen_ang_A: 5
+fen_ang_B: None
+i: 8
+fen_ang_A: 2
+fen_ang_B: None
+cambio_dwi: [1, 3, 7, 8]
+fen_dwi: ['S', 'NE o E', 'SE o S', 'SW', 'E']
+Valor 1
+i: 0
+fen_valor_med_A: 3.0
+fen_valor_med_B: None
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 1
+fen_valor_med_A: 2.0
+fen_valor_med_B: 3.0
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 2
+fen_valor_med_A: 2.0
+fen_valor_med_B: 3.0
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 3
+fen_valor_med_A: 2.0
+fen_valor_med_B: 3.0
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 4
+fen_valor_med_A: 2.0
+fen_valor_med_B: 3.0
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 5
+fen_valor_med_A: 2.0
+fen_valor_med_B: 3.0
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 6
+fen_valor_med_A: 2.0
+fen_valor_med_B: 3.0
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 7
+fen_valor_med_A: 2.0
+fen_valor_med_B: 3.0
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 8
+fen_valor_med_A: 2.0
+fen_valor_med_B: 3.0
+fen_valor_max_A: 4.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+cambio_wind: []
+fen_wind: ['2.0 o 3.0, localmente 4.0']
+cambios_totales: [1, 3, 7, 8]
+Valor 2
+i: 0
+fen_valor_med_A: 1.0
+fen_valor_med_B: None
+fen_valor_max_A: 2.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 1
+fen_valor_med_A: 1.0
+fen_valor_med_B: None
+fen_valor_max_A: 2.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 2
+fen_valor_med_A: 1.0
+fen_valor_med_B: None
+fen_valor_max_A: 2.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 3
+fen_valor_med_A: 1.0
+fen_valor_med_B: None
+fen_valor_max_A: 2.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 4
+fen_valor_med_A: 1.0
+fen_valor_med_B: None
+fen_valor_max_A: 2.0
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 5
+fen_valor_med_A: 1.0
+fen_valor_med_B: 2.0
+fen_valor_max_A: None
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 6
+fen_valor_med_A: 1.0
+fen_valor_med_B: 2.0
+fen_valor_max_A: None
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 7
+fen_valor_med_A: 1.0
+fen_valor_med_B: 2.0
+fen_valor_max_A: None
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+i: 8
+fen_valor_med_A: 1.0
+fen_valor_med_B: 2.0
+fen_valor_max_A: None
+fen_valor_max_B: None
+primer_valor_med_bajo: False
+cambio_shww: []
+fen_shww: ['Rizada o marejadilla']
+num_shww: ['1.0 o 2.0']
+Angulo
+i: 0
+fen_ang_A: 7
+fen_ang_B: None
+i: 1
+fen_ang_A: 7
+fen_ang_B: None
+i: 2
+fen_ang_A: 7
+fen_ang_B: None
+i: 3
+fen_ang_A: 7
+fen_ang_B: None
+i: 4
+fen_ang_A: 7
+fen_ang_B: None
+i: 5
+fen_ang_A: 7
+fen_ang_B: None
+i: 6
+fen_ang_A: 7
+fen_ang_B: None
+i: 7
+fen_ang_A: 7
+fen_ang_B: None
+i: 8
+fen_ang_A: 7
+fen_ang_B: None
+cambio_mdts: []
+fen_mdts: ['NW']
+Valor shts
+0    2.0
+1    2.0
+2    2.0
+3    2.0
+4    2.0
+5    2.0
+6    2.0
+7    2.0
+8    2.0
+Name: shts_med, dtype: float64
+i: 0
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 1
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 2
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 3
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 4
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 5
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 6
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 7
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+i: 8
+fen_valor_A: 2.0
+fen_valor_B: None
+fen_valor_C: None
+primer_valor_med_bajo: False
+cambio_shts: []
+fen_shts: ['de 1 a 2 m']
+num_shts: ['2.0']
+cambios_totales: []

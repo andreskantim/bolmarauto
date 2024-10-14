@@ -1,0 +1,228 @@
+lugo
+
+- E O SE 2 A 4, 4 O 5 MAR ADENTRO HASTA EL ANOCHECER, ARRECIANDOA W O SW 5 O 6 DE MADRUGADA, OCASIONALMENTE 7 MAR ADENTRO.
+MAREJADILLA O MAREJADA, AUMENTANDO A FUERTE MAREJADA.
+- AL ESTE DE BURELA CERCA DE LA COSTA: E O SE 2 A 4,TEMPORALMENTE VARIABLE, ARRECIANDO A SW 4 O 5.
+RIZADA OMAREJADILLA AUMENTANDO A MAREJADILLA O MAREJADA.
+- AMBAS ZONAS: MAR DE FONDO DEL W O NW EN TORNO A 1 M, AUMENTANDOA 1 A 2 M.
+LLUVIA DESDE LA NOCHE, AREAS DE BRUMA.
+TEMPORALMENTEREGULAR.
+
+1: ['- E O SE 2 A 4, 4 O 5 MAR ADENTRO HASTA EL ANOCHECER, ARRECIANDOA W O SW 5 O 6 DE MADRUGADA, OCASIONALMENTE 7 MAR ADENTRO.', '- AL ESTE DE BURELA CERCA DE LA COSTA: E O SE 2 A 4,TEMPORALMENTE VARIABLE, ARRECIANDO A SW 4 O 5.', '- AMBAS ZONAS: ']
+2: ['MAREJADILLA O MAREJADA, AUMENTANDO A FUERTE MAREJADA.', 'RIZADA OMAREJADILLA AUMENTANDO A MAREJADILLA O MAREJADA.']
+3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M, AUMENTANDOA 1 A 2 M.']
+4: ['LLUVIA DESDE LA NOCHE, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']
+
+1: ['- E O SE 2 A 4', ', 4 O 5 MAR ADENTRO HASTA EL ANOCHECER', ', ARRECIANDOA W O SW 5 O 6 DE MADRUGADA', ', OCASIONALMENTE 7 MAR ADENTRO.', '- AL ESTE DE BURELA CERCA DE LA COSTA: E O SE 2 A 4', ',TEMPORALMENTE VARIABLE', ', ARRECIANDO A SW 4 O 5.', '- AMBAS ZONAS: ']
+2: ['MAREJADILLA O MAREJADA', ', AUMENTANDO A FUERTE MAREJADA.', 'RIZADA OMAREJADILLA', ' AUMENTANDO A MAREJADILLA O MAREJADA.']
+3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.']
+4: ['LLUVIA DESDE LA NOCHE, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']
+
+1: ['- E O SE 2 A 4', ', 4 O 5 MAR ADENTRO HASTA EL ANOCHECER', ', ARRECIANDOA W O SW 5 O 6 DE MADRUGADA', ', OCASIONALMENTE 7 MAR ADENTRO.', '- AL ESTE DE BURELA CERCA DE LA COSTA: E O SE 2 A 4', ',TEMPORALMENTE VARIABLE', ', ARRECIANDO A SW 4 O 5.', '- AMBAS ZONAS: ']
+2: ['MAREJADILLA O MAREJADA', ', AUMENTANDO A FUERTE MAREJADA.', 'RIZADA OMAREJADILLA', ' AUMENTANDO A MAREJADILLA O MAREJADA.']
+3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.']
+4: ['LLUVIA DESDE LA NOCHE, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']
+
+0: {1: ['- E O SE 2 A 4', ', 4 O 5 MAR ADENTRO HASTA EL ANOCHECER'], 2: ['MAREJADILLA O MAREJADA', 'RIZADA OMAREJADILLA'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+1: {1: ['- E O SE 2 A 4', ', 4 O 5 MAR ADENTRO HASTA EL ANOCHECER'], 2: ['MAREJADILLA O MAREJADA', 'RIZADA OMAREJADILLA'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+2: {1: ['- E O SE 2 A 4', ', 4 O 5 MAR ADENTRO HASTA EL ANOCHECER'], 2: ['MAREJADILLA O MAREJADA', 'RIZADA OMAREJADILLA'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+3: {1: ['- E O SE 2 A 4'], 2: ['MAREJADILLA O MAREJADA', 'RIZADA OMAREJADILLA'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+4: {1: ['- E O SE 2 A 4'], 2: ['MAREJADILLA O MAREJADA', 'RIZADA OMAREJADILLA'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+5: {1: [', ARRECIANDOA W O SW 5 O 6 DE MADRUGADA', ', OCASIONALMENTE 7 MAR ADENTRO.', '- AL ESTE DE BURELA CERCA DE LA COSTA: E O SE 2 A 4', ',TEMPORALMENTE VARIABLE', ', ARRECIANDO A SW 4 O 5.', '- AMBAS ZONAS: '], 2: [' AUMENTANDO A MAREJADILLA O MAREJADA.'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+6: {1: [', ARRECIANDOA W O SW 5 O 6 DE MADRUGADA', ', OCASIONALMENTE 7 MAR ADENTRO.', '- AL ESTE DE BURELA CERCA DE LA COSTA: E O SE 2 A 4', ',TEMPORALMENTE VARIABLE', ', ARRECIANDO A SW 4 O 5.', '- AMBAS ZONAS: '], 2: [' AUMENTANDO A MAREJADILLA O MAREJADA.'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+7: {1: [', ARRECIANDOA W O SW 5 O 6 DE MADRUGADA', ', OCASIONALMENTE 7 MAR ADENTRO.', '- AL ESTE DE BURELA CERCA DE LA COSTA: E O SE 2 A 4', ',TEMPORALMENTE VARIABLE', ', ARRECIANDO A SW 4 O 5.', '- AMBAS ZONAS: '], 2: [' AUMENTANDO A MAREJADILLA O MAREJADA.'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+8: {1: [', ARRECIANDOA W O SW 5 O 6 DE MADRUGADA', ', OCASIONALMENTE 7 MAR ADENTRO.', '- AL ESTE DE BURELA CERCA DE LA COSTA: E O SE 2 A 4', ',TEMPORALMENTE VARIABLE', ', ARRECIANDO A SW 4 O 5.', '- AMBAS ZONAS: '], 2: [' AUMENTANDO A MAREJADILLA O MAREJADA.'], 3: ['MAR DE FONDO DEL W O NW EN TORNO A 1 M', ', AUMENTANDOA 1 A 2 M.'], 4: ['LLUVIA DESDE LA NOCHE, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTEREGULAR.']}
+
+0: {1: [112.5], 2: [0.9238795325112867], 3: [-0.3826834323650897], 4: [7.9, 10.7], 5: [4.4, 7.9], 6: [None], 7: [None], 8: [None], 9: [1.25, 0.5], 10: [0.75, 0.25], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+1: {1: [112.5], 2: [0.9238795325112867], 3: [-0.3826834323650897], 4: [7.9, 10.7], 5: [4.4, 7.9], 6: [None], 7: [None], 8: [None], 9: [1.25, 0.5], 10: [0.75, 0.25], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+2: {1: [112.5], 2: [0.9238795325112867], 3: [-0.3826834323650897], 4: [7.9, 10.7], 5: [4.4, 7.9], 6: [None], 7: [None], 8: [None], 9: [1.25, 0.5], 10: [0.75, 0.25], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+3: {1: [112.5], 2: [0.9238795325112867], 3: [-0.3826834323650897], 4: [7.9], 5: [4.4], 6: [None], 7: [None], 8: [None], 9: [1.25, 0.5], 10: [0.75, 0.25], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+4: {1: [112.5], 2: [0.9238795325112867], 3: [-0.3826834323650897], 4: [7.9], 5: [4.4], 6: [None], 7: [None], 8: [None], 9: [1.25, 0.5], 10: [0.75, 0.25], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+5: {1: [247.5, 112.5, None, 225.0], 2: [-0.9238795325112868, 0.9238795325112867, None, -0.7071067811865475], 3: [-0.3826834323650895, -0.3826834323650897, None, -0.7071067811865477], 4: [13.8, 17.1, 7.9, 10.7], 5: [10.7, 15.5, 4.4, 7.9], 6: [None], 7: [None], 8: [None], 9: [1.25], 10: [0.75], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+6: {1: [247.5, 112.5, None, 225.0], 2: [-0.9238795325112868, 0.9238795325112867, None, -0.7071067811865475], 3: [-0.3826834323650895, -0.3826834323650897, None, -0.7071067811865477], 4: [13.8, 17.1, 7.9, 10.7], 5: [10.7, 15.5, 4.4, 7.9], 6: [None], 7: [None], 8: [None], 9: [1.25], 10: [0.75], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+7: {1: [247.5, 112.5, None, 225.0], 2: [-0.9238795325112868, 0.9238795325112867, None, -0.7071067811865475], 3: [-0.3826834323650895, -0.3826834323650897, None, -0.7071067811865477], 4: [13.8, 17.1, 7.9, 10.7], 5: [10.7, 15.5, 4.4, 7.9], 6: [None], 7: [None], 8: [None], 9: [1.25], 10: [0.75], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+8: {1: [247.5, 112.5, None, 225.0], 2: [-0.9238795325112868, 0.9238795325112867, None, -0.7071067811865475], 3: [-0.3826834323650895, -0.3826834323650897, None, -0.7071067811865477], 4: [13.8, 17.1, 7.9, 10.7], 5: [10.7, 15.5, 4.4, 7.9], 6: [None], 7: [None], 8: [None], 9: [1.25], 10: [0.75], 11: [292.5], 12: [-0.9238795325112866], 13: [0.38268343236509], 14: [1.25, 2], 15: [1, 1.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+
+0: {1: 112.5, 2: 0.9238795325112867, 3: -0.3826834323650897, 4: 10.7, 5: 6.15, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.5, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+1: {1: 112.5, 2: 0.9238795325112867, 3: -0.3826834323650897, 4: 10.7, 5: 6.15, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.5, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+2: {1: 112.5, 2: 0.9238795325112867, 3: -0.3826834323650897, 4: 10.7, 5: 6.15, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.5, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+3: {1: 112.5, 2: 0.9238795325112867, 3: -0.3826834323650897, 4: 7.9, 5: 4.4, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.5, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+4: {1: 112.5, 2: 0.9238795325112867, 3: -0.3826834323650897, 4: 7.9, 5: 4.4, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.5, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+5: {1: 205.6511069385328, 2: -0.4328899973018986, 3: -0.9014467539660689, 4: 17.1, 5: 9.625, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.75, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+6: {1: 205.6511069385328, 2: -0.4328899973018986, 3: -0.9014467539660689, 4: 17.1, 5: 9.625, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.75, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+7: {1: 205.6511069385328, 2: -0.4328899973018986, 3: -0.9014467539660689, 4: 17.1, 5: 9.625, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.75, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+8: {1: 205.6511069385328, 2: -0.4328899973018986, 3: -0.9014467539660689, 4: 17.1, 5: 9.625, 6: None, 7: None, 8: None, 9: 1.25, 10: 0.75, 11: 292.5, 12: -0.9238795325112867, 13: 0.38268343236509006, 14: 2.0, 15: 1.25, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+
+coruña_norte
+
+- NORTE DE VILAN: VARIABLE 1 A 3 TENDIENDO A SE 2 O 3, SALVO E OSE 3 A 5 ENTRE ORTEGAL-BARES HASTA LA NOCHE, ARRECIANDO A SW 4 O5 DURANTE LA MADRUGADA EN TODA LA ZONA Y A 5 O 6 POR LA MANANA.
+- SUR DE VILAN: S 2 O 3 ARRECIANDO A 3 O 4, A 4 O 5 POR LA NOCHE,ARRECIANDO A W O SW 4 O 5 CON INTERVALOS DE 6 DURANTE LAMADRUGADA.
+- AMBAS ZQONAS: RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES, AUMENTANDO A MAREJADA O FUERTE MAREJADA.
+MAR DEFONDO DEL W DE 1 A 2 M AUMENTANDO A 2 A 3 M, LOCALMENTE 3 A 4 MMAR ADENTRO AL SUR DE VILAN AL FINAL.
+LLUVIA, AREAS DE BRUMA.
+TEMPORALMENTE REGULAR.
+
+1: ['- NORTE DE VILAN: VARIABLE 1 A 3 TENDIENDO A SE 2 O 3, SALVO E OSE 3 A 5 ENTRE ORTEGAL-BARES HASTA LA NOCHE, ARRECIANDO A SW 4 O5 DURANTE LA MADRUGADA EN TODA LA ZONA Y A 5 O 6 POR LA MANANA.']
+2: []
+3: []
+4: []
+5: []
+
+1: ['- NORTE DE VILAN: VARIABLE 1 A 3', ' TENDIENDO A SE 2 O 3', ', SALVO E OSE 3 A 5 ENTRE ORTEGAL-BARES HASTA LA NOCHE', ', ARRECIANDO A SW 4 O5 DURANTE LA MADRUGADA EN TODA LA ZONA', ' Y A 5 O 6 POR LA MANANA.']
+2: []
+3: []
+4: []
+5: []
+
+1: ['- NORTE DE VILAN: VARIABLE 1 A 3', ' TENDIENDO A SE 2 O 3', ', SALVO E OSE 3 A 5 ENTRE ORTEGAL-BARES HASTA LA NOCHE', ', ARRECIANDO A SW 4 O5 DURANTE LA MADRUGADA EN TODA LA ZONA', ' Y A 5 O 6 POR LA MANANA.']
+2: []
+3: []
+4: []
+5: []
+
+0: {1: ['- NORTE DE VILAN: VARIABLE 1 A 3', ' TENDIENDO A SE 2 O 3', ', SALVO E OSE 3 A 5 ENTRE ORTEGAL-BARES HASTA LA NOCHE'], 2: [], 3: [], 4: [], 5: []}
+1: {1: ['- NORTE DE VILAN: VARIABLE 1 A 3', ' TENDIENDO A SE 2 O 3', ', SALVO E OSE 3 A 5 ENTRE ORTEGAL-BARES HASTA LA NOCHE'], 2: [], 3: [], 4: [], 5: []}
+2: {1: ['- NORTE DE VILAN: VARIABLE 1 A 3', ' TENDIENDO A SE 2 O 3', ', SALVO E OSE 3 A 5 ENTRE ORTEGAL-BARES HASTA LA NOCHE'], 2: [], 3: [], 4: [], 5: []}
+3: {1: ['- NORTE DE VILAN: VARIABLE 1 A 3', ' TENDIENDO A SE 2 O 3'], 2: [], 3: [], 4: [], 5: []}
+4: {1: [', ARRECIANDO A SW 4 O5 DURANTE LA MADRUGADA EN TODA LA ZONA'], 2: [], 3: [], 4: [], 5: []}
+5: {1: [', ARRECIANDO A SW 4 O5 DURANTE LA MADRUGADA EN TODA LA ZONA'], 2: [], 3: [], 4: [], 5: []}
+6: {1: ['- NORTE DE VILAN: VARIABLE 1 A 3', ' TENDIENDO A SE 2 O 3'], 2: [], 3: [], 4: [], 5: []}
+7: {1: [' Y A 5 O 6 POR LA MANANA.'], 2: [], 3: [], 4: [], 5: []}
+8: {1: [' Y A 5 O 6 POR LA MANANA.'], 2: [], 3: [], 4: [], 5: []}
+
+0: {1: [None, 135.0, 112.5], 2: [None, 0.7071067811865476, 0.9238795325112867], 3: [None, -0.7071067811865475, -0.3826834323650897], 4: [5.4, 5.4, 10.7], 5: [2.5, 3.3, 6.7], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+1: {1: [None, 135.0, 112.5], 2: [None, 0.7071067811865476, 0.9238795325112867], 3: [None, -0.7071067811865475, -0.3826834323650897], 4: [5.4, 5.4, 10.7], 5: [2.5, 3.3, 6.7], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+2: {1: [None, 135.0, 112.5], 2: [None, 0.7071067811865476, 0.9238795325112867], 3: [None, -0.7071067811865475, -0.3826834323650897], 4: [5.4, 5.4, 10.7], 5: [2.5, 3.3, 6.7], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+3: {1: [None, 135.0], 2: [None, 0.7071067811865476], 3: [None, -0.7071067811865475], 4: [5.4, 5.4], 5: [2.5, 3.3], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+4: {1: [225.0], 2: [-0.7071067811865475], 3: [-0.7071067811865477], 4: [10.7], 5: [7.9], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+5: {1: [225.0], 2: [-0.7071067811865475], 3: [-0.7071067811865477], 4: [10.7], 5: [7.9], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+6: {1: [None, 135.0], 2: [None, 0.7071067811865476], 3: [None, -0.7071067811865475], 4: [5.4, 5.4], 5: [2.5, 3.3], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+7: {1: [None, 135.0], 2: [None, 0.7071067811865476], 3: [None, -0.7071067811865475], 4: [13.8], 5: [10.7], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+8: {1: [None, 135.0], 2: [None, 0.7071067811865476], 3: [None, -0.7071067811865475], 4: [13.8], 5: [10.7], 6: [None], 7: [None], 8: [None], 9: [None], 10: [None], 11: [None], 12: [None], 13: [None], 14: [1], 15: [0.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+
+0: {1: 123.74999999999999, 2: 0.8314696123025452, 3: -0.5555702330196021, 4: 10.7, 5: 4.166666666666667, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+1: {1: 123.74999999999999, 2: 0.8314696123025452, 3: -0.5555702330196021, 4: 10.7, 5: 4.166666666666667, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+2: {1: 123.74999999999999, 2: 0.8314696123025452, 3: -0.5555702330196021, 4: 10.7, 5: 4.166666666666667, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+3: {1: 135.0, 2: 0.7071067811865476, 3: -0.7071067811865475, 4: 5.4, 5: 2.9, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+4: {1: 224.99999999999997, 2: -0.7071067811865475, 3: -0.7071067811865477, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+5: {1: 224.99999999999997, 2: -0.7071067811865475, 3: -0.7071067811865477, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+6: {1: 135.0, 2: 0.7071067811865476, 3: -0.7071067811865475, 4: 5.4, 5: 2.9, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+7: {1: 135.0, 2: 0.7071067811865476, 3: -0.7071067811865475, 4: 13.8, 5: 10.7, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+8: {1: 135.0, 2: 0.7071067811865476, 3: -0.7071067811865475, 4: 13.8, 5: 10.7, 6: None, 7: None, 8: None, 9: None, 10: None, 11: None, 12: None, 13: None, 14: 1.0, 15: 0.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+
+coruña_sur
+
+- NORTE DE VILAN: VARIABLE 1 A 3 TENDIENDO A SE 2 O 3, SALVO E OSE 3 A 5 ENTRE ORTEGAL-BARES HASTA LA NOCHE, ARRECIANDO A SW 4 O5 DURANTE LA MADRUGADA EN TODA LA ZONA Y A 5 O 6 POR LA MANANA.
+- SUR DE VILAN: S 2 O 3 ARRECIANDO A 3 O 4, A 4 O 5 POR LA NOCHE,ARRECIANDO A W O SW 4 O 5 CON INTERVALOS DE 6 DURANTE LAMADRUGADA.
+- AMBAS ZQONAS: RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES, AUMENTANDO A MAREJADA O FUERTE MAREJADA.
+MAR DEFONDO DEL W DE 1 A 2 M AUMENTANDO A 2 A 3 M, LOCALMENTE 3 A 4 MMAR ADENTRO AL SUR DE VILAN AL FINAL.
+LLUVIA, AREAS DE BRUMA.
+TEMPORALMENTE REGULAR.
+
+1: ['- SUR DE VILAN: S 2 O 3 ARRECIANDO A 3 O 4, A 4 O 5 POR LA NOCHE,ARRECIANDO A W O SW 4 O 5 CON INTERVALOS DE 6 DURANTE LAMADRUGADA.', '- AMBAS ZQONAS: ']
+2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES, AUMENTANDO A MAREJADA O FUERTE MAREJADA.']
+3: ['MAR DEFONDO DEL W DE 1 A 2 M AUMENTANDO A 2 A 3 M, LOCALMENTE 3 A 4 MMAR ADENTRO AL SUR DE VILAN AL FINAL.']
+4: ['LLUVIA, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']
+
+1: ['- SUR DE VILAN: S 2 O 3', ' ARRECIANDO A 3 O 4', ', A 4 O 5 POR LA NOCHE', ',ARRECIANDO A W O SW 4 O 5', ' CON INTERVALOS DE 6 DURANTE LAMADRUGADA.', '- AMBAS ZQONAS: ']
+2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES', ', AUMENTANDO A MAREJADA O FUERTE MAREJADA.']
+3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M', ', LOCALMENTE 3 A 4 MMAR ADENTRO AL SUR DE VILAN AL FINAL.']
+4: ['LLUVIA, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']
+
+1: ['- SUR DE VILAN: S 2 O 3', ' ARRECIANDO A 3 O 4', ', A 4 O 5 POR LA NOCHE', ',ARRECIANDO A W O SW 4 O 5', ' CON INTERVALOS DE 6 DURANTE LAMADRUGADA.', '- AMBAS ZQONAS: ']
+2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES', ', AUMENTANDO A MAREJADA O FUERTE MAREJADA.']
+3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M', ', LOCALMENTE 3 A 4 MMAR ADENTRO AL SUR DE VILAN AL FINAL.']
+4: ['LLUVIA, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']
+
+0: {1: ['- SUR DE VILAN: S 2 O 3', ' ARRECIANDO A 3 O 4'], 2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES'], 3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+1: {1: ['- SUR DE VILAN: S 2 O 3', ' ARRECIANDO A 3 O 4'], 2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES'], 3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+2: {1: ['- SUR DE VILAN: S 2 O 3', ' ARRECIANDO A 3 O 4'], 2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES'], 3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+3: {1: [', A 4 O 5 POR LA NOCHE', ',ARRECIANDO A W O SW 4 O 5'], 2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES'], 3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+4: {1: [' CON INTERVALOS DE 6 DURANTE LAMADRUGADA.'], 2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES'], 3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+5: {1: [' CON INTERVALOS DE 6 DURANTE LAMADRUGADA.'], 2: ['RIZADA O MAREJADILLA, MAREJADA MAR ADENTRO ENTREORTEGAL-BARES'], 3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+6: {1: [', A 4 O 5 POR LA NOCHE', ',ARRECIANDO A W O SW 4 O 5', '- AMBAS ZQONAS: '], 2: [', AUMENTANDO A MAREJADA O FUERTE MAREJADA.'], 3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+7: {1: [', A 4 O 5 POR LA NOCHE', ',ARRECIANDO A W O SW 4 O 5', '- AMBAS ZQONAS: '], 2: [', AUMENTANDO A MAREJADA O FUERTE MAREJADA.'], 3: ['MAR DEFONDO DEL W DE 1 A 2 M', ' AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+8: {1: [', A 4 O 5 POR LA NOCHE', ',ARRECIANDO A W O SW 4 O 5', '- AMBAS ZQONAS: '], 2: [', AUMENTANDO A MAREJADA O FUERTE MAREJADA.'], 3: [', LOCALMENTE 3 A 4 MMAR ADENTRO AL SUR DE VILAN AL FINAL.'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+
+0: {1: [None], 2: [None], 3: [None], 4: [5.4, 7.9], 5: [3.3, 5.4], 6: [None], 7: [None], 8: [None], 9: [0.5], 10: [0.25], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+1: {1: [None], 2: [None], 3: [None], 4: [5.4, 7.9], 5: [3.3, 5.4], 6: [None], 7: [None], 8: [None], 9: [0.5], 10: [0.25], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+2: {1: [None], 2: [None], 3: [None], 4: [5.4, 7.9], 5: [3.3, 5.4], 6: [None], 7: [None], 8: [None], 9: [0.5], 10: [0.25], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+3: {1: [247.5], 2: [-0.9238795325112868], 3: [-0.3826834323650895], 4: [10.7, 10.7], 5: [7.9, 7.9], 6: [None], 7: [None], 8: [None], 9: [0.5], 10: [0.25], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+4: {1: [247.5], 2: [-0.9238795325112868], 3: [-0.3826834323650895], 4: [13.8], 5: [12.3], 6: [None], 7: [None], 8: [None], 9: [0.5], 10: [0.25], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+5: {1: [247.5], 2: [-0.9238795325112868], 3: [-0.3826834323650895], 4: [13.8], 5: [12.3], 6: [None], 7: [None], 8: [None], 9: [0.5], 10: [0.25], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+6: {1: [247.5], 2: [-0.9238795325112868], 3: [-0.3826834323650895], 4: [10.7, 10.7], 5: [7.9, 7.9], 6: [None], 7: [None], 8: [None], 9: [2.5], 10: [1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+7: {1: [247.5], 2: [-0.9238795325112868], 3: [-0.3826834323650895], 4: [10.7, 10.7], 5: [7.9, 7.9], 6: [None], 7: [None], 8: [None], 9: [2.5], 10: [1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+8: {1: [247.5], 2: [-0.9238795325112868], 3: [-0.3826834323650895], 4: [10.7, 10.7], 5: [7.9, 7.9], 6: [None], 7: [None], 8: [None], 9: [2.5], 10: [1.75], 11: [180.0], 12: [1.2246467991473532e-16], 13: [-1.0], 14: [4], 15: [3.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+
+0: {1: None, 2: None, 3: None, 4: 7.9, 5: 4.35, 6: None, 7: None, 8: None, 9: 0.5, 10: 0.25, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+1: {1: None, 2: None, 3: None, 4: 7.9, 5: 4.35, 6: None, 7: None, 8: None, 9: 0.5, 10: 0.25, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+2: {1: None, 2: None, 3: None, 4: 7.9, 5: 4.35, 6: None, 7: None, 8: None, 9: 0.5, 10: 0.25, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+3: {1: 247.5, 2: -0.9238795325112868, 3: -0.3826834323650895, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 0.5, 10: 0.25, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+4: {1: 247.5, 2: -0.9238795325112868, 3: -0.3826834323650895, 4: 13.8, 5: 12.3, 6: None, 7: None, 8: None, 9: 0.5, 10: 0.25, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+5: {1: 247.5, 2: -0.9238795325112868, 3: -0.3826834323650895, 4: 13.8, 5: 12.3, 6: None, 7: None, 8: None, 9: 0.5, 10: 0.25, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+6: {1: 247.5, 2: -0.9238795325112868, 3: -0.3826834323650895, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.75, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+7: {1: 247.5, 2: -0.9238795325112868, 3: -0.3826834323650895, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.75, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+8: {1: 247.5, 2: -0.9238795325112868, 3: -0.3826834323650895, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.75, 11: 180.0, 12: 1.2246467991473532e-16, 13: -1.0, 14: 4.0, 15: 3.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+
+pontevedra
+
+S 4 O 5, ARRECIANDO A S O SW 5 O 6 AL ANOCHECER, ROLANDO A WDURANTE LA MADRUGADA, AMAINANDO A SW 4 O 5 POR LA MANANA.
+MAREJADILLA, AUMENTANDO A MAREJADA CON AREAS DE FUERTE MAREJADA.
+MAR DE FONDO DEL W DE 1 A 2 M, AUMENTANDO A 2 A 3 M, 3 A 4 M MARADENTRO AL FINAL.
+LLUVIA, AREAS DE BRUMA.
+TEMPORALMENTE REGULAR.
+
+1: ['S 4 O 5, ARRECIANDO A S O SW 5 O 6 AL ANOCHECER, ROLANDO A WDURANTE LA MADRUGADA, AMAINANDO A SW 4 O 5 POR LA MANANA.']
+2: ['MAREJADILLA, AUMENTANDO A MAREJADA CON AREAS DE FUERTE MAREJADA.']
+3: ['MAR DE FONDO DEL W DE 1 A 2 M, AUMENTANDO A 2 A 3 M, 3 A 4 M MARADENTRO AL FINAL.']
+4: ['LLUVIA, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']
+
+1: ['S 4 O 5', ', ARRECIANDO A S O SW 5 O 6 AL ANOCHECER', ', ROLANDO A WDURANTE LA MADRUGADA', ', AMAINANDO A SW 4 O 5 POR LA MANANA.']
+2: ['MAREJADILLA', ', AUMENTANDO A MAREJADA', ' CON ', 'AREAS DE FUERTE MAREJADA.']
+3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M', ', 3 A 4 M MARADENTRO AL FINAL.']
+4: ['LLUVIA, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']
+
+1: ['S 4 O 5', ', ARRECIANDO A S O SW 5 O 6 AL ANOCHECER', ', ROLANDO A WDURANTE LA MADRUGADA', ', AMAINANDO A SW 4 O 5 POR LA MANANA.']
+2: ['MAREJADILLA', ', AUMENTANDO A MAREJADA', ' CON ', 'AREAS DE FUERTE MAREJADA.']
+3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M', ', 3 A 4 M MARADENTRO AL FINAL.']
+4: ['LLUVIA, AREAS DE ']
+5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']
+
+0: {1: ['S 4 O 5'], 2: ['MAREJADILLA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+1: {1: ['S 4 O 5'], 2: ['MAREJADILLA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+2: {1: ['S 4 O 5'], 2: ['MAREJADILLA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+3: {1: [', ARRECIANDO A S O SW 5 O 6 AL ANOCHECER'], 2: ['MAREJADILLA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+4: {1: [', ROLANDO A WDURANTE LA MADRUGADA'], 2: ['MAREJADILLA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+5: {1: [', ROLANDO A WDURANTE LA MADRUGADA'], 2: ['MAREJADILLA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+6: {1: [', ARRECIANDO A S O SW 5 O 6 AL ANOCHECER'], 2: ['MAREJADILLA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+7: {1: [', AMAINANDO A SW 4 O 5 POR LA MANANA.'], 2: [', AUMENTANDO A MAREJADA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: ['MAR DE FONDO DEL W DE 1 A 2 M', ', AUMENTANDO A 2 A 3 M'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+8: {1: [', AMAINANDO A SW 4 O 5 POR LA MANANA.'], 2: [', AUMENTANDO A MAREJADA', ' CON ', 'AREAS DE FUERTE MAREJADA.'], 3: [', 3 A 4 M MARADENTRO AL FINAL.'], 4: ['LLUVIA, AREAS DE '], 5: ['BRUMA.', 'TEMPORALMENTE REGULAR.']}
+
+0: {1: [180.0], 2: [1.2246467991473532e-16], 3: [-1.0], 4: [10.7], 5: [7.9], 6: [None], 7: [None], 8: [None], 9: [0.5, 2.5], 10: [0.25, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+1: {1: [180.0], 2: [1.2246467991473532e-16], 3: [-1.0], 4: [10.7], 5: [7.9], 6: [None], 7: [None], 8: [None], 9: [0.5, 2.5], 10: [0.25, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+2: {1: [180.0], 2: [1.2246467991473532e-16], 3: [-1.0], 4: [10.7], 5: [7.9], 6: [None], 7: [None], 8: [None], 9: [0.5, 2.5], 10: [0.25, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+3: {1: [202.5], 2: [-0.38268343236508967], 3: [-0.9238795325112868], 4: [13.8], 5: [10.7], 6: [None], 7: [None], 8: [None], 9: [0.5, 2.5], 10: [0.25, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+4: {1: [202.5], 2: [-0.38268343236508967], 3: [-0.9238795325112868], 4: [13.8], 5: [10.7], 6: [None], 7: [None], 8: [None], 9: [0.5, 2.5], 10: [0.25, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+5: {1: [202.5], 2: [-0.38268343236508967], 3: [-0.9238795325112868], 4: [13.8], 5: [10.7], 6: [None], 7: [None], 8: [None], 9: [0.5, 2.5], 10: [0.25, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+6: {1: [202.5], 2: [-0.38268343236508967], 3: [-0.9238795325112868], 4: [13.8], 5: [10.7], 6: [None], 7: [None], 8: [None], 9: [0.5, 2.5], 10: [0.25, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+7: {1: [225.0], 2: [-0.7071067811865475], 3: [-0.7071067811865477], 4: [10.7], 5: [7.9], 6: [None], 7: [None], 8: [None], 9: [1.25, 2.5], 10: [0.75, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [2, 3], 15: [1.5, 2.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+8: {1: [225.0], 2: [-0.7071067811865475], 3: [-0.7071067811865477], 4: [10.7], 5: [7.9], 6: [None], 7: [None], 8: [None], 9: [1.25, 2.5], 10: [0.75, 1.75], 11: [270.0], 12: [-1.0], 13: [-1.8369701987210297e-16], 14: [4], 15: [3.5], 16: [None], 17: [None], 18: [None], 19: [None], 20: [None], 21: [None], 22: [None], 23: [None], 24: [None], 25: [None]}
+
+0: {1: 180.0, 2: 1.2246467991473532e-16, 3: -1.0, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.0, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+1: {1: 180.0, 2: 1.2246467991473532e-16, 3: -1.0, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.0, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+2: {1: 180.0, 2: 1.2246467991473532e-16, 3: -1.0, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.0, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+3: {1: 202.49999999999997, 2: -0.38268343236508967, 3: -0.9238795325112868, 4: 13.8, 5: 10.7, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.0, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+4: {1: 202.49999999999997, 2: -0.38268343236508967, 3: -0.9238795325112868, 4: 13.8, 5: 10.7, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.0, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+5: {1: 202.49999999999997, 2: -0.38268343236508967, 3: -0.9238795325112868, 4: 13.8, 5: 10.7, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.0, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+6: {1: 202.49999999999997, 2: -0.38268343236508967, 3: -0.9238795325112868, 4: 13.8, 5: 10.7, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.0, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+7: {1: 224.99999999999997, 2: -0.7071067811865475, 3: -0.7071067811865477, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.25, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 3.0, 15: 2.0, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+8: {1: 224.99999999999997, 2: -0.7071067811865475, 3: -0.7071067811865477, 4: 10.7, 5: 7.9, 6: None, 7: None, 8: None, 9: 2.5, 10: 1.25, 11: 270.0, 12: -1.0, 13: -1.8369701987210297e-16, 14: 4.0, 15: 3.5, 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None}
+
