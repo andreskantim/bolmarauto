@@ -9,8 +9,14 @@ def git_commit_push(commit_message):
         # Hacer el commit con el mensaje especificado
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
         
-        # Hacer push al repositorio remoto en la rama actual
-        subprocess.run(["git", "push"], check=True)
+        # Intentar hacer push al repositorio remoto
+        push_result = subprocess.run(["git", "push"], check=False)
+
+        # Verificar si el push falló debido a la falta de upstream y solucionarlo
+        if push_result.returncode != 0:
+            print("La rama actual no tiene upstream. Configurando upstream y volviendo a intentar...")
+            # Configurar el upstream automáticamente y hacer el push
+            subprocess.run(["git", "push", "--set-upstream", "origin", "main"], check=True)
         
         print("Cambios añadidos, commit realizado y repositorio remoto actualizado.")
     except subprocess.CalledProcessError as e:
