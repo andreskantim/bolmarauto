@@ -12,9 +12,9 @@ from rich import print
 from funciones_pytorch import PytorchWrapper
 
 # Leer los datos de entrada y target
-input = pd.read_csv("../../datasets/modelo/FQXX41MM-2023/cantabria.csv")
-target = pd.read_csv("../../datasets/boletines/FQXX41MM-2023/cantabria.csv")
-output_file = "../../predicciones/modelo/FQXX41MM-2023/cantabria.csv"
+input = pd.read_csv("../../datasets/modelo/FQXX41MM2023/cantabria.csv")
+target = pd.read_csv("../../datasets/boletines/FQXX41MM2023/cantabria.csv")
+output_file = "../../predicciones/modelo/FQXX41MM2023/cantabria.csv"
 copy_target = target.copy()
 # Guardar las columnas 'emission_time' y 'valid_time' antes de eliminarlas
 emission_time = target['emission_time']

@@ -4,9 +4,10 @@ import numpy as np
 import os
 
 codigo_boletin = 'FQXX41MM'
-zona_boletin = 'asturias'
-ruta_entrada = f'../../datos/modelo/{codigo_boletin}/{zona_boletin}'      
-ruta_salida = f'../../datasets/modelo/{codigo_boletin}'
+zona_boletin = 'cantabria'
+año = '2023'
+ruta_entrada = f'../../datos/antiguos_modelo/{codigo_boletin}/{zona_boletin}'      
+ruta_salida = f'../../datasets/modelo/{codigo_boletin}{año}'
 
 if not os.path.isdir(ruta_salida):
     os.makedirs(ruta_salida)
@@ -17,11 +18,14 @@ datasets = []
 # Itera sobre los archivos en el directorio de entrada
 for archivo in os.listdir(ruta_entrada):
     if archivo.endswith('.grib') or archivo.endswith('.grib2'):
+
+        if año and not archivo.startswith(año):
+            continue
         # Construye la ruta completa del archivo
         ruta_archivo = os.path.join(ruta_entrada, archivo)
         
         # Abre el archivo GRIB usando xarray y cfgrib como backend
-        ds = xr.open_dataset(ruta_archivo, engine='cfgrib')
+        ds = xr.open_dataset(ruta_archivo, engine='cfgrib', decode_timedelta=False)
         
         # Agrega el dataset a la lista
         datasets.append(ds)
@@ -32,11 +36,14 @@ datos_combinados = xr.concat(datasets, dim='time')
 
 df = datos_combinados.to_dataframe()
 
+
+
 df.reset_index(inplace=True)
+
 df['time'] = pd.to_datetime(df['time'])
 
 # Convertir 'step' a un valor entero de 1 a 11
-df['step_num'] = df['step'].apply(lambda x: ((x.total_seconds() // 3600) - 12) / 3 + 1)
+df['step_num'] = df['step'].apply(lambda x: (x - 12) / 3 + 1)
 df['step_num'] = df['step_num'].astype(int)
 
 # Calculamos los validate_time
@@ -91,6 +98,9 @@ def concat_row_values(group):
 
 # Agrupamos por 'final_combined_time' y aplicamos la función
 result = df.groupby(['emission_time', 'valid_time'], as_index=False).apply(concat_row_values, include_groups=False)
+
+print(result.columns)
+print(result.head())
 
 result.set_index(['emission_time', 'valid_time'], inplace=True)
 
