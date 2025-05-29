@@ -5,9 +5,19 @@ import os
 
 codigo_boletin = 'FQXX41MM'
 zona_boletin = 'cantabria'
-año = '2023'
+año = None  # Esto indica que queremos todos los años
+#año = '2023'
+#año = ['2022', '2023']
+
+if año is None:
+    sufijo = ''
+elif isinstance(año, list):
+    sufijo = '_'.join(año)
+else:
+    sufijo = str(año)
+
 ruta_entrada = f'../../datos/antiguos_modelo/{codigo_boletin}/{zona_boletin}'      
-ruta_salida = f'../../datasets/modelo/{codigo_boletin}{año}'
+ruta_salida = f'../../datasets/modelo/{codigo_boletin}{sufijo}'
 
 if not os.path.isdir(ruta_salida):
     os.makedirs(ruta_salida)
@@ -16,21 +26,26 @@ if not os.path.isdir(ruta_salida):
 datasets = []
 
 # Itera sobre los archivos en el directorio de entrada
-for archivo in os.listdir(ruta_entrada):
+for archivo in sorted(os.listdir(ruta_entrada)):
     if archivo.endswith('.grib') or archivo.endswith('.grib2'):
+        
+        # Filtrado por año si aplica (maneja str o lista)
+        if año:
+            if isinstance(año, str) and not archivo.startswith(año):
+                continue
+            if isinstance(año, list) and not any(archivo.startswith(a) for a in año):
+                continue
 
-        if año and not archivo.startswith(año):
-            continue
-        # Construye la ruta completa del archivo
         ruta_archivo = os.path.join(ruta_entrada, archivo)
-        
-        # Abre el archivo GRIB usando xarray y cfgrib como backend
-        ds = xr.open_dataset(ruta_archivo, engine='cfgrib', decode_timedelta=False)
-        
-        # Agrega el dataset a la lista
-        datasets.append(ds)
+        try:
+            ds = xr.open_dataset(ruta_archivo, engine='cfgrib', decode_timedelta=False)
+            datasets.append(ds)
+            print(f"✔ Procesado: {archivo}")
+        except Exception as e:
+            print(f"❌ Error al procesar {archivo}: {e}")
 
 datos_combinados = xr.concat(datasets, dim='time')
+print("📦 Datos combinados exitosamente.")
 
 # Opcionalmente, puedes realizar alguna transformación o selección de datos aquí
 
@@ -106,6 +121,8 @@ result.set_index(['emission_time', 'valid_time'], inplace=True)
 
 archivo_salida = f'{ruta_salida}/{zona_boletin}.csv'
 result.to_csv(archivo_salida)
+print(f"✅ Archivo guardado en: {archivo_salida}")
+
 
 # ####################################### POR VARIABLES #############################################
 
