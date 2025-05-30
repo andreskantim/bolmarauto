@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/Local-ewcmf-1/scripts/sbatch/../sk_learn/rna/scripts/RNA_py4.py", line 105, in <module>
+    grid_search.fit(input, y)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 970, in fit
+    self._run_search(evaluate_candidates)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 1527, in _run_search
+    evaluate_candidates(ParameterGrid(self.param_grid))
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 947, in evaluate_candidates
+    _warn_or_raise_about_fit_failures(out, self.error_score)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 536, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 720 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+720 fits failed with the following error:
+Traceback (most recent call last):
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/base.py", line 1474, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/pipeline.py", line 475, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/Local-ewcmf-1/scripts/sk_learn/funciones_pytorch.py", line 81, in fit
+    self.model = MLPRegressor(self.number_inputs, self.hidden_layers, self.activation) # 👈 nuevo
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/Local-ewcmf-1/scripts/sk_learn/funciones_pytorch.py", line 16, in __init__
+    layers.append(activation())   # 👈 nuevo
+                  ^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+

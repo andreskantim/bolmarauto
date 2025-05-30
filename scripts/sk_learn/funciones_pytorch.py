@@ -7,13 +7,13 @@ from sklearn.base import BaseEstimator, RegressorMixin
 
 # Clase MLPRegressor para PyTorch
 class MLPRegressor(nn.Module):
-    def __init__(self, number_inputs, hidden_layers=[10]):
+    def __init__(self, number_inputs, hidden_layers=[10], activation=nn.ReLU):# 👈 nuevo
         super(MLPRegressor, self).__init__()
         layers = []
         input_size = number_inputs
         for hidden_size in hidden_layers:
             layers.append(nn.Linear(input_size, hidden_size))
-            layers.append(nn.ReLU())
+            layers.append(activation())   # 👈 nuevo
             input_size = hidden_size
         layers.append(nn.Linear(input_size, 1))
         self.layers = nn.Sequential(*layers)
@@ -53,8 +53,9 @@ def evaluate_model(model, dataset, criterion, batch_size=32):
 
 # Clase PytorchWrapper para integrarse con scikit-learn
 class PytorchWrapper(BaseEstimator, RegressorMixin):
-    def __init__(self, hidden_layers=[10], lr=0.001, epochs=100, batch_size=32):
+    def __init__(self, hidden_layers=[10], activation=nn.ReLU, lr=0.001, epochs=100, batch_size=32):
         self.hidden_layers = hidden_layers
+        self.activation = activation  # 👈 nuevo
         self.lr = lr
         self.epochs = epochs
         self.batch_size = batch_size
@@ -67,7 +68,7 @@ class PytorchWrapper(BaseEstimator, RegressorMixin):
         for param, value in params.items():
             setattr(self, param, value)
         if self.number_inputs:
-            self.model = MLPRegressor(self.number_inputs, self.hidden_layers)
+            self.model = MLPRegressor(self.number_inputs, self.hidden_layers, self.activation) # 👈 nuevo
             self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.lr)
         return self
 
@@ -77,7 +78,7 @@ class PytorchWrapper(BaseEstimator, RegressorMixin):
         X_torch = torch.tensor(X.values if isinstance(X, pd.DataFrame) else X, dtype=torch.float32)
         y_torch = torch.tensor(y.values if isinstance(y, pd.Series) else y, dtype=torch.float32)  
         
-        self.model = MLPRegressor(self.number_inputs, self.hidden_layers)
+        self.model = MLPRegressor(self.number_inputs, self.hidden_layers, self.activation) # 👈 nuevo
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.lr)
         
         dataset = TensorDataset(X_torch, y_torch)

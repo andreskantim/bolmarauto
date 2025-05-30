@@ -6,6 +6,9 @@ from sklearn.decomposition import PCA
 from sklearn.model_selection import GridSearchCV
 from sklearn.neural_network import MLPRegressor
 from sklearn.svm import SVR
+R
+from sklearn import tree
+from sklearn.neighbors import NearestNeighbors
 from sklearn.model_selection import train_test_split
 from rich import print
 

@@ -1,0 +1,4 @@
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/Local-ewcmf-1/scripts/sbatch/../sk_learn/kn/scripts/KN_bajo.py", line 58
+    'scaler': [None, StandardScaler(), RobustScaler()]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?

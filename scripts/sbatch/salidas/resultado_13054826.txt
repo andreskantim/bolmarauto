@@ -1,0 +1,40 @@
+slurmstepd: info: Setting TMPDIR to /scratch/13054826. Previous errors about TMPDIR can be discarded
+dwi_sin
+[
+    {
+        'regressor': [KNeighborsRegressor()],
+        'pca': [None, PCA(n_components=0.99), PCA(n_components=0.95)],
+        'scaler': [
+            StandardScaler(),
+            Normalizer(),
+            MinMaxScaler(),
+            RobustScaler()
+        ],
+        'regressor__n_neighbors': [1, 3, 5, 7, 10, 15],
+        'regressor__weights': ['uniform', 'distance'],
+        'regressor__metric': [
+            'minkowski',
+            'euclidean',
+            'manhattan',
+            'chebyshev'
+        ]
+    },
+    {
+        'regressor': [KNeighborsRegressor()],
+        'pca': [None, PCA(n_components=0.99), PCA(n_components=0.95)],
+        'scaler': [
+            StandardScaler(),
+            Normalizer(),
+            MinMaxScaler(),
+            RobustScaler()
+        ],
+        'regressor__n_neighbors': [1, 3, 5, 7, 10, 15],
+        'regressor__weights': ['uniform', 'distance'],
+        'regressor__metric': ['minkowski'],
+        'regressor__p': [1, 2, 3]
+    }
+]
+[-0.65090997 -0.64779538 -0.64257149 ... -0.48210296 -0.48715398
+ -0.50541377]
+[0.05014223 0.04030026 0.05474568 ... 0.05435185 0.06432046 0.06233684]
+[919 905 869 ...   8  60 326]

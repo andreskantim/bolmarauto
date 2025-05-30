@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/Local-ewcmf-1/scripts/sbatch/../sk_learn/rna/scripts/RNA_py5.py", line 65, in <module>
+    "regressor__activation": [nn.ReLU, nn.Tanh, nn.Sigmoid],
+                              ^^
+NameError: name 'nn' is not defined

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/Local-ewcmf-1/scripts/sbatch/../sk_learn/rna/scripts/RNA_py3.py", line 13, in <module>
+    from funciones_pytorch import PytorchWrapper
+ModuleNotFoundError: No module named 'funciones_pytorch'

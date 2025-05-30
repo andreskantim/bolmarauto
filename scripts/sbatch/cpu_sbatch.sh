@@ -1,14 +1,25 @@
 #!/bin/bash
 
-#SBATCH -c 32 #(5 cores per job)
-#SBATCH -t 01:00:00 #(10 min of execution time)
-#SBATCH --output=salidas/resultado_%j.txt
-#SBATCH --error=salidas/error_%j.txt
-#SBATCH --mem=16GB #(4GB of memory)
-##SBATCH --exclusive
+#SBATCH --error=errores/err_%j.txt
 
-source $STORE/mytorchdist/bin/activate
 
-python ../sk_learn/sk_learn.py
+# #SBATCH -c 32
+# #SBATCH -t 02:30:00
+# #SBATCH --mem=16GB
+# #SBATCH --output=salidas/res_%j.txt
+# #SBATCH --exclusive
 
-python ../predicciones/prediccion.py
+# source $STORE/miniconda3/envs/genhpc/bin/activate
+
+# Inicializa Conda
+source $STORE/miniconda3/etc/profile.d/conda.sh
+
+# Activa entorno Conda
+conda activate genhpc
+
+# Ejecuta el script python pasado como argumento
+python "$1"
+
+#python ../sk_learn/TREE.py
+
+#python ../predicciones/prediccion.py

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/Local-ewcmf-1/scripts/sbatch/../sk_learn/tree/scripts/RandomForest.py", line 89, in <module>
+    parametros, 
+    ^^^^^^^^^^
+NameError: name 'parametros' is not defined

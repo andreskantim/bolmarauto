@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "../sk_learn/tree/scripts/GradientBoosting.py", line 18, in <module>
+    from rich import print
+ModuleNotFoundError: No module named 'rich'
