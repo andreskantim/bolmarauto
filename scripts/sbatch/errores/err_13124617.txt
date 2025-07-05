@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/bolmarauto/scripts/sbatch/../sk_learn/tree/scripts/HistGradientBoosting copy 2.py", line 83, in <module>
+    print(col)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/rich/__init__.py", line 74, in print
+    return write_console.print(*objects, sep=sep, end=end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/rich/console.py", line 1692, in print
+    with self:
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/rich/console.py", line 866, in __exit__
+    self._exit_buffer()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/rich/console.py", line 824, in _exit_buffer
+    self._check_buffer()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/rich/console.py", line 2033, in _check_buffer
+    self._write_buffer()
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/rich/console.py", line 2107, in _write_buffer
+    self.file.flush()
+OSError: [Errno 116] Stale file handle
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+OSError: [Errno 116] Stale file handle

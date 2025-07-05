@@ -15,7 +15,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import ParameterGrid
 from sklearn.model_selection import train_test_split
 
-from rich import print
+# from rich import print
 
 # Leer los datos de entrada y target
 input = pd.read_csv("../../datasets/modelo/FQXX41MM2023/cantabria.csv")
@@ -53,10 +53,10 @@ pipe = Pipeline([
     ("regressor", HistGradientBoostingRegressor())
 ])
 
-Definir parámetros para la búsqueda de hiperparámetros
+# Definir parámetros para la búsqueda de hiperparámetros
 grid_parametros = [
     {
-    'regressor__max_iter': [100],
+    'regressor__max_iter': [100, 200],
     'regressor__learning_rate': [0.05, 0.1],
     'regressor__max_depth': [None, 5],
     'regressor__min_samples_leaf': [20, 50],

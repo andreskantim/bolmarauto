@@ -8,8 +8,8 @@ regresores=("tree")
 slurm_script="cpu_sbatch.sh"
 
 # Parámetros que quieres modificar
-NUCLEOS="16"        # Número de nucleos (ej: 32)
-MEMORIA="32GB"    # Memoria por nodo (ej: 16G)
+NUCLEOS="64"        # Número de nucleos (ej: 32)
+MEMORIA="16GB"    # Memoria por nodo (ej: 16G)
 TIEMPO="04:00:00" # Tiempo máximo de ejecución (ej: 2 horas)
 
 # Verificación de existencia del script sbatch
