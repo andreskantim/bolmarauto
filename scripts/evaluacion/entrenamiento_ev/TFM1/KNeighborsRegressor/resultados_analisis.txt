@@ -1,0 +1,398 @@
+ANÁLISIS DE PARÁMETROS CSV
+==================================================
+
+CONFIGURACIÓN:
+- Archivo CSV: kn.csv
+- Regressor: KNeighborsRegressor
+- Parámetros analizados: regressor__n_neighbors, pca, scaler, regressor__weights, regressor__metric
+- Parámetro especial: regressor__n_neighbors
+- Variables: dwi_sin, dwi_cos, wind_max, wind_med, shww_max, shww_med, mdts_sin, mdts_cos, shts_max, shts_med
+
+NOMBRES PERSONALIZADOS DE PARÁMETROS:
+- regressor__n_neighbors: Numero vecinos
+- pca: PCA
+- scaler: Reescalador
+- regressor__weights: Ponderación
+- regressor__metric: Metrica distancia
+
+GRUPOS DE VARIABLES Y COLORES:
+- DWI (Reds): dwi_sin, dwi_cos
+- WIND (Blues): wind_max, wind_med
+- SHWW (Greens): shww_max, shww_med
+- MDTS (Purples): mdts_sin, mdts_cos
+- SHTS (Oranges): shts_max, shts_med
+
+RANGOS PARAMETROS:
+{'regressor__n_neighbors': {'min': 1, 'max': 100, 'valores_unicos': [1, 3, 5, 7, 10, 15, 20, 25, 30, 50, 70, 100]}, 'pca': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['PCA(n_components=0.95)']}, 'scaler': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['RobustScaler', 'StandardScaler']}, 'regressor__weights': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['distance', 'uniform']}, 'regressor__metric': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['chebyshev', 'euclidean', 'manhattan']}}
+
+MEJORES MODELOS:
+{'dwi_sin': variable                                 dwi_sin
+regressor                    KNeighborsRegressor
+regressor__n_neighbors                        70
+pca                       PCA(n_components=0.95)
+scaler                                       NaN
+regressor__weights                      distance
+regressor__metric                      euclidean
+score                                  -0.465219
+std                                     0.058272
+Name: 381, dtype: object, 'dwi_cos': variable                                 dwi_cos
+regressor                    KNeighborsRegressor
+regressor__n_neighbors                        30
+pca                       PCA(n_components=0.95)
+scaler                                       NaN
+regressor__weights                      distance
+regressor__metric                      euclidean
+score                                  -0.423338
+std                                     0.044963
+Name: 741, dtype: object, 'wind_max': variable                             wind_max
+regressor                 KNeighborsRegressor
+regressor__n_neighbors                    100
+pca                                       NaN
+scaler                         StandardScaler
+regressor__weights                   distance
+regressor__metric                   euclidean
+score                               -2.330014
+std                                  0.434012
+Name: 1269, dtype: object, 'wind_med': variable                             wind_med
+regressor                 KNeighborsRegressor
+regressor__n_neighbors                    100
+pca                                       NaN
+scaler                           RobustScaler
+regressor__weights                   distance
+regressor__metric                   euclidean
+score                               -2.013823
+std                                  0.441222
+Name: 1707, dtype: object, 'shww_max': variable                                shww_max
+regressor                    KNeighborsRegressor
+regressor__n_neighbors                        30
+pca                       PCA(n_components=0.95)
+scaler                                       NaN
+regressor__weights                      distance
+regressor__metric                      euclidean
+score                                  -0.909191
+std                                     0.416644
+Name: 2037, dtype: object, 'shww_med': variable                                shww_med
+regressor                    KNeighborsRegressor
+regressor__n_neighbors                        30
+pca                       PCA(n_components=0.95)
+scaler                                       NaN
+regressor__weights                       uniform
+regressor__metric                      euclidean
+score                                  -0.688058
+std                                     0.340365
+Name: 2466, dtype: object, 'mdts_sin': variable                                mdts_sin
+regressor                    KNeighborsRegressor
+regressor__n_neighbors                       100
+pca                       PCA(n_components=0.95)
+scaler                              RobustScaler
+regressor__weights                      distance
+regressor__metric                      manhattan
+score                                   -0.08504
+std                                     0.049471
+Name: 3022, dtype: object, 'mdts_cos': variable                                mdts_cos
+regressor                    KNeighborsRegressor
+regressor__n_neighbors                        70
+pca                       PCA(n_components=0.95)
+scaler                                       NaN
+regressor__weights                       uniform
+regressor__metric                      manhattan
+score                                  -0.094828
+std                                     0.041805
+Name: 3403, dtype: object, 'shts_max': variable                                shts_max
+regressor                    KNeighborsRegressor
+regressor__n_neighbors                        50
+pca                       PCA(n_components=0.95)
+scaler                            StandardScaler
+regressor__weights                      distance
+regressor__metric                      chebyshev
+score                                  -0.603174
+std                                     0.158337
+Name: 3809, dtype: object, 'shts_med': variable                                shts_med
+regressor                    KNeighborsRegressor
+regressor__n_neighbors                        50
+pca                       PCA(n_components=0.95)
+scaler                            StandardScaler
+regressor__weights                      distance
+regressor__metric                      chebyshev
+score                                  -0.531629
+std                                     0.116268
+Name: 4241, dtype: object}
+
+MEJORES VALORES PROMEDIO:
+{'dwi_sin': {'regressor__n_neighbors': {'valor': 100, 'score_promedio': -0.4773997961111111}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -0.5227629475}, 'scaler': {'valor': 'RobustScaler', 'score_promedio': -0.5225679098611111}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -0.5180369721759259}, 'regressor__metric': {'valor': 'manhattan', 'score_promedio': -0.5143416826388889}}, 'dwi_cos': {'regressor__n_neighbors': {'valor': 100, 'score_promedio': -0.4319666494444444}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -0.4675196805092593}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.4673612772222222}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -0.4636789797685185}, 'regressor__metric': {'valor': 'manhattan', 'score_promedio': -0.45984818562500007}}, 'wind_max': {'regressor__n_neighbors': {'valor': 100, 'score_promedio': -2.4576441566666665}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -2.6238611854166667}, 'scaler': {'valor': 'RobustScaler', 'score_promedio': -2.6299528786805557}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -2.620044301064815}, 'regressor__metric': {'valor': 'euclidean', 'score_promedio': -2.5119900659722223}}, 'wind_med': {'regressor__n_neighbors': {'valor': 100, 'score_promedio': -2.1173473636111115}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -2.256939672222222}, 'scaler': {'valor': 'RobustScaler', 'score_promedio': -2.2633978134722224}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -2.2536098242592595}, 'regressor__metric': {'valor': 'euclidean', 'score_promedio': -2.1671564520833333}}, 'shww_max': {'regressor__n_neighbors': {'valor': 50, 'score_promedio': -0.9287268469444445}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -0.9949113500462963}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.9964253120833333}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -0.9931746012037037}, 'regressor__metric': {'valor': 'euclidean', 'score_promedio': -0.9783340822916666}}, 'shww_med': {'regressor__n_neighbors': {'valor': 50, 'score_promedio': -0.7020283116666666}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -0.7537356381018518}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.7537876005555556}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -0.7505634419907408}, 'regressor__metric': {'valor': 'euclidean', 'score_promedio': -0.741311846875}}, 'mdts_sin': {'regressor__n_neighbors': {'valor': 100, 'score_promedio': -0.08788538555555556}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -0.09547236416666667}, 'scaler': {'valor': 'RobustScaler', 'score_promedio': -0.09527353756944444}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -0.09504881560185184}, 'regressor__metric': {'valor': 'manhattan', 'score_promedio': -0.0919376620138889}}, 'mdts_cos': {'regressor__n_neighbors': {'valor': 100, 'score_promedio': -0.098115265}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -0.10839526476851852}, 'scaler': {'valor': 'RobustScaler', 'score_promedio': -0.108968253125}, 'regressor__weights': {'valor': 'uniform', 'score_promedio': -0.10881759}, 'regressor__metric': {'valor': 'manhattan', 'score_promedio': -0.10613884048611111}}, 'shts_max': {'regressor__n_neighbors': {'valor': 25, 'score_promedio': -0.6191191558333333}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -0.7015850734259259}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.6916123830555556}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -0.6785282158796296}, 'regressor__metric': {'valor': 'chebyshev', 'score_promedio': -0.6640149706944444}}, 'shts_med': {'regressor__n_neighbors': {'valor': 25, 'score_promedio': -0.5427035922222223}, 'pca': {'valor': 'PCA(0.95)', 'score_promedio': -0.6135410488425926}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.6050340347916667}, 'regressor__weights': {'valor': 'distance', 'score_promedio': -0.5930830167129629}, 'regressor__metric': {'valor': 'chebyshev', 'score_promedio': -0.5821848167361111}}}
+
+VARIABILIDAD:
+{'dwi_sin': {'regressor__n_neighbors': 0.046691377841435074, 'pca': 0.0057226821916047995, 'scaler': 0.00702027942475007, 'regressor__weights': 0.0009608562071412895, 'regressor__metric': 0.007043549908708228}, 'dwi_cos': {'regressor__n_neighbors': 0.03970117097300764, 'pca': 0.004599036057717307, 'scaler': 0.005432248071249179, 'regressor__weights': 0.0008325350188546525, 'regressor__metric': 0.00640836342095966}, 'wind_max': {'regressor__n_neighbors': 0.21731118135756952, 'pca': 0.0004024363698417817, 'scaler': 0.013083470980839005, 'regressor__weights': 0.0058003259862402234, 'regressor__metric': 0.09907060726288798}, 'wind_med': {'regressor__n_neighbors': 0.18819346524206243, 'pca': 0.0010846205177968819, 'scaler': 0.010866493606835632, 'regressor__weights': 0.005793736667659401, 'regressor__metric': 0.08002538655138411}, 'shww_max': {'regressor__n_neighbors': 0.08173761149127708, 'pca': 0.0019083844990228907, 'scaler': 0.006979443123312978, 'regressor__weights': 0.0005477492686072854, 'regressor__metric': 0.018378748755487954}, 'shww_med': {'regressor__n_neighbors': 0.05857438738976663, 'pca': 0.004173275148706127, 'scaler': 0.006657814801132185, 'regressor__weights': 0.00031288761413435305, 'regressor__metric': 0.01256587121742941}, 'mdts_sin': {'regressor__n_neighbors': 0.008334314138787186, 'pca': 0.0005494280906934288, 'scaler': 0.0008795221165519634, 'regressor__weights': 4.9560033991343424e-05, 'regressor__metric': 0.0046187566102258255}, 'mdts_cos': {'regressor__n_neighbors': 0.01231013230854274, 'pca': 0.0006997648849302008, 'scaler': 0.00032814583622629904, 'regressor__weights': 0.00010250681483672374, 'regressor__metric': 0.004388050910903081}, 'shts_max': {'regressor__n_neighbors': 0.05688392784490877, 'pca': 0.03144929052993407, 'scaler': 0.022195928146913377, 'regressor__weights': 0.0011580301177426433, 'regressor__metric': 0.020653576029309742}, 'shts_med': {'regressor__n_neighbors': 0.04764751114005731, 'pca': 0.027302647641521446, 'scaler': 0.01921065080912533, 'regressor__weights': 0.0016293788556654243, 'regressor__metric': 0.016470125680672878}}
+
+VARIABILIDAD GLOBAL:
+{'regressor__n_neighbors': 0.07573850797274143, 'pca': 0.007789156593176893, 'scaler': 0.009265399691693602, 'regressor__weights': 0.0017187566584873338, 'regressor__metric': 0.026962303634796885}
+
+VARIABILIDAD ORDENADA:
+[('regressor__n_neighbors', 0.07573850797274143), ('regressor__metric', 0.026962303634796885), ('scaler', 0.009265399691693602), ('pca', 0.007789156593176893), ('regressor__weights', 0.0017187566584873338)]
+
+TABLAS ESPECIALES:
+{'dwi_sin': regressor__n_neighbors       1         3         5        7         10        15        20        25       30        50        70      100
+regressor__n_neighbors                                                                                                                    
+1                      -0.616728       NaN       NaN      NaN       NaN       NaN       NaN       NaN      NaN       NaN       NaN     NaN
+3                            NaN -0.608229       NaN      NaN       NaN       NaN       NaN       NaN      NaN       NaN       NaN     NaN
+5                            NaN       NaN -0.533758      NaN       NaN       NaN       NaN       NaN      NaN       NaN       NaN     NaN
+7                            NaN       NaN       NaN -0.52258       NaN       NaN       NaN       NaN      NaN       NaN       NaN     NaN
+10                           NaN       NaN       NaN      NaN -0.509987       NaN       NaN       NaN      NaN       NaN       NaN     NaN
+15                           NaN       NaN       NaN      NaN       NaN -0.498755       NaN       NaN      NaN       NaN       NaN     NaN
+20                           NaN       NaN       NaN      NaN       NaN       NaN -0.499551       NaN      NaN       NaN       NaN     NaN
+25                           NaN       NaN       NaN      NaN       NaN       NaN       NaN -0.486988      NaN       NaN       NaN     NaN
+30                           NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN -0.49524       NaN       NaN     NaN
+50                           NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN      NaN -0.481027       NaN     NaN
+70                           NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN      NaN       NaN -0.494353     NaN
+100                          NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN      NaN       NaN       NaN -0.4774, 'dwi_cos': regressor__n_neighbors       1         3         5         7         10        15       20        25        30        50        70        100
+regressor__n_neighbors                                                                                                                       
+1                      -0.545631       NaN       NaN       NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+3                            NaN -0.543106       NaN       NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+5                            NaN       NaN -0.475651       NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+7                            NaN       NaN       NaN -0.469015       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+10                           NaN       NaN       NaN       NaN -0.455559       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+15                           NaN       NaN       NaN       NaN       NaN -0.447574      NaN       NaN       NaN       NaN       NaN       NaN
+20                           NaN       NaN       NaN       NaN       NaN       NaN -0.44595       NaN       NaN       NaN       NaN       NaN
+25                           NaN       NaN       NaN       NaN       NaN       NaN      NaN -0.436733       NaN       NaN       NaN       NaN
+30                           NaN       NaN       NaN       NaN       NaN       NaN      NaN       NaN -0.443458       NaN       NaN       NaN
+50                           NaN       NaN       NaN       NaN       NaN       NaN      NaN       NaN       NaN -0.432143       NaN       NaN
+70                           NaN       NaN       NaN       NaN       NaN       NaN      NaN       NaN       NaN       NaN -0.444426       NaN
+100                          NaN       NaN       NaN       NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN -0.431967, 'wind_max': regressor__n_neighbors       1         3         5         7         10        15        20        25        30        50        70        100
+regressor__n_neighbors                                                                                                                        
+1                      -3.059719       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+3                            NaN -3.068067       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+5                            NaN       NaN -2.672735       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+7                            NaN       NaN       NaN -2.669145       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+10                           NaN       NaN       NaN       NaN -2.563742       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+15                           NaN       NaN       NaN       NaN       NaN -2.545386       NaN       NaN       NaN       NaN       NaN       NaN
+20                           NaN       NaN       NaN       NaN       NaN       NaN -2.510212       NaN       NaN       NaN       NaN       NaN
+25                           NaN       NaN       NaN       NaN       NaN       NaN       NaN -2.483639       NaN       NaN       NaN       NaN
+30                           NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -2.495939       NaN       NaN       NaN
+50                           NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -2.459313       NaN       NaN
+70                           NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -2.504209       NaN
+100                          NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -2.457644, 'wind_med': regressor__n_neighbors       1         3         5        7         10        15       20        25        30        50        70        100
+regressor__n_neighbors                                                                                                                      
+1                      -2.633779       NaN       NaN      NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+3                            NaN -2.646135       NaN      NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+5                            NaN       NaN -2.295576      NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+7                            NaN       NaN       NaN -2.29438       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+10                           NaN       NaN       NaN      NaN -2.201024       NaN      NaN       NaN       NaN       NaN       NaN       NaN
+15                           NaN       NaN       NaN      NaN       NaN -2.190171      NaN       NaN       NaN       NaN       NaN       NaN
+20                           NaN       NaN       NaN      NaN       NaN       NaN -2.15691       NaN       NaN       NaN       NaN       NaN
+25                           NaN       NaN       NaN      NaN       NaN       NaN      NaN -2.137499       NaN       NaN       NaN       NaN
+30                           NaN       NaN       NaN      NaN       NaN       NaN      NaN       NaN -2.146506       NaN       NaN       NaN
+50                           NaN       NaN       NaN      NaN       NaN       NaN      NaN       NaN       NaN -2.117835       NaN       NaN
+70                           NaN       NaN       NaN      NaN       NaN       NaN      NaN       NaN       NaN       NaN -2.155316       NaN
+100                          NaN       NaN       NaN      NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN -2.117347, 'shww_max': regressor__n_neighbors      1         3         5         7         10        15        20        25        30        50        70        100
+regressor__n_neighbors                                                                                                                       
+1                      -1.16883       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+3                           NaN -1.151368       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+5                           NaN       NaN -1.011243       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+7                           NaN       NaN       NaN -1.000986       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+10                          NaN       NaN       NaN       NaN -0.970326       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+15                          NaN       NaN       NaN       NaN       NaN -0.959283       NaN       NaN       NaN       NaN       NaN       NaN
+20                          NaN       NaN       NaN       NaN       NaN       NaN -0.954118       NaN       NaN       NaN       NaN       NaN
+25                          NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.938211       NaN       NaN       NaN       NaN
+30                          NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.949183       NaN       NaN       NaN
+50                          NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.928727       NaN       NaN
+70                          NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.957944       NaN
+100                         NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.932522, 'shww_med': regressor__n_neighbors       1         3        5         7        10        15        20       25        30        50        70        100
+regressor__n_neighbors                                                                                                                     
+1                      -0.877126       NaN      NaN       NaN      NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN
+3                            NaN -0.862732      NaN       NaN      NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN
+5                            NaN       NaN -0.76425       NaN      NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN
+7                            NaN       NaN      NaN -0.753528      NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN
+10                           NaN       NaN      NaN       NaN -0.73518       NaN       NaN      NaN       NaN       NaN       NaN       NaN
+15                           NaN       NaN      NaN       NaN      NaN -0.723966       NaN      NaN       NaN       NaN       NaN       NaN
+20                           NaN       NaN      NaN       NaN      NaN       NaN -0.724266      NaN       NaN       NaN       NaN       NaN
+25                           NaN       NaN      NaN       NaN      NaN       NaN       NaN -0.70883       NaN       NaN       NaN       NaN
+30                           NaN       NaN      NaN       NaN      NaN       NaN       NaN      NaN -0.720874       NaN       NaN       NaN
+50                           NaN       NaN      NaN       NaN      NaN       NaN       NaN      NaN       NaN -0.702028       NaN       NaN
+70                           NaN       NaN      NaN       NaN      NaN       NaN       NaN      NaN       NaN       NaN -0.729519       NaN
+100                          NaN       NaN      NaN       NaN      NaN       NaN       NaN      NaN       NaN       NaN       NaN -0.707116, 'mdts_sin': regressor__n_neighbors       1         3         5         7        10        15        20        25        30        50        70        100
+regressor__n_neighbors                                                                                                                       
+1                      -0.110714       NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+3                            NaN -0.111721       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+5                            NaN       NaN -0.098571       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+7                            NaN       NaN       NaN -0.098106      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+10                           NaN       NaN       NaN       NaN -0.09361       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+15                           NaN       NaN       NaN       NaN      NaN -0.093184       NaN       NaN       NaN       NaN       NaN       NaN
+20                           NaN       NaN       NaN       NaN      NaN       NaN -0.090658       NaN       NaN       NaN       NaN       NaN
+25                           NaN       NaN       NaN       NaN      NaN       NaN       NaN -0.090423       NaN       NaN       NaN       NaN
+30                           NaN       NaN       NaN       NaN      NaN       NaN       NaN       NaN -0.089134       NaN       NaN       NaN
+50                           NaN       NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN -0.089069       NaN       NaN
+70                           NaN       NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN -0.087931       NaN
+100                          NaN       NaN       NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.087885, 'mdts_cos': regressor__n_neighbors       1         3         5         7         10        15        20        25        30        50        70        100
+regressor__n_neighbors                                                                                                                        
+1                      -0.131019       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+3                            NaN -0.134102       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+5                            NaN       NaN -0.113447       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+7                            NaN       NaN       NaN -0.114472       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+10                           NaN       NaN       NaN       NaN -0.106216       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+15                           NaN       NaN       NaN       NaN       NaN -0.106649       NaN       NaN       NaN       NaN       NaN       NaN
+20                           NaN       NaN       NaN       NaN       NaN       NaN -0.102074       NaN       NaN       NaN       NaN       NaN
+25                           NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.102406       NaN       NaN       NaN       NaN
+30                           NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.099986       NaN       NaN       NaN
+50                           NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.100054       NaN       NaN
+70                           NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.098141       NaN
+100                          NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.098115, 'shts_max': regressor__n_neighbors       1         3       5         7         10        15        20        25        30       50        70       100
+regressor__n_neighbors                                                                                                                    
+1                      -0.810954       NaN     NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN       NaN      NaN
+3                            NaN -0.752231     NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN       NaN      NaN
+5                            NaN       NaN -0.7066       NaN       NaN       NaN       NaN       NaN       NaN      NaN       NaN      NaN
+7                            NaN       NaN     NaN -0.654737       NaN       NaN       NaN       NaN       NaN      NaN       NaN      NaN
+10                           NaN       NaN     NaN       NaN -0.678382       NaN       NaN       NaN       NaN      NaN       NaN      NaN
+15                           NaN       NaN     NaN       NaN       NaN -0.627952       NaN       NaN       NaN      NaN       NaN      NaN
+20                           NaN       NaN     NaN       NaN       NaN       NaN -0.672025       NaN       NaN      NaN       NaN      NaN
+25                           NaN       NaN     NaN       NaN       NaN       NaN       NaN -0.619119       NaN      NaN       NaN      NaN
+30                           NaN       NaN     NaN       NaN       NaN       NaN       NaN       NaN -0.676028      NaN       NaN      NaN
+50                           NaN       NaN     NaN       NaN       NaN       NaN       NaN       NaN       NaN -0.62136       NaN      NaN
+70                           NaN       NaN     NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN -0.694497      NaN
+100                          NaN       NaN     NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN       NaN -0.63828, 'shts_med': regressor__n_neighbors       1         3         5        7         10       15        20        25        30        50        70        100
+regressor__n_neighbors                                                                                                                      
+1                      -0.702741       NaN       NaN      NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN
+3                            NaN -0.656735       NaN      NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN
+5                            NaN       NaN -0.615441      NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN
+7                            NaN       NaN       NaN -0.57125       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN
+10                           NaN       NaN       NaN      NaN -0.592247      NaN       NaN       NaN       NaN       NaN       NaN       NaN
+15                           NaN       NaN       NaN      NaN       NaN -0.54881       NaN       NaN       NaN       NaN       NaN       NaN
+20                           NaN       NaN       NaN      NaN       NaN      NaN -0.587987       NaN       NaN       NaN       NaN       NaN
+25                           NaN       NaN       NaN      NaN       NaN      NaN       NaN -0.542704       NaN       NaN       NaN       NaN
+30                           NaN       NaN       NaN      NaN       NaN      NaN       NaN       NaN -0.593141       NaN       NaN       NaN
+50                           NaN       NaN       NaN      NaN       NaN      NaN       NaN       NaN       NaN -0.546257       NaN       NaN
+70                           NaN       NaN       NaN      NaN       NaN      NaN       NaN       NaN       NaN       NaN -0.610613       NaN
+100                          NaN       NaN       NaN      NaN       NaN      NaN       NaN       NaN       NaN       NaN       NaN -0.562897}
+
+TABLAS DOS VAR:
+{'dwi_sin': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -0.623788  -0.616274  -0.610122
+3                       -0.621483  -0.595820  -0.607386
+5                       -0.539880  -0.530389  -0.531006
+7                       -0.533978  -0.513328  -0.520434
+10                      -0.514595  -0.509690  -0.505675
+15                      -0.508726  -0.490355  -0.497184
+20                      -0.503620  -0.501307  -0.493728
+25                      -0.497417  -0.479295  -0.484253
+30                      -0.498730  -0.498657  -0.488333
+50                      -0.492496  -0.473110  -0.477476
+70                      -0.497209  -0.502377  -0.483473
+100                     -0.490178  -0.468990  -0.473031, 'dwi_cos': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -0.539940  -0.556243  -0.540711
+3                       -0.542870  -0.547082  -0.539366
+5                       -0.472953  -0.482182  -0.471819
+7                       -0.469745  -0.469844  -0.467455
+10                      -0.452016  -0.464615  -0.450044
+15                      -0.447959  -0.448476  -0.446286
+20                      -0.440420  -0.457675  -0.439754
+25                      -0.436142  -0.439111  -0.434946
+30                      -0.436555  -0.457926  -0.435894
+50                      -0.431372  -0.435875  -0.429181
+70                      -0.435742  -0.462875  -0.434662
+100                     -0.430337  -0.437504  -0.428059, 'wind_max': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -3.099591  -2.938128  -3.141437
+3                       -3.108844  -2.959460  -3.135897
+5                       -2.707119  -2.556522  -2.754562
+7                       -2.707198  -2.567419  -2.732817
+10                      -2.596899  -2.453804  -2.640523
+15                      -2.580504  -2.442597  -2.613056
+20                      -2.538404  -2.402797  -2.589434
+25                      -2.522806  -2.379000  -2.549110
+30                      -2.525729  -2.380635  -2.581452
+50                      -2.502077  -2.349622  -2.526241
+70                      -2.536306  -2.373765  -2.602555
+100                     -2.503032  -2.340129  -2.529772, 'wind_med': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -2.662856  -2.537231  -2.701251
+3                       -2.686115  -2.555315  -2.696976
+5                       -2.317815  -2.205220  -2.363694
+7                       -2.332229  -2.209914  -2.340997
+10                      -2.226918  -2.111834  -2.264319
+15                      -2.219811  -2.112061  -2.238640
+20                      -2.180137  -2.068450  -2.222143
+25                      -2.167639  -2.057938  -2.186920
+30                      -2.170221  -2.048621  -2.220675
+50                      -2.149545  -2.032750  -2.171211
+70                      -2.180086  -2.042552  -2.243312
+100                     -2.150948  -2.023990  -2.177104, 'shww_max': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -1.179359  -1.145598  -1.181534
+3                       -1.145894  -1.135604  -1.172604
+5                       -1.006998  -0.990863  -1.035869
+7                       -0.999490  -0.989127  -1.014342
+10                      -0.960915  -0.953729  -0.996334
+15                      -0.955466  -0.949789  -0.972595
+20                      -0.943062  -0.936624  -0.982669
+25                      -0.933848  -0.929593  -0.951192
+30                      -0.937133  -0.929456  -0.980960
+50                      -0.924129  -0.920019  -0.942032
+70                      -0.946388  -0.936510  -0.990936
+100                     -0.927819  -0.923097  -0.946652, 'shww_med': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -0.883216  -0.863268  -0.884895
+3                       -0.856112  -0.856665  -0.875419
+5                       -0.759652  -0.750620  -0.782478
+7                       -0.752859  -0.746560  -0.761167
+10                      -0.726844  -0.724242  -0.754455
+15                      -0.720842  -0.719029  -0.732027
+20                      -0.715026  -0.712497  -0.745275
+25                      -0.705763  -0.704357  -0.716371
+30                      -0.710531  -0.706605  -0.745484
+50                      -0.698905  -0.696599  -0.710581
+70                      -0.719101  -0.713689  -0.755768
+100                     -0.703182  -0.701612  -0.716553, 'mdts_sin': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -0.107299  -0.117837  -0.107007
+3                       -0.106854  -0.124163  -0.104146
+5                       -0.096394  -0.103370  -0.095949
+7                       -0.095131  -0.105987  -0.093199
+10                      -0.091706  -0.097419  -0.091705
+15                      -0.091135  -0.099139  -0.089277
+20                      -0.089014  -0.093980  -0.088980
+25                      -0.089000  -0.095089  -0.087180
+30                      -0.087687  -0.092087  -0.087627
+50                      -0.087819  -0.093297  -0.086092
+70                      -0.086657  -0.090488  -0.086649
+100                     -0.086434  -0.091781  -0.085442, 'mdts_cos': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -0.129402  -0.135202  -0.128452
+3                       -0.129375  -0.145136  -0.127796
+5                       -0.112345  -0.116287  -0.111709
+7                       -0.110943  -0.122447  -0.110026
+10                      -0.104638  -0.109019  -0.104991
+15                      -0.103940  -0.113178  -0.102830
+20                      -0.100465  -0.104970  -0.100787
+25                      -0.099933  -0.108112  -0.099174
+30                      -0.098299  -0.102897  -0.098762
+50                      -0.097618  -0.105607  -0.096936
+70                      -0.096404  -0.101045  -0.096973
+100                     -0.095609  -0.103508  -0.095229, 'shts_max': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -0.790346  -0.851630  -0.790885
+3                       -0.750514  -0.751659  -0.754519
+5                       -0.683508  -0.738969  -0.697322
+7                       -0.655422  -0.652645  -0.656145
+10                      -0.655309  -0.712157  -0.667680
+15                      -0.623669  -0.631448  -0.628740
+20                      -0.648090  -0.708365  -0.659620
+25                      -0.611589  -0.627629  -0.618140
+30                      -0.650103  -0.716638  -0.661343
+50                      -0.610701  -0.636118  -0.617262
+70                      -0.665498  -0.743462  -0.674531
+100                     -0.623431  -0.663276  -0.628133, 'shts_med': regressor__metric       chebyshev  euclidean  manhattan
+regressor__n_neighbors                                 
+1                       -0.685279  -0.735986  -0.686958
+3                       -0.655283  -0.655218  -0.659703
+5                       -0.595039  -0.644266  -0.607020
+7                       -0.572556  -0.567351  -0.573843
+10                      -0.573615  -0.619851  -0.583273
+15                      -0.546849  -0.549370  -0.550211
+20                      -0.569165  -0.617463  -0.577334
+25                      -0.537776  -0.548167  -0.542168
+30                      -0.572560  -0.626642  -0.580222
+50                      -0.538679  -0.557310  -0.542780
+70                      -0.587671  -0.651463  -0.592705
+100                     -0.551746  -0.582940  -0.554004}
+

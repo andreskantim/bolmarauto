@@ -1,0 +1,229 @@
+ANÁLISIS DE PARÁMETROS CSV
+==================================================
+
+CONFIGURACIÓN:
+- Archivo CSV: gradient.csv
+- Regressor: GradientBoosting
+- Parámetros analizados: regressor__n_estimators, regressor__learning_rate, regressor__max_depth, regressor__subsample, regressor__max_features
+- Parámetro especial: regressor__n_estimators
+- Variables: dwi_sin, dwi_cos, wind_max, wind_med, shww_max, shww_med, mdts_sin, mdts_cos, shts_max, shts_med
+
+NOMBRES PERSONALIZADOS DE PARÁMETROS:
+- regressor__n_estimators: Numero de árboles
+- regressor__learning_rate: Learning Rate
+- regressor__max_depth: Profundidad Máxima
+- regressor__min_samples_split: Mínimo hojas división
+- regressor__subsample: Fracción datos usados
+- regressor__max_features: Número características
+
+GRUPOS DE VARIABLES Y COLORES:
+- DWI (Reds): dwi_sin, dwi_cos
+- WIND (Blues): wind_max, wind_med
+- SHWW (Greens): shww_max, shww_med
+- MDTS (Purples): mdts_sin, mdts_cos
+- SHTS (Oranges): shts_max, shts_med
+
+RANGOS PARAMETROS:
+{'regressor__n_estimators': {'min': 100, 'max': 600, 'valores_unicos': [100, 200, 300, 400, 500, 600]}, 'regressor__learning_rate': {'min': 0.05, 'max': 0.1, 'valores_unicos': [0.05, 0.1]}, 'regressor__max_depth': {'min': 5.0, 'max': 5.0, 'valores_unicos': [5.0]}, 'regressor__subsample': {'min': 0.8, 'max': 1.0, 'valores_unicos': [0.8, 1.0]}, 'regressor__max_features': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['log2', 'sqrt']}}
+
+MEJORES MODELOS:
+{'dwi_sin': variable                        dwi_sin
+regressor__n_estimators             200
+regressor__learning_rate           0.05
+regressor__max_depth                NaN
+regressor__min_samples_leaf          20
+regressor__subsample                1.0
+regressor__max_features            sqrt
+score                         -0.462517
+std                            0.062998
+Name: 36, dtype: object, 'dwi_cos': variable                        dwi_cos
+regressor__n_estimators             100
+regressor__learning_rate            0.1
+regressor__max_depth                5.0
+regressor__min_samples_leaf          10
+regressor__subsample                1.0
+regressor__max_features            log2
+score                         -0.404797
+std                            0.037046
+Name: 217, dtype: object, 'wind_max': variable                       wind_max
+regressor__n_estimators             200
+regressor__learning_rate           0.05
+regressor__max_depth                5.0
+regressor__min_samples_leaf          20
+regressor__subsample                0.8
+regressor__max_features            sqrt
+score                         -2.293453
+std                            0.376809
+Name: 430, dtype: object, 'wind_med': variable                       wind_med
+regressor__n_estimators             200
+regressor__learning_rate           0.05
+regressor__max_depth                5.0
+regressor__min_samples_leaf          10
+regressor__subsample                0.8
+regressor__max_features            log2
+score                         -1.999087
+std                            0.411909
+Name: 619, dtype: object, 'shww_max': variable                       shww_max
+regressor__n_estimators             100
+regressor__learning_rate            0.1
+regressor__max_depth                5.0
+regressor__min_samples_leaf          20
+regressor__subsample                0.8
+regressor__max_features            log2
+score                         -0.893987
+std                            0.391457
+Name: 799, dtype: object, 'shww_med': variable                       shww_med
+regressor__n_estimators             100
+regressor__learning_rate            0.1
+regressor__max_depth                5.0
+regressor__min_samples_leaf          20
+regressor__subsample                0.8
+regressor__max_features            log2
+score                         -0.673985
+std                            0.320976
+Name: 991, dtype: object, 'mdts_sin': variable                       mdts_sin
+regressor__n_estimators             200
+regressor__learning_rate           0.05
+regressor__max_depth                5.0
+regressor__min_samples_leaf          10
+regressor__subsample                0.8
+regressor__max_features            sqrt
+score                         -0.084395
+std                            0.048357
+Name: 1194, dtype: object, 'mdts_cos': variable                       mdts_cos
+regressor__n_estimators             200
+regressor__learning_rate           0.05
+regressor__max_depth                NaN
+regressor__min_samples_leaf          20
+regressor__subsample                1.0
+regressor__max_features            log2
+score                         -0.097162
+std                             0.04448
+Name: 1381, dtype: object, 'shts_max': variable                       shts_max
+regressor__n_estimators             200
+regressor__learning_rate           0.05
+regressor__max_depth                5.0
+regressor__min_samples_leaf          10
+regressor__subsample                0.8
+regressor__max_features            sqrt
+score                         -0.537733
+std                            0.153529
+Name: 1578, dtype: object, 'shts_med': variable                       shts_med
+regressor__n_estimators             100
+regressor__learning_rate            0.1
+regressor__max_depth                5.0
+regressor__min_samples_leaf          20
+regressor__subsample                0.8
+regressor__max_features            log2
+score                         -0.478289
+std                             0.11804
+Name: 1759, dtype: object}
+
+MEJORES VALORES PROMEDIO:
+{'dwi_sin': {'regressor__n_estimators': {'valor': 100, 'score_promedio': -0.475563179375}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -0.47607175333333335}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -0.4770201033333334}, 'regressor__subsample': {'valor': 1.0, 'score_promedio': -0.47893092958333333}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.4771705940625}}, 'dwi_cos': {'regressor__n_estimators': {'valor': 100, 'score_promedio': -0.4119744253125}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -0.41312077072916664}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -0.41437000958333337}, 'regressor__subsample': {'valor': 0.8, 'score_promedio': -0.4153219571875}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.41426125875}}, 'wind_max': {'regressor__n_estimators': {'valor': 200, 'score_promedio': -2.347934088125}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -2.3464359082291666}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -2.33998578625}, 'regressor__subsample': {'valor': 0.8, 'score_promedio': -2.352869233333333}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -2.3552213673958335}}, 'wind_med': {'regressor__n_estimators': {'valor': 100, 'score_promedio': -2.04483247625}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -2.0447746871875}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -2.0442396717708333}, 'regressor__subsample': {'valor': 0.8, 'score_promedio': -2.0519812644791666}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -2.0516612646875}}, 'shww_max': {'regressor__n_estimators': {'valor': 100, 'score_promedio': -0.921402583125}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -0.9237523420833332}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -0.9227922001041667}, 'regressor__subsample': {'valor': 0.8, 'score_promedio': -0.9275598661458333}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.9276550990625}}, 'shww_med': {'regressor__n_estimators': {'valor': 100, 'score_promedio': -0.700572955625}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -0.7015360741666666}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -0.6998918623958333}, 'regressor__subsample': {'valor': 0.8, 'score_promedio': -0.7040729929166667}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.7048079147916666}}, 'mdts_sin': {'regressor__n_estimators': {'valor': 200, 'score_promedio': -0.086923154375}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -0.0871911415625}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -0.08746467416666666}, 'regressor__subsample': {'valor': 1.0, 'score_promedio': -0.0875828315625}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.08746097291666667}}, 'mdts_cos': {'regressor__n_estimators': {'valor': 200, 'score_promedio': -0.10198788875}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -0.10246425739583333}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -0.10238352020833334}, 'regressor__subsample': {'valor': 0.8, 'score_promedio': -0.10299124385416668}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.10284223916666667}}, 'shts_max': {'regressor__n_estimators': {'valor': 100, 'score_promedio': -0.554780164375}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -0.5558465054166667}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -0.5555889521875}, 'regressor__subsample': {'valor': 1.0, 'score_promedio': -0.5593339961458333}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.5576317577083333}}, 'shts_med': {'regressor__n_estimators': {'valor': 100, 'score_promedio': -0.4921228190625}, 'regressor__learning_rate': {'valor': 0.05, 'score_promedio': -0.4931174753125}, 'regressor__max_depth': {'valor': 5.0, 'score_promedio': -0.4931968233333333}, 'regressor__subsample': {'valor': 1.0, 'score_promedio': -0.4959781736458333}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.4944718482291666}}}
+
+VARIABILIDAD:
+{'dwi_sin': {'regressor__n_estimators': 0.0028618313230992197, 'regressor__learning_rate': 0.004068675993446125, 'regressor__max_depth': 0.00272750656156954, 'regressor__subsample': 2.519016348110038e-05, 'regressor__max_features': 0.0025146805313706914}, 'dwi_cos': {'regressor__n_estimators': 0.0022323996915025934, 'regressor__learning_rate': 0.0031287492958808876, 'regressor__max_depth': 0.0013620587656749219, 'regressor__subsample': 1.5801553193882138e-05, 'regressor__max_features': 0.0015158556690942646}, 'wind_max': {'regressor__n_estimators': 0.00867211192492662, 'regressor__learning_rate': 0.014585297710425837, 'regressor__max_depth': 0.02370714769232405, 'regressor__subsample': 0.0054872020969581135, 'regressor__max_features': 0.002160782205250716}, 'wind_med': {'regressor__n_estimators': 0.009640515726510954, 'regressor__learning_rate': 0.0153599987439069, 'regressor__max_depth': 0.016116624802235444, 'regressor__subsample': 0.00516835939974183, 'regressor__max_features': 0.005620907445073195}, 'shww_max': {'regressor__n_estimators': 0.0047640498709869816, 'regressor__learning_rate': 0.006190958591483848, 'regressor__max_depth': 0.007548804400225008, 'regressor__subsample': 0.0008063064232344269, 'regressor__max_features': 0.0006716267409000504}, 'shww_med': {'regressor__n_estimators': 0.004062808823753066, 'regressor__learning_rate': 0.005251809343093087, 'regressor__max_depth': 0.00757707592881909, 'regressor__subsample': 0.0016640644402045575, 'regressor__max_features': 0.0006247279572948698}, 'mdts_sin': {'regressor__n_estimators': 0.0005857001935334936, 'regressor__learning_rate': 0.0007005820270201018, 'regressor__max_depth': 0.0003137485084563881, 'regressor__subsample': 0.00014664871677418402, 'regressor__max_features': 0.0003189828664041042}, 'mdts_cos': {'regressor__n_estimators': 0.0008672389255940256, 'regressor__learning_rate': 0.0007660817701031545, 'regressor__max_depth': 0.0008802613956535027, 'regressor__subsample': 2.081037354117591e-05, 'regressor__max_features': 0.00023153482346085415}, 'shts_max': {'regressor__n_estimators': 0.00395721123089233, 'regressor__learning_rate': 0.004969799690795006, 'regressor__max_depth': 0.005334034960515549, 'regressor__subsample': 3.774300295709012e-05, 'regressor__max_features': 0.002445071687662459}, 'shts_med': {'regressor__n_estimators': 0.003039303142738952, 'regressor__learning_rate': 0.004072081817451851, 'regressor__max_depth': 0.003959866770241955, 'regressor__subsample': 2.6443436593788836e-05, 'regressor__max_features': 0.0021567092701911057}}
+
+VARIABILIDAD GLOBAL:
+{'regressor__n_estimators': 0.004068317085353824, 'regressor__learning_rate': 0.00590940349836068, 'regressor__max_depth': 0.006952712978571546, 'regressor__subsample': 0.0013398569606680147, 'regressor__max_features': 0.0018260879196702307}
+
+VARIABILIDAD ORDENADA:
+[('regressor__max_depth', 0.006952712978571546), ('regressor__learning_rate', 0.00590940349836068), ('regressor__n_estimators', 0.004068317085353824), ('regressor__max_features', 0.0018260879196702307), ('regressor__subsample', 0.0013398569606680147)]
+
+TABLAS ESPECIALES:
+{'dwi_sin': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -0.472923
+200                     -0.476463
+300                     -0.475003
+400                     -0.477416
+500                     -0.479601
+600                     -0.480714, 'dwi_cos': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -0.410529
+200                     -0.414120
+300                     -0.413616
+400                     -0.414591
+500                     -0.415848
+600                     -0.417515, 'wind_max': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -2.339529
+200                     -2.347211
+300                     -2.335388
+400                     -2.334247
+500                     -2.339709
+600                     -2.343830, 'wind_med': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -2.032978
+200                     -2.048317
+300                     -2.036340
+400                     -2.043401
+500                     -2.049069
+600                     -2.055334, 'shww_max': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -0.915886
+200                     -0.924782
+300                     -0.921690
+400                     -0.921626
+500                     -0.926405
+600                     -0.926366, 'shww_med': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -0.696638
+200                     -0.701688
+300                     -0.697280
+400                     -0.700553
+500                     -0.699917
+600                     -0.703275, 'mdts_sin': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -0.086559
+200                     -0.086960
+300                     -0.087364
+400                     -0.087538
+500                     -0.088191
+600                     -0.088177, 'mdts_cos': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -0.101638
+200                     -0.101935
+300                     -0.102091
+400                     -0.102228
+500                     -0.103038
+600                     -0.103371, 'shts_max': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -0.551263
+200                     -0.556143
+300                     -0.552532
+400                     -0.555469
+500                     -0.557917
+600                     -0.560210, 'shts_med': regressor__max_depth          5.0
+regressor__n_estimators          
+100                     -0.489104
+200                     -0.494187
+300                     -0.491617
+400                     -0.492659
+500                     -0.495500
+600                     -0.496115}
+
+TABLAS DOS VAR:
+{'dwi_sin': regressor__learning_rate      0.05      0.10
+regressor__max_depth                        
+5.0                      -0.474102 -0.479938, 'dwi_cos': regressor__learning_rate      0.05      0.10
+regressor__max_depth                        
+5.0                      -0.411942 -0.416798, 'wind_max': regressor__learning_rate      0.05      0.10
+regressor__max_depth                        
+5.0                      -2.330276 -2.349695, 'wind_med': regressor__learning_rate     0.05      0.10
+regressor__max_depth                       
+5.0                      -2.03191 -2.056569, 'shww_max': regressor__learning_rate      0.05      0.10
+regressor__max_depth                        
+5.0                      -0.918043 -0.927541, 'shww_med': regressor__learning_rate      0.05      0.10
+regressor__max_depth                        
+5.0                      -0.696045 -0.703739, 'mdts_sin': regressor__learning_rate      0.05      0.10
+regressor__max_depth                        
+5.0                      -0.086895 -0.088035, 'mdts_cos': regressor__learning_rate      0.05      0.10
+regressor__max_depth                        
+5.0                      -0.101762 -0.103005, 'shts_max': regressor__learning_rate      0.05    0.10
+regressor__max_depth                      
+5.0                      -0.551678 -0.5595, 'shts_med': regressor__learning_rate      0.05      0.10
+regressor__max_depth                        
+5.0                      -0.490217 -0.496177}
+

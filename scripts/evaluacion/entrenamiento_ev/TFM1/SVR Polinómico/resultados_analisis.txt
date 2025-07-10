@@ -1,0 +1,208 @@
+ANÁLISIS DE PARÁMETROS CSV
+==================================================
+
+CONFIGURACIÓN:
+- Archivo CSV: svr_poly.csv
+- Regressor: SVR Polinómico
+- Parámetros analizados: regressor, scaler, pca, regressor_C, regressor_epsilon
+- Parámetro especial: regressor
+- Variables: dwi_sin, dwi_cos, wind_max, wind_med, shww_max, shww_med, mdts_sin, mdts_cos, shts_max, shts_med
+
+NOMBRES PERSONALIZADOS DE PARÁMETROS:
+- regressor: Algoritmo
+- scaler: Reescalador
+- pca: PCA
+- regressor_C: Penalización error
+- regressor_epsilon: Tolerancia error
+
+GRUPOS DE VARIABLES Y COLORES:
+- DWI (Reds): dwi_sin, dwi_cos
+- WIND (Blues): wind_max, wind_med
+- SHWW (Greens): shww_max, shww_med
+- MDTS (Purples): mdts_sin, mdts_cos
+- SHTS (Oranges): shts_max, shts_med
+
+RANGOS PARAMETROS:
+{'regressor': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['LinSVR', 'SVR']}, 'scaler': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['StandardScaler']}, 'pca': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['PCA']}, 'regressor_C': {'min': 0.1, 'max': 100.0, 'valores_unicos': [0.1, 1.0, 10.0, 100.0]}, 'regressor_epsilon': {'min': 0.01, 'max': 1.0, 'valores_unicos': [0.01, 0.1, 0.2, 1.0]}}
+
+MEJORES MODELOS:
+{'dwi_sin': variable              dwi_sin
+regressor                 SVR
+scaler                    NaN
+pca                       NaN
+regressor_C             100.0
+regressor_epsilon        0.01
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -0.468956
+std                       0.0
+Name: 108, dtype: object, 'dwi_cos': variable              dwi_cos
+regressor                 SVR
+scaler                    NaN
+pca                       NaN
+regressor_C             100.0
+regressor_epsilon        0.01
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -0.414659
+std                       0.0
+Name: 268, dtype: object, 'wind_max': variable             wind_max
+regressor                 SVR
+scaler                    NaN
+pca                       PCA
+regressor_C               1.0
+regressor_epsilon         0.2
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -2.310946
+std                       0.0
+Name: 438, dtype: object, 'wind_med': variable             wind_med
+regressor                 SVR
+scaler                    NaN
+pca                       PCA
+regressor_C               1.0
+regressor_epsilon         0.2
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -2.023905
+std                       0.0
+Name: 598, dtype: object, 'shww_max': variable             shww_max
+regressor                 SVR
+scaler                    NaN
+pca                       NaN
+regressor_C             100.0
+regressor_epsilon        0.01
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -0.899589
+std                       0.0
+Name: 748, dtype: object, 'shww_med': variable             shww_med
+regressor                 SVR
+scaler                    NaN
+pca                       NaN
+regressor_C               1.0
+regressor_epsilon        0.01
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -0.676583
+std                       0.0
+Name: 900, dtype: object, 'mdts_sin': variable             mdts_sin
+regressor                 SVR
+scaler                    NaN
+pca                       NaN
+regressor_C              10.0
+regressor_epsilon        0.01
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -0.086682
+std                       0.0
+Name: 1064, dtype: object, 'mdts_cos': variable             mdts_cos
+regressor                 SVR
+scaler                    NaN
+pca                       NaN
+regressor_C              10.0
+regressor_epsilon        0.01
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -0.097774
+std                       0.0
+Name: 1224, dtype: object, 'shts_max': variable             shts_max
+regressor                 SVR
+scaler                    NaN
+pca                       NaN
+regressor_C              10.0
+regressor_epsilon         0.2
+regressor_kernel       lineal
+regressor_loss            NaN
+score               -0.572282
+std                       0.0
+Name: 1386, dtype: object, 'shts_med': variable             shts_med
+regressor                 SVR
+scaler                    NaN
+pca                       NaN
+regressor_C              10.0
+regressor_epsilon        0.01
+regressor_kernel       lineal
+regressor_loss            NaN
+score                 -0.5082
+std                       0.0
+Name: 1544, dtype: object}
+
+MEJORES VALORES PROMEDIO:
+{'dwi_sin': {'regressor': {'valor': 'SVR', 'score_promedio': -0.6328532153124999}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.761281549125}, 'pca': {'valor': 'PCA', 'score_promedio': -0.68643999140625}, 'regressor_C': {'valor': 1.0, 'score_promedio': -0.6762848235}, 'regressor_epsilon': {'valor': 1.0, 'score_promedio': -0.7153929029999999}}, 'dwi_cos': {'regressor': {'valor': 'SVR', 'score_promedio': -0.5547126934375}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.646658140875}, 'pca': {'valor': 'PCA', 'score_promedio': -0.61115533109375}, 'regressor_C': {'valor': 1.0, 'score_promedio': -0.5834964425}, 'regressor_epsilon': {'valor': 0.2, 'score_promedio': -0.5821791115}}, 'wind_max': {'regressor': {'valor': 'SVR', 'score_promedio': -2.86467939875}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -3.67863208525}, 'pca': {'valor': 'PCA', 'score_promedio': -2.95457179546875}, 'regressor_C': {'valor': 1.0, 'score_promedio': -3.06060770625}, 'regressor_epsilon': {'valor': 1.0, 'score_promedio': -3.2061717455}}, 'wind_med': {'regressor': {'valor': 'SVR', 'score_promedio': -2.53583135296875}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -3.10729509275}, 'pca': {'valor': 'PCA', 'score_promedio': -2.6261348003125002}, 'regressor_C': {'valor': 1.0, 'score_promedio': -2.6816902872500004}, 'regressor_epsilon': {'valor': 0.2, 'score_promedio': -2.75081179025}}, 'shww_max': {'regressor': {'valor': 'SVR', 'score_promedio': -1.0974651990625}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -1.31009755025}, 'pca': {'valor': 'PCA', 'score_promedio': -1.17958791203125}, 'regressor_C': {'valor': 1.0, 'score_promedio': -1.13548281925}, 'regressor_epsilon': {'valor': 0.2, 'score_promedio': -1.19588076825}}, 'shww_med': {'regressor': {'valor': 'SVR', 'score_promedio': -0.860952014453125}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.9778865045}, 'pca': {'valor': 'PCA', 'score_promedio': -0.9325054640625}, 'regressor_C': {'valor': 0.1, 'score_promedio': -0.89492014425}, 'regressor_epsilon': {'valor': 0.01, 'score_promedio': -0.9019747389999999}}, 'mdts_sin': {'regressor': {'valor': 'SVR', 'score_promedio': -0.2026709340625}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.230644130625}, 'pca': {'valor': 'PCA', 'score_promedio': -0.22212155140625}, 'regressor_C': {'valor': 0.1, 'score_promedio': -0.14272076525}, 'regressor_epsilon': {'valor': 0.01, 'score_promedio': -0.14432714525}}, 'mdts_cos': {'regressor': {'valor': 'SVR', 'score_promedio': -0.17034888359375}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.208175073375}, 'pca': {'valor': 'PCA', 'score_promedio': -0.18970577265625}, 'regressor_C': {'valor': 0.1, 'score_promedio': -0.15606654225}, 'regressor_epsilon': {'valor': 0.01, 'score_promedio': -0.15529514175}}, 'shts_max': {'regressor': {'valor': 'SVR', 'score_promedio': -0.847671860859375}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.9934984176249999}, 'pca': {'valor': 'PCA', 'score_promedio': -0.92564185953125}, 'regressor_C': {'valor': 1.0, 'score_promedio': -0.8372688687500001}, 'regressor_epsilon': {'valor': 0.2, 'score_promedio': -0.8608686677499999}}, 'shts_med': {'regressor': {'valor': 'SVR', 'score_promedio': -0.750183161484375}, 'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.854941451}, 'pca': {'valor': 'PCA', 'score_promedio': -0.8252441303125}, 'regressor_C': {'valor': 1.0, 'score_promedio': -0.724539657}, 'regressor_epsilon': {'valor': 0.2, 'score_promedio': -0.74617322925}}}
+
+VARIABILIDAD:
+{'dwi_sin': {'regressor': 0.33318276764318794, 'scaler': 0.048351984413341535, 'pca': 0.04790830128470296, 'regressor_C': 0.06877955153968905, 'regressor_epsilon': 0.016260046012879604}, 'dwi_cos': {'regressor': 0.29693737073935245, 'scaler': 0.01125555046883409, 'pca': 0.03246083718846817, 'regressor_C': 0.05411326203603838, 'regressor_epsilon': 0.05670906051442528}, 'wind_max': {'regressor': 1.5372208196861932, 'scaler': 0.5362146005038386, 'pca': 0.40646773440049844, 'regressor_C': 0.19937907790688575, 'regressor_epsilon': 0.15244796291689347}, 'wind_med': {'regressor': 1.1466683483947055, 'scaler': 0.3495044318452105, 'pca': 0.2757991494960888, 'regressor_C': 0.13808813218125904, 'regressor_epsilon': 0.10490296747063747}, 'shww_max': {'regressor': 0.45093796193863495, 'scaler': 0.12033237007318749, 'pca': 0.05353010859681236, 'regressor_C': 0.08142868968622873, 'regressor_epsilon': 0.02397863690871835}, 'shww_med': {'regressor': 0.310873039966569, 'scaler': 0.04102112574684474, 'pca': 0.019297797595391332, 'regressor_C': 0.05988361549139727, 'regressor_epsilon': 0.04176745342355573}, 'mdts_sin': {'regressor': 0.10044382707067046, 'scaler': 0.0006174568666522444, 'pca': 0.010558503320172977, 'regressor_C': 0.08866818435123248, 'regressor_epsilon': 0.08771753353358294}, 'mdts_cos': {'regressor': 0.1245818662268416, 'scaler': 0.0036615641108056983, 'pca': 0.018714976210998102, 'regressor_C': 0.04058655158413803, 'regressor_epsilon': 0.04016238968372889}, 'shts_max': {'regressor': 0.28169984478661375, 'scaler': 0.09354995641747127, 'pca': 0.0020114236122230427, 'regressor_C': 0.07798421058431303, 'regressor_epsilon': 0.0487078060317386}, 'shts_med': {'regressor': 0.2118547029331791, 'scaler': 0.06340871263073244, 'pca': 0.017841965790272394, 'regressor_C': 0.07353444595141477, 'regressor_epsilon': 0.051039079578148766}}
+
+VARIABILIDAD GLOBAL:
+{'regressor': 0.47944005493859476, 'scaler': 0.12679177530769187, 'pca': 0.08845907974956288, 'regressor_C': 0.08824457213125965, 'regressor_epsilon': 0.06236929360743092}
+
+VARIABILIDAD ORDENADA:
+[('regressor', 0.47944005493859476), ('scaler', 0.12679177530769187), ('pca', 0.08845907974956288), ('regressor_C', 0.08824457213125965), ('regressor_epsilon', 0.06236929360743092)]
+
+TABLAS ESPECIALES:
+{'dwi_sin': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -1.104045       NaN
+SVR             NaN -0.632853, 'dwi_cos': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -0.974646       NaN
+SVR             NaN -0.554713, 'wind_max': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -5.038638       NaN
+SVR             NaN -2.864679, 'wind_med': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -4.157465       NaN
+SVR             NaN -2.535831, 'shww_max': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -1.735188       NaN
+SVR             NaN -1.097465, 'shww_med': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -1.300593       NaN
+SVR             NaN -0.860952, 'mdts_sin': regressor   LinSVR       SVR
+regressor                   
+LinSVR    -0.34472       NaN
+SVR            NaN -0.202671, 'mdts_cos': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -0.346534       NaN
+SVR             NaN -0.170349, 'shts_max': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -1.246056       NaN
+SVR             NaN -0.847672, 'shts_med': regressor    LinSVR       SVR
+regressor                    
+LinSVR    -1.049791       NaN
+SVR             NaN -0.750183}
+
+TABLAS DOS VAR:
+{'dwi_sin': scaler     StandardScaler
+regressor                
+LinSVR          -1.278285
+SVR             -0.632031, 'dwi_cos': scaler     StandardScaler
+regressor                
+LinSVR          -1.144183
+SVR             -0.522277, 'wind_max': scaler     StandardScaler
+regressor                
+LinSVR          -6.650743
+SVR             -2.935604, 'wind_med': scaler     StandardScaler
+regressor                
+LinSVR          -5.203054
+SVR             -2.583355, 'shww_max': scaler     StandardScaler
+regressor                
+LinSVR          -2.168698
+SVR             -1.095447, 'shww_med': scaler     StandardScaler
+regressor                
+LinSVR          -1.493627
+SVR             -0.848951, 'mdts_sin': scaler     StandardScaler
+regressor                
+LinSVR          -0.346679
+SVR             -0.201635, 'mdts_cos': scaler     StandardScaler
+regressor                
+LinSVR          -0.358906
+SVR             -0.170492, 'shts_max': scaler     StandardScaler
+regressor                
+LinSVR          -1.493524
+SVR             -0.868492, 'shts_med': scaler     StandardScaler
+regressor                
+LinSVR          -1.200154
+SVR             -0.768638}
+

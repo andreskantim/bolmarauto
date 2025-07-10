@@ -1,0 +1,278 @@
+ANÁLISIS DE PARÁMETROS CSV
+==================================================
+
+CONFIGURACIÓN:
+- Archivo CSV: ran_forest.csv
+- Regressor: Random Forest
+- Parámetros analizados: regressor__n_estimators, regressor__max_depth, regressor__min_samples_split, regressor__min_samples_leaf, regressor__max_features
+- Parámetro especial: regressor__n_estimators
+- Variables: dwi_sin, dwi_cos, wind_max, wind_med, shww_max, shww_med, mdts_sin, mdts_cos, shts_max, shts_med
+
+NOMBRES PERSONALIZADOS DE PARÁMETROS:
+- regressor__n_estimators: Numero de árboles
+- regressor__max_depth: Profundidad Máxima
+- regressor__min_samples_split: Mínimo hojas división
+- regressor__min_samples_leaf: Mínimo muestras hoja
+- regressor__max_features: Número características
+
+GRUPOS DE VARIABLES Y COLORES:
+- DWI (Reds): dwi_sin, dwi_cos
+- WIND (Blues): wind_max, wind_med
+- SHWW (Greens): shww_max, shww_med
+- MDTS (Purples): mdts_sin, mdts_cos
+- SHTS (Oranges): shts_max, shts_med
+
+RANGOS PARAMETROS:
+{'regressor__n_estimators': {'min': 100, 'max': 600, 'valores_unicos': [100, 200, 300, 400, 500, 600]}, 'regressor__max_depth': {'min': 20.0, 'max': 20.0, 'valores_unicos': [20.0]}, 'regressor__min_samples_split': {'min': 2, 'max': 10, 'valores_unicos': [2, 10]}, 'regressor__min_samples_leaf': {'min': 1, 'max': 4, 'valores_unicos': [1, 4]}, 'regressor__max_features': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['log2', 'sqrt']}}
+
+MEJORES MODELOS:
+{'dwi_sin': variable                                      dwi_sin
+regressor__n_estimators                           200
+regressor__max_depth                              NaN
+regressor__min_samples_split                       10
+regressor__min_samples_leaf                         1
+regressor__max_features                          log2
+score                                       -0.465433
+std                                          0.061137
+regressor                       RandomForestRegressor
+Name: 21, dtype: object, 'dwi_cos': variable                                      dwi_cos
+regressor__n_estimators                           100
+regressor__max_depth                              NaN
+regressor__min_samples_split                       10
+regressor__min_samples_leaf                         4
+regressor__max_features                          log2
+score                                       -0.404174
+std                                          0.037515
+regressor                       RandomForestRegressor
+Name: 103, dtype: object, 'wind_max': variable                                     wind_max
+regressor__n_estimators                           300
+regressor__max_depth                             20.0
+regressor__min_samples_split                       10
+regressor__min_samples_leaf                         4
+regressor__max_features                          log2
+score                                       -2.313016
+std                                          0.371651
+regressor                       RandomForestRegressor
+Name: 239, dtype: object, 'wind_med': variable                                     wind_med
+regressor__n_estimators                           200
+regressor__max_depth                              NaN
+regressor__min_samples_split                        2
+regressor__min_samples_leaf                         4
+regressor__max_features                          sqrt
+score                                          -2.013
+std                                          0.398159
+regressor                       RandomForestRegressor
+Name: 306, dtype: object, 'shww_max': variable                                     shww_max
+regressor__n_estimators                           200
+regressor__max_depth                              NaN
+regressor__min_samples_split                        2
+regressor__min_samples_leaf                         4
+regressor__max_features                          log2
+score                                       -0.901809
+std                                          0.398615
+regressor                       RandomForestRegressor
+Name: 403, dtype: object, 'shww_med': variable                                     shww_med
+regressor__n_estimators                           300
+regressor__max_depth                             20.0
+regressor__min_samples_split                       10
+regressor__min_samples_leaf                         1
+regressor__max_features                          log2
+score                                        -0.68559
+std                                          0.331755
+regressor                       RandomForestRegressor
+Name: 525, dtype: object, 'mdts_sin': variable                                     mdts_sin
+regressor__n_estimators                           200
+regressor__max_depth                              NaN
+regressor__min_samples_split                       10
+regressor__min_samples_leaf                         1
+regressor__max_features                          sqrt
+score                                       -0.084398
+std                                          0.045993
+regressor                       RandomForestRegressor
+Name: 596, dtype: object, 'mdts_cos': variable                                     mdts_cos
+regressor__n_estimators                           200
+regressor__max_depth                              NaN
+regressor__min_samples_split                       10
+regressor__min_samples_leaf                         4
+regressor__max_features                          sqrt
+score                                       -0.098085
+std                                          0.043838
+regressor                       RandomForestRegressor
+Name: 694, dtype: object, 'shts_max': variable                                     shts_max
+regressor__n_estimators                           600
+regressor__max_depth                              NaN
+regressor__min_samples_split                        2
+regressor__min_samples_leaf                         4
+regressor__max_features                          sqrt
+score                                       -0.541239
+std                                          0.145655
+regressor                       RandomForestRegressor
+Name: 850, dtype: object, 'shts_med': variable                                     shts_med
+regressor__n_estimators                           500
+regressor__max_depth                             20.0
+regressor__min_samples_split                       10
+regressor__min_samples_leaf                         4
+regressor__max_features                          sqrt
+score                                       -0.482148
+std                                          0.111013
+regressor                       RandomForestRegressor
+Name: 942, dtype: object}
+
+MEJORES VALORES PROMEDIO:
+{'dwi_sin': {'regressor__n_estimators': {'valor': 600, 'score_promedio': -0.467793176875}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -0.46867436458333334}, 'regressor__min_samples_split': {'valor': 10, 'score_promedio': -0.4685902866666667}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -0.46817544125000005}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.46863171500000006}}, 'dwi_cos': {'regressor__n_estimators': {'valor': 400, 'score_promedio': -0.405128555}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -0.40572008541666665}, 'regressor__min_samples_split': {'valor': 2, 'score_promedio': -0.4056131508333333}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -0.40561079375}, 'regressor__max_features': {'valor': 'log2', 'score_promedio': -0.40575133625000004}}, 'wind_max': {'regressor__n_estimators': {'valor': 600, 'score_promedio': -2.3237240675}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -2.3264566077083333}, 'regressor__min_samples_split': {'valor': 10, 'score_promedio': -2.3263487506250002}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -2.325423387083333}, 'regressor__max_features': {'valor': 'log2', 'score_promedio': -2.3268619622916664}}, 'wind_med': {'regressor__n_estimators': {'valor': 600, 'score_promedio': -2.019381899375}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -2.0231594433333333}, 'regressor__min_samples_split': {'valor': 10, 'score_promedio': -2.022693973125}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -2.021916425}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -2.02300093125}}, 'shww_max': {'regressor__n_estimators': {'valor': 600, 'score_promedio': -0.9078172275}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -0.9107127522916666}, 'regressor__min_samples_split': {'valor': 10, 'score_promedio': -0.9103976066666667}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -0.90895185625}, 'regressor__max_features': {'valor': 'log2', 'score_promedio': -0.9105137045833334}}, 'shww_med': {'regressor__n_estimators': {'valor': 600, 'score_promedio': -0.6909454675}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -0.6930544408333333}, 'regressor__min_samples_split': {'valor': 10, 'score_promedio': -0.6926396814583334}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -0.6916249964583333}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.6931426779166667}}, 'mdts_sin': {'regressor__n_estimators': {'valor': 600, 'score_promedio': -0.08481796625}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -0.08505581375}, 'regressor__min_samples_split': {'valor': 10, 'score_promedio': -0.084991374375}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -0.08495861541666666}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.08505885958333333}}, 'mdts_cos': {'regressor__n_estimators': {'valor': 300, 'score_promedio': -0.099494461875}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -0.09989382125}, 'regressor__min_samples_split': {'valor': 10, 'score_promedio': -0.09978589166666667}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -0.09961321395833334}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.09986381750000001}}, 'shts_max': {'regressor__n_estimators': {'valor': 600, 'score_promedio': -0.545075005}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -0.5457889100000001}, 'regressor__min_samples_split': {'valor': 2, 'score_promedio': -0.545716576875}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -0.5451223443750001}, 'regressor__max_features': {'valor': 'sqrt', 'score_promedio': -0.5460471185416667}}, 'shts_med': {'regressor__n_estimators': {'valor': 500, 'score_promedio': -0.484898745625}, 'regressor__max_depth': {'valor': 20.0, 'score_promedio': -0.4856081975}, 'regressor__min_samples_split': {'valor': 2, 'score_promedio': -0.48513830875}, 'regressor__min_samples_leaf': {'valor': 4, 'score_promedio': -0.484790345}, 'regressor__max_features': {'valor': 'log2', 'score_promedio': -0.48554373395833333}}}
+
+VARIABILIDAD:
+{'dwi_sin': {'regressor__n_estimators': 0.0005728528971925827, 'regressor__max_depth': 2.411720259757846e-05, 'regressor__min_samples_split': 0.0001430213326436651, 'regressor__min_samples_leaf': 0.0007297013471819488, 'regressor__max_features': 8.443282177709855e-05}, 'dwi_cos': {'regressor__n_estimators': 0.0004709327600442851, 'regressor__max_depth': 4.509823930669133e-05, 'regressor__min_samples_split': 0.00019632657734340123, 'regressor__min_samples_leaf': 0.0001996599965610664, 'regressor__max_features': 9.028869711963748e-07}, 'wind_max': {'regressor__n_estimators': 0.00271292496925916, 'regressor__max_depth': 0.0006003374873891836, 'regressor__min_samples_split': 0.0007528704374367903, 'regressor__min_samples_leaf': 0.002061532108187629, 'regressor__max_features': 2.7079538069378427e-05}, 'wind_med': {'regressor__n_estimators': 0.0029589603270365715, 'regressor__max_depth': 1.9507455639895695e-05, 'regressor__min_samples_split': 0.0006777817371455047, 'regressor__min_samples_leaf': 0.0017774008409183922, 'regressor__max_features': 0.00024367739368999754}, 'shww_max': {'regressor__n_estimators': 0.0017686692705102575, 'regressor__max_depth': 0.0002803812443064732, 'regressor__min_samples_split': 0.00016530197269093357, 'regressor__min_samples_leaf': 0.0022099018197475687, 'regressor__max_features': 1.1147243777478193e-06}, 'shww_med': {'regressor__n_estimators': 0.002115183894660727, 'regressor__max_depth': 0.00021769048291174617, 'regressor__min_samples_split': 0.0008042488161580813, 'regressor__min_samples_leaf': 0.0022392301046946467, 'regressor__max_features': 9.290440295750413e-05}, 'mdts_sin': {'regressor__n_estimators': 0.00016502128741452532, 'regressor__max_depth': 9.596617531996114e-06, 'regressor__min_samples_split': 0.00010072765560784575, 'regressor__min_samples_leaf': 0.00014705581877207598, 'regressor__max_features': 5.28915872327831e-06}, 'mdts_cos': {'regressor__n_estimators': 0.00036364902387531493, 'regressor__max_depth': 1.7230424490561147e-05, 'regressor__min_samples_split': 0.0001354050560407151, 'regressor__min_samples_leaf': 0.00037960821308521953, 'regressor__max_features': 2.520128568148118e-05}, 'shts_max': {'regressor__n_estimators': 0.0008347941461937225, 'regressor__max_depth': 0.00042519641846563175, 'regressor__min_samples_split': 0.0005274909048495249, 'regressor__min_samples_leaf': 0.001367862565552336, 'regressor__max_features': 6.003439692017238e-05}, 'shts_med': {'regressor__n_estimators': 0.0005357858197436989, 'regressor__max_depth': 8.228159670930655e-05, 'regressor__min_samples_split': 0.0005822414463472064, 'regressor__min_samples_leaf': 0.0010743365008114261, 'regressor__max_features': 8.883618194302074e-06}}
+
+VARIABILIDAD GLOBAL:
+{'regressor__n_estimators': 0.0012498774395930845, 'regressor__max_depth': 0.00017214371693490642, 'regressor__min_samples_split': 0.0004085415936263668, 'regressor__min_samples_leaf': 0.001218628931551231, 'regressor__max_features': 5.495202273621567e-05}
+
+VARIABILIDAD ORDENADA:
+[('regressor__n_estimators', 0.0012498774395930845), ('regressor__min_samples_leaf', 0.001218628931551231), ('regressor__min_samples_split', 0.0004085415936263668), ('regressor__max_depth', 0.00017214371693490642), ('regressor__max_features', 5.495202273621567e-05)]
+
+TABLAS ESPECIALES:
+{'dwi_sin': regressor__n_estimators       100       200       300       400       500       600
+regressor__n_estimators                                                            
+100                     -0.469472       NaN       NaN       NaN       NaN       NaN
+200                           NaN -0.468846       NaN       NaN       NaN       NaN
+300                           NaN       NaN -0.468695       NaN       NaN       NaN
+400                           NaN       NaN       NaN -0.468988       NaN       NaN
+500                           NaN       NaN       NaN       NaN -0.468355       NaN
+600                           NaN       NaN       NaN       NaN       NaN -0.467793, 'dwi_cos': regressor__n_estimators       100       200       300       400       500       600
+regressor__n_estimators                                                            
+100                     -0.406037       NaN       NaN       NaN       NaN       NaN
+200                           NaN -0.406157       NaN       NaN       NaN       NaN
+300                           NaN       NaN -0.406288       NaN       NaN       NaN
+400                           NaN       NaN       NaN -0.405129       NaN       NaN
+500                           NaN       NaN       NaN       NaN -0.405395       NaN
+600                           NaN       NaN       NaN       NaN       NaN -0.405506, 'wind_max': regressor__n_estimators       100      200       300       400       500       600
+regressor__n_estimators                                                           
+100                     -2.330492      NaN       NaN       NaN       NaN       NaN
+200                           NaN -2.32858       NaN       NaN       NaN       NaN
+300                           NaN      NaN -2.325008       NaN       NaN       NaN
+400                           NaN      NaN       NaN -2.328659       NaN       NaN
+500                           NaN      NaN       NaN       NaN -2.324823       NaN
+600                           NaN      NaN       NaN       NaN       NaN -2.323724, 'wind_med': regressor__n_estimators       100       200       300       400       500       600
+regressor__n_estimators                                                            
+100                     -2.027931       NaN       NaN       NaN       NaN       NaN
+200                           NaN -2.024431       NaN       NaN       NaN       NaN
+300                           NaN       NaN -2.022822       NaN       NaN       NaN
+400                           NaN       NaN       NaN -2.023522       NaN       NaN
+500                           NaN       NaN       NaN       NaN -2.020951       NaN
+600                           NaN       NaN       NaN       NaN       NaN -2.019382, 'shww_max': regressor__n_estimators      100       200       300       400       500       600
+regressor__n_estimators                                                           
+100                     -0.91296       NaN       NaN       NaN       NaN       NaN
+200                          NaN -0.911305       NaN       NaN       NaN       NaN
+300                          NaN       NaN -0.909452       NaN       NaN       NaN
+400                          NaN       NaN       NaN -0.911274       NaN       NaN
+500                          NaN       NaN       NaN       NaN -0.910279       NaN
+600                          NaN       NaN       NaN       NaN       NaN -0.907817, 'shww_med': regressor__n_estimators       100       200       300       400       500       600
+regressor__n_estimators                                                            
+100                     -0.696423       NaN       NaN       NaN       NaN       NaN
+200                           NaN -0.693631       NaN       NaN       NaN       NaN
+300                           NaN       NaN -0.691064       NaN       NaN       NaN
+400                           NaN       NaN       NaN -0.694552       NaN       NaN
+500                           NaN       NaN       NaN       NaN -0.692635       NaN
+600                           NaN       NaN       NaN       NaN       NaN -0.690945, 'mdts_sin': regressor__n_estimators       100       200       300       400       500       600
+regressor__n_estimators                                                            
+100                     -0.085316       NaN       NaN       NaN       NaN       NaN
+200                           NaN -0.085119       NaN       NaN       NaN       NaN
+300                           NaN       NaN -0.085011       NaN       NaN       NaN
+400                           NaN       NaN       NaN -0.085111       NaN       NaN
+500                           NaN       NaN       NaN       NaN -0.085001       NaN
+600                           NaN       NaN       NaN       NaN       NaN -0.084818, 'mdts_cos': regressor__n_estimators       100       200       300       400       500       600
+regressor__n_estimators                                                            
+100                     -0.100409       NaN       NaN       NaN       NaN       NaN
+200                           NaN -0.099885       NaN       NaN       NaN       NaN
+300                           NaN       NaN -0.099494       NaN       NaN       NaN
+400                           NaN       NaN       NaN -0.100199       NaN       NaN
+500                           NaN       NaN       NaN       NaN -0.099766       NaN
+600                           NaN       NaN       NaN       NaN       NaN -0.099536, 'shts_max': regressor__n_estimators       100       200      300       400       500       600
+regressor__n_estimators                                                           
+100                     -0.547505       NaN      NaN       NaN       NaN       NaN
+200                           NaN -0.546348      NaN       NaN       NaN       NaN
+300                           NaN       NaN -0.54616       NaN       NaN       NaN
+400                           NaN       NaN      NaN -0.545964       NaN       NaN
+500                           NaN       NaN      NaN       NaN -0.545486       NaN
+600                           NaN       NaN      NaN       NaN       NaN -0.545075, 'shts_med': regressor__n_estimators      100       200       300       400       500       600
+regressor__n_estimators                                                           
+100                     -0.48619       NaN       NaN       NaN       NaN       NaN
+200                          NaN -0.485591       NaN       NaN       NaN       NaN
+300                          NaN       NaN -0.486168       NaN       NaN       NaN
+400                          NaN       NaN       NaN -0.485289       NaN       NaN
+500                          NaN       NaN       NaN       NaN -0.484899       NaN
+600                          NaN       NaN       NaN       NaN       NaN -0.485163}
+
+TABLAS DOS VAR:
+{'dwi_sin': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -0.469993 -0.468950
+200                         -0.469388 -0.468303
+300                         -0.469270 -0.468121
+400                         -0.469417 -0.468559
+500                         -0.468906 -0.467803
+600                         -0.468269 -0.467317, 'dwi_cos': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -0.406394 -0.405680
+200                         -0.406058 -0.406255
+300                         -0.406542 -0.406034
+400                         -0.405230 -0.405027
+500                         -0.405508 -0.405283
+600                         -0.405627 -0.405385, 'wind_max': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -2.333177 -2.327808
+200                         -2.330266 -2.326893
+300                         -2.327727 -2.322289
+400                         -2.329861 -2.327457
+500                         -2.326050 -2.323596
+600                         -2.322951 -2.324497, 'wind_med': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -2.030938 -2.024924
+200                         -2.025733 -2.023129
+300                         -2.023745 -2.021900
+400                         -2.024096 -2.022949
+500                         -2.022236 -2.019665
+600                         -2.019833 -2.018931, 'shww_max': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -0.913869 -0.912050
+200                         -0.913837 -0.908773
+300                         -0.910995 -0.907909
+400                         -0.912697 -0.909851
+500                         -0.912484 -0.908074
+600                         -0.908580 -0.907054, 'shww_med': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -0.697853 -0.694993
+200                         -0.695674 -0.691588
+300                         -0.692442 -0.689685
+400                         -0.695865 -0.693239
+500                         -0.694864 -0.690405
+600                         -0.692053 -0.689838, 'mdts_sin': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -0.085506 -0.085126
+200                         -0.085242 -0.084995
+300                         -0.085050 -0.084971
+400                         -0.085232 -0.084990
+500                         -0.085091 -0.084912
+600                         -0.084879 -0.084757, 'mdts_cos': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -0.100561 -0.100256
+200                         -0.100355 -0.099415
+300                         -0.099613 -0.099376
+400                         -0.100468 -0.099931
+500                         -0.100098 -0.099434
+600                         -0.099805 -0.099267, 'shts_max': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -0.548135 -0.546875
+200                         -0.547790 -0.544905
+300                         -0.546982 -0.545338
+400                         -0.546742 -0.545186
+500                         -0.546948 -0.544024
+600                         -0.545744 -0.544406, 'shts_med': regressor__min_samples_leaf         1         4
+regressor__n_estimators                        
+100                         -0.486983 -0.485396
+200                         -0.486597 -0.484586
+300                         -0.487006 -0.485331
+400                         -0.485896 -0.484683
+500                         -0.485732 -0.484065
+600                         -0.485644 -0.484681}
+

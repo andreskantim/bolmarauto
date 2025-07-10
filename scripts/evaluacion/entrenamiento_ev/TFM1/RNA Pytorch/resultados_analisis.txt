@@ -1,0 +1,229 @@
+ANÁLISIS DE PARÁMETROS CSV
+==================================================
+
+CONFIGURACIÓN:
+- Archivo CSV: rna_py.csv
+- Regressor: RNA Pytorch
+- Parámetros analizados: scaler, regressor__hidden_layers, regressor__activation, regressor__lr, regressor__epochs, regressor__batch_size
+- Parámetro especial: regressor__hidden_layers
+- Variables: dwi_sin, dwi_cos, wind_max, wind_med, shww_max, shww_med, mdts_sin, mdts_cos, shts_max, shts_med
+
+NOMBRES PERSONALIZADOS DE PARÁMETROS:
+- scaler: Reescalador
+- regressor__hidden_layers: Estructura
+- regressor__activation: Función activación
+- regressor__lr: Learning rate
+- regressor__epochs: Epochs
+- regressor__batch_size: Batch Size
+
+GRUPOS DE VARIABLES Y COLORES:
+- DWI (Reds): dwi_sin, dwi_cos
+- WIND (Blues): wind_max, wind_med
+- SHWW (Greens): shww_max, shww_med
+- MDTS (Purples): mdts_sin, mdts_cos
+- SHTS (Oranges): shts_max, shts_med
+
+RANGOS PARAMETROS:
+{'scaler': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['StandardScaler']}, 'regressor__hidden_layers': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['(10,)', '(25,)', '(30, 10)', '(50, 20)', '(50, 20, 10)']}, 'regressor__activation': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['ReLU', 'Sigmoid', 'Tanh']}, 'regressor__lr': {'min': 0.0005, 'max': 0.01, 'valores_unicos': [0.0005, 0.001, 0.01]}, 'regressor__epochs': {'min': 50, 'max': 100, 'valores_unicos': [50, 100]}, 'regressor__batch_size': {'min': 16, 'max': 32, 'valores_unicos': [16, 32]}}
+
+MEJORES MODELOS:
+{'dwi_sin': variable                           dwi_sin
+scaler                      StandardScaler
+regressor__hidden_layers          (30, 10)
+regressor__activation                 Tanh
+regressor__lr                       0.0005
+regressor__epochs                       50
+regressor__batch_size                   16
+score                            -0.460897
+std                               0.057094
+Name: 192, dtype: object, 'dwi_cos': variable                           dwi_cos
+scaler                      StandardScaler
+regressor__hidden_layers          (30, 10)
+regressor__activation              Sigmoid
+regressor__lr                       0.0005
+regressor__epochs                       50
+regressor__batch_size                   32
+score                            -0.413514
+std                               0.039047
+Name: 565, dtype: object, 'wind_max': variable                    wind_max
+scaler                           NaN
+regressor__hidden_layers    (50, 20)
+regressor__activation           ReLU
+regressor__lr                  0.001
+regressor__epochs                 50
+regressor__batch_size             16
+score                       -2.30965
+std                         0.389234
+Name: 940, dtype: object, 'wind_med': variable                    wind_med
+scaler                           NaN
+regressor__hidden_layers       (10,)
+regressor__activation           ReLU
+regressor__lr                   0.01
+regressor__epochs                100
+regressor__batch_size             16
+score                      -2.018022
+std                         0.409898
+Name: 1090, dtype: object, 'shww_max': variable                          shww_max
+scaler                      StandardScaler
+regressor__hidden_layers          (30, 10)
+regressor__activation              Sigmoid
+regressor__lr                        0.001
+regressor__epochs                      100
+regressor__batch_size                   16
+score                            -0.897679
+std                               0.383875
+Name: 1650, dtype: object, 'shww_med': variable                    shww_med
+scaler                           NaN
+regressor__hidden_layers       (25,)
+regressor__activation           ReLU
+regressor__lr                   0.01
+regressor__epochs                100
+regressor__batch_size             16
+score                      -0.678221
+std                         0.320953
+Name: 1882, dtype: object, 'mdts_sin': variable                    mdts_sin
+scaler                           NaN
+regressor__hidden_layers       (10,)
+regressor__activation           Tanh
+regressor__lr                   0.01
+regressor__epochs                100
+regressor__batch_size             16
+score                      -0.088502
+std                         0.054069
+Name: 2182, dtype: object, 'mdts_cos': variable                    mdts_cos
+scaler                           NaN
+regressor__hidden_layers       (10,)
+regressor__activation           ReLU
+regressor__lr                  0.001
+regressor__epochs                 50
+regressor__batch_size             32
+score                      -0.094059
+std                         0.046236
+Name: 2525, dtype: object, 'shts_max': variable                    shts_max
+scaler                           NaN
+regressor__hidden_layers       (25,)
+regressor__activation           ReLU
+regressor__lr                  0.001
+regressor__epochs                 50
+regressor__batch_size             16
+score                      -0.543712
+std                         0.150064
+Name: 2956, dtype: object, 'shts_med': variable                    shts_med
+scaler                           NaN
+regressor__hidden_layers       (25,)
+regressor__activation           Tanh
+regressor__lr                  0.001
+regressor__epochs                 50
+regressor__batch_size             16
+score                      -0.482332
+std                         0.121013
+Name: 3328, dtype: object}
+
+MEJORES VALORES PROMEDIO:
+{'dwi_sin': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.4894641682777778}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -0.47318338638888885}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -0.48723211383333337}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -0.48270282216666666}, 'regressor__epochs': {'valor': 50, 'score_promedio': -0.4903948426111111}, 'regressor__batch_size': {'valor': 16, 'score_promedio': -0.48004151283333335}}, 'dwi_cos': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.4414018599444444}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -0.4259289304166667}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -0.4383730819166667}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -0.43371653125}, 'regressor__epochs': {'valor': 50, 'score_promedio': -0.44116888150000005}, 'regressor__batch_size': {'valor': 16, 'score_promedio': -0.43580423727777784}}, 'wind_max': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -2.481658919888889}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -2.426021055138889}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -2.44282697325}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -2.4392520030833333}, 'regressor__epochs': {'valor': 50, 'score_promedio': -2.4735547094444446}, 'regressor__batch_size': {'valor': 16, 'score_promedio': -2.413179409611111}}, 'wind_med': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -2.1535085820555557}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -2.1024356358333334}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -2.1208154896666667}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -2.1142130614166668}, 'regressor__epochs': {'valor': 50, 'score_promedio': -2.150444136611111}, 'regressor__batch_size': {'valor': 16, 'score_promedio': -2.1042407495555553}}, 'shww_max': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.9706925442777778}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -0.9398138091666666}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -0.9585271185833334}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -0.9493419718333332}, 'regressor__epochs': {'valor': 50, 'score_promedio': -0.9760386785}, 'regressor__batch_size': {'valor': 16, 'score_promedio': -0.9564203510555557}}, 'shww_med': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.7361493684444445}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -0.7136855820833333}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -0.7280932925}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -0.7217844368333334}, 'regressor__epochs': {'valor': 50, 'score_promedio': -0.7400308690555556}, 'regressor__batch_size': {'valor': 16, 'score_promedio': -0.7258606673888889}}, 'mdts_sin': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.09663605383333333}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -0.09365565152777777}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -0.0962674685}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -0.09552533041666668}, 'regressor__epochs': {'valor': 50, 'score_promedio': -0.09690210355555556}, 'regressor__batch_size': {'valor': 32, 'score_promedio': -0.0959344616111111}}, 'mdts_cos': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.11173707866666667}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -0.10408208708333333}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -0.110251768}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -0.1089311605}, 'regressor__epochs': {'valor': 100, 'score_promedio': -0.11143324644444444}, 'regressor__batch_size': {'valor': 32, 'score_promedio': -0.11017788622222222}}, 'shts_max': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.5989990796666667}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -0.5816872136111111}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -0.5854995685833334}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -0.5862129016666666}, 'regressor__epochs': {'valor': 50, 'score_promedio': -0.5981505136666667}, 'regressor__batch_size': {'valor': 16, 'score_promedio': -0.5819053018333333}}, 'shts_med': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.5311751429444445}, 'regressor__hidden_layers': {'valor': '(10,)', 'score_promedio': -0.5158889018055555}, 'regressor__activation': {'valor': 'Tanh', 'score_promedio': -0.5190468298333334}, 'regressor__lr': {'valor': 0.0005, 'score_promedio': -0.51895308225}, 'regressor__epochs': {'valor': 50, 'score_promedio': -0.5297413678888888}, 'regressor__batch_size': {'valor': 16, 'score_promedio': -0.5174968055555556}}}
+
+VARIABILIDAD:
+{'dwi_sin': {'scaler': 0.0028714586186035134, 'regressor__hidden_layers': 0.013364304102883003, 'regressor__activation': 0.004250931137151662, 'regressor__lr': 0.008824475325146283, 'regressor__epochs': 0.0015552863542509854, 'regressor__batch_size': 0.016197105741705586}, 'dwi_cos': {'scaler': 0.0008625602393756948, 'regressor__hidden_layers': 0.011897191652116432, 'regressor__activation': 0.003292980184589271, 'regressor__lr': 0.008198555623004063, 'regressor__epochs': 0.0011920415152495809, 'regressor__batch_size': 0.008778794131622702}, 'wind_max': {'scaler': 0.009128935771280747, 'regressor__hidden_layers': 0.04771049361424136, 'regressor__activation': 0.028231047567243563, 'regressor__lr': 0.03592207586310705, 'regressor__epochs': 0.0023321485515782484, 'regressor__batch_size': 0.08771571640822064}, 'wind_med': {'scaler': 0.0016748924056286707, 'regressor__hidden_layers': 0.04526231373774875, 'regressor__activation': 0.02728923867318202, 'regressor__lr': 0.03682049906796005, 'regressor__epochs': 0.0026588879030573563, 'regressor__batch_size': 0.06800034450459759}, 'shww_max': {'scaler': 0.008630866175203427, 'regressor__hidden_layers': 0.026928193035758705, 'regressor__activation': 0.016269115510185256, 'regressor__lr': 0.025446292206865905, 'regressor__epochs': 0.0010702906518697923, 'regressor__batch_size': 0.028814795394879387}, 'shww_med': {'scaler': 0.007001738898964718, 'regressor__hidden_layers': 0.018062278976138157, 'regressor__activation': 0.011626887506266753, 'regressor__lr': 0.017992630345611656, 'regressor__epochs': 0.001512468092371882, 'regressor__batch_size': 0.021552159470933707}, 'mdts_sin': {'scaler': 0.0007402300591236465, 'regressor__hidden_layers': 0.002286444490645508, 'regressor__activation': 0.0007725560702651334, 'regressor__lr': 0.0015996599415615074, 'regressor__epochs': 0.0003639789336913732, 'regressor__batch_size': 0.0017324312950457992}, 'mdts_cos': {'scaler': 0.00030254168602201, 'regressor__hidden_layers': 0.004770820516370751, 'regressor__activation': 0.0011066508251852273, 'regressor__lr': 0.0025810645022521102, 'regressor__epochs': 0.00012714196333060495, 'regressor__batch_size': 0.0019024894152609763}, 'shts_max': {'scaler': 0.00016863628561299818, 'regressor__hidden_layers': 0.01222749859914148, 'regressor__activation': 0.011588833720381267, 'regressor__lr': 0.011861119335108276, 'regressor__epochs': 0.001031417260155604, 'regressor__batch_size': 0.024005616158479487}, 'shts_med': {'scaler': 0.0009066180201585002, 'regressor__hidden_layers': 0.010441960785623275, 'regressor__activation': 0.009975604234883296, 'regressor__lr': 0.01073318505388235, 'regressor__epochs': 0.0011210461088004477, 'regressor__batch_size': 0.01843747222592318}}
+
+VARIABILIDAD GLOBAL:
+{'scaler': 0.0032288478159973925, 'regressor__hidden_layers': 0.019295149951066744, 'regressor__activation': 0.011440384542933345, 'regressor__lr': 0.015997955726449926, 'regressor__epochs': 0.0012964707334355875, 'regressor__batch_size': 0.027713692474666908}
+
+VARIABILIDAD ORDENADA:
+[('regressor__batch_size', 0.027713692474666908), ('regressor__hidden_layers', 0.019295149951066744), ('regressor__lr', 0.015997955726449926), ('regressor__activation', 0.011440384542933345), ('scaler', 0.0032288478159973925), ('regressor__epochs', 0.0012964707334355875)]
+
+TABLAS ESPECIALES:
+{'dwi_sin': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -0.468574 -0.477793
+(25,)                    -0.475718 -0.493446
+(30, 10)                 -0.478274 -0.503723
+(50, 20)                 -0.488166 -0.519732
+(50, 20, 10)             -0.489475 -0.520044, 'dwi_cos': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -0.425137 -0.426721
+(25,)                    -0.431355 -0.440327
+(30, 10)                 -0.434408 -0.447878
+(50, 20)                 -0.443110 -0.462378
+(50, 20, 10)             -0.445011 -0.463793, 'wind_max': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -2.382212 -2.469830
+(25,)                    -2.380970 -2.480964
+(30, 10)                 -2.406786 -2.537186
+(50, 20)                 -2.442598 -2.594494
+(50, 20, 10)             -2.453331 -2.603668, 'wind_med': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -2.065790 -2.139081
+(25,)                    -2.075708 -2.150911
+(30, 10)                 -2.103227 -2.197095
+(50, 20)                 -2.133386 -2.254273
+(50, 20, 10)             -2.143093 -2.260678, 'shww_max': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -0.925022 -0.954606
+(25,)                    -0.936096 -0.983791
+(30, 10)                 -0.959725 -1.002466
+(50, 20)                 -0.978395 -1.027420
+(50, 20, 10)             -0.982863 -1.017570, 'shww_med': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -0.697729 -0.729642
+(25,)                    -0.713335 -0.754227
+(30, 10)                 -0.732947 -0.756561
+(50, 20)                 -0.742461 -0.773459
+(50, 20, 10)             -0.742831 -0.767812, 'mdts_sin': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -0.094743 -0.092569
+(25,)                    -0.099036 -0.097177
+(30, 10)                 -0.098142 -0.095721
+(50, 20)                 -0.101479 -0.098385
+(50, 20, 10)             -0.098524 -0.095821, 'mdts_cos': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -0.105503 -0.102661
+(25,)                    -0.111006 -0.109514
+(30, 10)                 -0.112971 -0.111120
+(50, 20)                 -0.117474 -0.114571
+(50, 20, 10)             -0.117388 -0.113024, 'shts_max': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -0.566934 -0.596441
+(25,)                    -0.575090 -0.609360
+(30, 10)                 -0.582708 -0.617425
+(50, 20)                 -0.591850 -0.628702
+(50, 20, 10)             -0.592945 -0.627344, 'shts_med': regressor__batch_size           16        32
+regressor__hidden_layers                    
+(10,)                    -0.503987 -0.527791
+(25,)                    -0.512363 -0.537788
+(30, 10)                 -0.516959 -0.545186
+(50, 20)                 -0.527205 -0.554033
+(50, 20, 10)             -0.526971 -0.553058}
+
+TABLAS DOS VAR:
+{'dwi_sin': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -0.468574 -0.475718 -0.478274 -0.488166     -0.489475
+32                       -0.477793 -0.493446 -0.503723 -0.519732     -0.520044, 'dwi_cos': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -0.425137 -0.431355 -0.434408 -0.443110     -0.445011
+32                       -0.426721 -0.440327 -0.447878 -0.462378     -0.463793, 'wind_max': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -2.382212 -2.380970 -2.406786 -2.442598     -2.453331
+32                       -2.469830 -2.480964 -2.537186 -2.594494     -2.603668, 'wind_med': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -2.065790 -2.075708 -2.103227 -2.133386     -2.143093
+32                       -2.139081 -2.150911 -2.197095 -2.254273     -2.260678, 'shww_max': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -0.925022 -0.936096 -0.959725 -0.978395     -0.982863
+32                       -0.954606 -0.983791 -1.002466 -1.027420     -1.017570, 'shww_med': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -0.697729 -0.713335 -0.732947 -0.742461     -0.742831
+32                       -0.729642 -0.754227 -0.756561 -0.773459     -0.767812, 'mdts_sin': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -0.094743 -0.099036 -0.098142 -0.101479     -0.098524
+32                       -0.092569 -0.097177 -0.095721 -0.098385     -0.095821, 'mdts_cos': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -0.105503 -0.111006 -0.112971 -0.117474     -0.117388
+32                       -0.102661 -0.109514 -0.111120 -0.114571     -0.113024, 'shts_max': regressor__hidden_layers     (10,)    (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                        
+16                       -0.566934 -0.57509 -0.582708 -0.591850     -0.592945
+32                       -0.596441 -0.60936 -0.617425 -0.628702     -0.627344, 'shts_med': regressor__hidden_layers     (10,)     (25,)  (30, 10)  (50, 20)  (50, 20, 10)
+regressor__batch_size                                                         
+16                       -0.503987 -0.512363 -0.516959 -0.527205     -0.526971
+32                       -0.527791 -0.537788 -0.545186 -0.554033     -0.553058}
+

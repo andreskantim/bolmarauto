@@ -15,6 +15,8 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import ParameterGrid
 from sklearn.model_selection import train_test_split
 
+# from rich import print
+
 # Leer los datos de entrada y target
 input = pd.read_csv("../../datasets/modelo/FQXX41MM2023/cantabria.csv")
 target = pd.read_csv("../../datasets/boletines/FQXX41MM2023/cantabria.csv")

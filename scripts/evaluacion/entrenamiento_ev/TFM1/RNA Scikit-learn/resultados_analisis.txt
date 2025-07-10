@@ -1,0 +1,229 @@
+ANÁLISIS DE PARÁMETROS CSV
+==================================================
+
+CONFIGURACIÓN:
+- Archivo CSV: rna_sk.csv
+- Regressor: RNA Scikit-learn
+- Parámetros analizados: scaler, regressor__hidden_layer_sizes, regressor__activation, regressor__learning_rate_init, regressor__alpha, regressor__batch_size
+- Parámetro especial: regressor__hidden_layer_sizes
+- Variables: dwi_sin, dwi_cos, wind_max, wind_med, shww_max, shww_med, mdts_sin, mdts_cos, shts_max, shts_med
+
+NOMBRES PERSONALIZADOS DE PARÁMETROS:
+- scaler: Reescalador
+- regressor__hidden_layer_sizes: Estructura
+- regressor__activation: Función activación
+- regressor__learning_rate_init: Learning rate
+- regressor__alpha: Regularización
+- regressor__batch_size: Batch Size
+
+GRUPOS DE VARIABLES Y COLORES:
+- DWI (Reds): dwi_sin, dwi_cos
+- WIND (Blues): wind_max, wind_med
+- SHWW (Greens): shww_max, shww_med
+- MDTS (Purples): mdts_sin, mdts_cos
+- SHTS (Oranges): shts_max, shts_med
+
+RANGOS PARAMETROS:
+{'scaler': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['StandardScaler']}, 'regressor__hidden_layer_sizes': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['(10,)', '(100, 50, 10)', '(100,)', '(30, 10)']}, 'regressor__activation': {'min': 'N/A', 'max': 'N/A', 'valores_unicos': ['logistic', 'relu', 'tanh']}, 'regressor__learning_rate_init': {'min': 0.001, 'max': 0.01, 'valores_unicos': [0.001, 0.01]}, 'regressor__alpha': {'min': 0.0001, 'max': 0.001, 'valores_unicos': [0.0001, 0.001]}, 'regressor__batch_size': {'min': 32.0, 'max': 32.0, 'valores_unicos': [32.0]}}
+
+MEJORES MODELOS:
+{'dwi_sin': variable                                dwi_sin
+scaler                           StandardScaler
+regressor__hidden_layer_sizes     (100, 50, 10)
+regressor__activation                  logistic
+regressor__solver                          adam
+regressor__learning_rate_init              0.01
+regressor__alpha                          0.001
+regressor__batch_size                      auto
+score                                   -0.4687
+std                                    0.054274
+Name: 190, dtype: object, 'dwi_cos': variable                                dwi_cos
+scaler                           StandardScaler
+regressor__hidden_layer_sizes             (10,)
+regressor__activation                      tanh
+regressor__solver                          adam
+regressor__learning_rate_init              0.01
+regressor__alpha                         0.0001
+regressor__batch_size                        32
+score                                 -0.416309
+std                                    0.036652
+Name: 229, dtype: object, 'wind_max': variable                               wind_max
+scaler                           StandardScaler
+regressor__hidden_layer_sizes             (10,)
+regressor__activation                  logistic
+regressor__solver                          adam
+regressor__learning_rate_init              0.01
+regressor__alpha                         0.0001
+regressor__batch_size                      auto
+score                                  -2.36518
+std                                    0.421182
+Name: 428, dtype: object, 'wind_med': variable                               wind_med
+scaler                           StandardScaler
+regressor__hidden_layer_sizes            (100,)
+regressor__activation                      tanh
+regressor__solver                          adam
+regressor__learning_rate_init             0.001
+regressor__alpha                         0.0001
+regressor__batch_size                      auto
+score                                 -2.061559
+std                                    0.426828
+Name: 656, dtype: object, 'shww_max': variable                         shww_max
+scaler                                NaN
+regressor__hidden_layer_sizes       (10,)
+regressor__activation                tanh
+regressor__solver                    adam
+regressor__learning_rate_init        0.01
+regressor__alpha                    0.001
+regressor__batch_size                auto
+score                           -0.904121
+std                               0.35767
+Name: 782, dtype: object, 'shww_med': variable                         shww_med
+scaler                                NaN
+regressor__hidden_layer_sizes       (10,)
+regressor__activation                tanh
+regressor__solver                    adam
+regressor__learning_rate_init       0.001
+regressor__alpha                    0.001
+regressor__batch_size                auto
+score                           -0.696291
+std                              0.306627
+Name: 970, dtype: object, 'mdts_sin': variable                               mdts_sin
+scaler                           StandardScaler
+regressor__hidden_layer_sizes     (100, 50, 10)
+regressor__activation                      tanh
+regressor__solver                          adam
+regressor__learning_rate_init              0.01
+regressor__alpha                          0.001
+regressor__batch_size                        32
+score                                 -0.086305
+std                                    0.045161
+Name: 1335, dtype: object, 'mdts_cos': variable                               mdts_cos
+scaler                           StandardScaler
+regressor__hidden_layer_sizes     (100, 50, 10)
+regressor__activation                  logistic
+regressor__solver                          adam
+regressor__learning_rate_init              0.01
+regressor__alpha                          0.001
+regressor__batch_size                      auto
+score                                 -0.096292
+std                                    0.041572
+Name: 1534, dtype: object, 'shts_max': variable                         shts_max
+scaler                                NaN
+regressor__hidden_layer_sizes       (10,)
+regressor__activation                tanh
+regressor__solver                    adam
+regressor__learning_rate_init        0.01
+regressor__alpha                    0.001
+regressor__batch_size                auto
+score                           -0.564331
+std                              0.150495
+Name: 1550, dtype: object, 'shts_med': variable                         shts_med
+scaler                                NaN
+regressor__hidden_layer_sizes       (10,)
+regressor__activation                tanh
+regressor__solver                    adam
+regressor__learning_rate_init        0.01
+regressor__alpha                   0.0001
+regressor__batch_size                auto
+score                           -0.497941
+std                              0.116582
+Name: 1740, dtype: object}
+
+MEJORES VALORES PROMEDIO:
+{'dwi_sin': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.4872970090625}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -0.48283461770833336}, 'regressor__activation': {'valor': 'tanh', 'score_promedio': -0.4890416784375}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -0.4913034541666667}, 'regressor__alpha': {'valor': 0.001, 'score_promedio': -0.492002898125}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -0.48951403343750005}}, 'dwi_cos': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.4373488932291667}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -0.4304942852083333}, 'regressor__activation': {'valor': 'tanh', 'score_promedio': -0.436541550625}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -0.4398507803125}, 'regressor__alpha': {'valor': 0.0001, 'score_promedio': -0.4412191625}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -0.43935836708333337}}, 'wind_max': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -2.5567950061458333}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -2.4981074114583333}, 'regressor__activation': {'valor': 'tanh', 'score_promedio': -2.50438389328125}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -2.5295176092708336}, 'regressor__alpha': {'valor': 0.001, 'score_promedio': -2.549100233854167}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -2.5047573269791665}}, 'wind_med': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -2.2093458547916667}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -2.159148995833333}, 'regressor__activation': {'valor': 'tanh', 'score_promedio': -2.15587680390625}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -2.1914263269791667}, 'regressor__alpha': {'valor': 0.0001, 'score_promedio': -2.1986731696875}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -2.177227095833333}}, 'shww_max': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.99590380375}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -0.9803395029166667}, 'regressor__activation': {'valor': 'tanh', 'score_promedio': -0.9677749728125}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -0.9903187853125001}, 'regressor__alpha': {'valor': 0.0001, 'score_promedio': -0.9865623634374999}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -0.9819266731249999}}, 'shww_med': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.7528519247916666}, 'regressor__hidden_layer_sizes': {'valor': '(100, 50, 10)', 'score_promedio': -0.745890609375}, 'regressor__activation': {'valor': 'tanh', 'score_promedio': -0.73329733390625}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -0.7507843697916666}, 'regressor__alpha': {'valor': 0.0001, 'score_promedio': -0.7472812626041666}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -0.7424905328125}}, 'mdts_sin': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.09698534677083333}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -0.09716866895833333}, 'regressor__activation': {'valor': 'logistic', 'score_promedio': -0.10057732453125}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -0.09795046822916666}, 'regressor__alpha': {'valor': 0.001, 'score_promedio': -0.09955427916666666}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -0.10237892489583333}}, 'mdts_cos': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.11057691239583334}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -0.10590975395833334}, 'regressor__activation': {'valor': 'logistic', 'score_promedio': -0.11289389859375}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -0.10991557270833334}, 'regressor__alpha': {'valor': 0.001, 'score_promedio': -0.11149640906250001}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -0.11358959885416665}}, 'shts_max': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.6171252081249999}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -0.613187843125}, 'regressor__activation': {'valor': 'tanh', 'score_promedio': -0.60339869640625}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -0.6173018102083333}, 'regressor__alpha': {'valor': 0.0001, 'score_promedio': -0.6181527022916666}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -0.6109319734374999}}, 'shts_med': {'scaler': {'valor': 'StandardScaler', 'score_promedio': -0.5448581095833334}, 'regressor__hidden_layer_sizes': {'valor': '(10,)', 'score_promedio': -0.539302114375}, 'regressor__activation': {'valor': 'tanh', 'score_promedio': -0.534054608125}, 'regressor__learning_rate_init': {'valor': 0.01, 'score_promedio': -0.5451356770833333}, 'regressor__alpha': {'valor': 0.0001, 'score_promedio': -0.5449235015625}, 'regressor__batch_size': {'valor': 'auto', 'score_promedio': -0.5397516269791667}}}
+
+VARIABILIDAD:
+{'dwi_sin': {'scaler': 0.00785779142839361, 'regressor__hidden_layer_sizes': 0.007521833294740869, 'regressor__activation': 0.005274794399006618, 'regressor__learning_rate_init': 0.002191822425177814, 'regressor__alpha': 0.001202659293182906, 'regressor__batch_size': 0.0047224454891568535}, 'dwi_cos': {'scaler': 0.005723409791388098, 'regressor__hidden_layer_sizes': 0.0076706267113473775, 'regressor__activation': 0.00522660469668806, 'regressor__learning_rate_init': 0.002185207146611972, 'regressor__alpha': 0.000250022498539763, 'regressor__batch_size': 0.0028815846135914255}, 'wind_max': {'scaler': 0.009289913059256086, 'regressor__hidden_layer_sizes': 0.051282977335017334, 'regressor__activation': 0.040286576140676475, 'regressor__learning_rate_init': 0.029286151547602352, 'regressor__alpha': 0.0015921382749916708, 'regressor__batch_size': 0.06430247857266395}, 'wind_med': {'scaler': 0.008596294634548272, 'regressor__hidden_layer_sizes': 0.038369441661917636, 'regressor__activation': 0.04134979022288079, 'regressor__learning_rate_init': 0.016745744629211034, 'regressor__alpha': 0.0064971613867016486, 'regressor__batch_size': 0.03682648989091914}, 'shww_max': {'scaler': 0.003856018195735579, 'regressor__hidden_layer_sizes': 0.0087257169587497, 'regressor__activation': 0.022016487658309908, 'regressor__learning_rate_init': 0.004042390624680682, 'regressor__alpha': 0.009354773386300691, 'regressor__batch_size': 0.015910629497199836}, 'shww_med': {'scaler': 0.000804573937963488, 'regressor__hidden_layer_sizes': 0.007944075084602556, 'regressor__activation': 0.01644787674373491, 'regressor__learning_rate_init': 0.0021193903839888148, 'regressor__alpha': 0.0070735320789980126, 'regressor__batch_size': 0.013848647124037772}, 'mdts_sin': {'scaler': 0.009154410186777154, 'regressor__hidden_layer_sizes': 0.007764883575767887, 'regressor__activation': 0.004726169314517556, 'regressor__learning_rate_init': 0.00778952233106486, 'regressor__alpha': 0.005521391151770044, 'regressor__batch_size': 0.0015267388526833058}, 'mdts_cos': {'scaler': 0.006941353492274183, 'regressor__hidden_layer_sizes': 0.008696980017676903, 'regressor__activation': 0.00422879943221802, 'regressor__learning_rate_init': 0.007876629047672265, 'regressor__alpha': 0.005640988835717323, 'regressor__batch_size': 0.0026807714437214218}, 'shts_max': {'scaler': 0.005205733675975422, 'regressor__hidden_layer_sizes': 0.005400577345998906, 'regressor__activation': 0.015234778973952947, 'regressor__learning_rate_init': 0.004955980614582032, 'regressor__alpha': 0.003752637490216136, 'regressor__batch_size': 0.01396429016599741}, 'shts_med': {'scaler': 0.004088319493484394, 'regressor__hidden_layer_sizes': 0.006107973072383974, 'regressor__activation': 0.012086339350258136, 'regressor__learning_rate_init': 0.0036957797705104503, 'regressor__alpha': 0.003995841269676482, 'regressor__batch_size': 0.0113099764483192}}
+
+VARIABILIDAD GLOBAL:
+{'scaler': 0.006151781789579629, 'regressor__hidden_layer_sizes': 0.014948508505820312, 'regressor__activation': 0.01668782169322434, 'regressor__learning_rate_init': 0.008088861852110229, 'regressor__alpha': 0.004488114566609467, 'regressor__batch_size': 0.01679740520982903}
+
+VARIABILIDAD ORDENADA:
+[('regressor__batch_size', 0.01679740520982903), ('regressor__activation', 0.01668782169322434), ('regressor__hidden_layer_sizes', 0.014948508505820312), ('regressor__learning_rate_init', 0.008088861852110229), ('scaler', 0.006151781789579629), ('regressor__alpha', 0.004488114566609467)]
+
+TABLAS ESPECIALES:
+{'dwi_sin': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -0.486045 -0.479624
+(100, 50, 10)                 -0.498195 -0.490152
+(100,)                        -0.502211 -0.499913
+(30, 10)                      -0.498320 -0.488368, 'dwi_cos': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -0.433076 -0.427913
+(100, 50, 10)                 -0.446206 -0.444633
+(100,)                        -0.449123 -0.446518
+(30, 10)                      -0.445329 -0.438370, 'wind_max': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -2.555469 -2.440746
+(100, 50, 10)                 -2.652451 -2.586920
+(100,)                        -2.564768 -2.498419
+(30, 10)                      -2.610091 -2.492944, 'wind_med': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -2.188689 -2.129609
+(100, 50, 10)                 -2.275274 -2.229409
+(100,)                        -2.214057 -2.177555
+(30, 10)                      -2.239211 -2.172335, 'shww_max': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -1.004594 -0.956085
+(100, 50, 10)                 -1.003443 -0.991954
+(100,)                        -1.002793 -0.996021
+(30, 10)                      -1.006880 -0.983647, 'shww_med': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -0.768877 -0.727159
+(100, 50, 10)                 -0.749980 -0.741801
+(100,)                        -0.768456 -0.758891
+(30, 10)                      -0.760989 -0.742111, 'mdts_sin': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -0.099967 -0.094370
+(100, 50, 10)                 -0.101170 -0.101239
+(100,)                        -0.114499 -0.115085
+(30, 10)                      -0.102516 -0.098821, 'mdts_cos': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -0.109696 -0.102124
+(100, 50, 10)                 -0.116365 -0.113831
+(100,)                        -0.127429 -0.126576
+(30, 10)                      -0.116033 -0.111828, 'shts_max': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -0.629434 -0.596941
+(100, 50, 10)                 -0.627948 -0.613555
+(100,)                        -0.630660 -0.618823
+(30, 10)                      -0.634679 -0.614409, 'shts_med': regressor__batch_size                32      auto
+regressor__hidden_layer_sizes                    
+(10,)                         -0.553122 -0.525482
+(100, 50, 10)                 -0.551605 -0.542922
+(100,)                        -0.556767 -0.548602
+(30, 10)                      -0.561492 -0.542000}
+
+TABLAS DOS VAR:
+{'dwi_sin': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -0.493949 -0.502589 -0.492039
+auto                  -0.487340 -0.495157 -0.486044, 'dwi_cos': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -0.441923 -0.450370 -0.438008
+auto                  -0.439512 -0.443487 -0.435075, 'wind_max': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -2.629418 -2.616508 -2.541158
+auto                  -2.530570 -2.516092 -2.467610, 'wind_med': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -2.261034 -2.248615 -2.178274
+auto                  -2.202973 -2.195229 -2.133480, 'shww_max': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -1.018813 -1.016218 -0.978252
+auto                  -0.994700 -0.993782 -0.957298, 'shww_med': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -0.774535 -0.770903 -0.740788
+auto                  -0.749891 -0.751775 -0.725806, 'mdts_sin': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -0.101244 -0.111126 -0.101245
+auto                  -0.099911 -0.106700 -0.100526, 'mdts_cos': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -0.115002 -0.122101 -0.115039
+auto                  -0.110786 -0.118629 -0.111354, 'shts_max': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -0.634854 -0.643980 -0.613208
+auto                  -0.619770 -0.619437 -0.593589, 'shts_med': regressor__activation  logistic      relu      tanh
+regressor__batch_size                              
+32                    -0.558897 -0.566569 -0.541773
+auto                  -0.545636 -0.547283 -0.526337}
+
