@@ -1,0 +1,106 @@
+slurmstepd: info: Setting TMPDIR to /scratch/14382013. Previous errors about TMPDIR can be discarded
+Variable: dwi_sin
+Mejor score: -0.5003136364395682
+Mejores parámetros: {'regressor': GradientBoostingRegressor(), 
+'regressor__learning_rate': 0.1, 'regressor__max_depth': 5, 
+'regressor__max_features': 'sqrt', 'regressor__min_samples_leaf': 15, 
+'regressor__n_estimators': 200, 'regressor__subsample': 0.8}
+[
+    {
+        'regressor': [GradientBoostingRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__learning_rate': [0.1],
+        'regressor__max_depth': [5],
+        'regressor__min_samples_leaf': [15],
+        'regressor__subsample': [0.8],
+        'regressor__max_features': ['sqrt']
+    }
+]
+[-0.50031364 -0.50243441]
+[0.02879392 0.02952221]
+[1 2]
+--------------------------------------------------
+Variable: dwi_cos
+Mejor score: -0.3852719910827167
+Mejores parámetros: {'regressor': GradientBoostingRegressor(), 
+'regressor__learning_rate': 0.1, 'regressor__max_depth': 5, 
+'regressor__max_features': 'sqrt', 'regressor__min_samples_leaf': 15, 
+'regressor__n_estimators': 200, 'regressor__subsample': 0.8}
+[
+    {
+        'regressor': [GradientBoostingRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__learning_rate': [0.1],
+        'regressor__max_depth': [5],
+        'regressor__min_samples_leaf': [15],
+        'regressor__subsample': [0.8],
+        'regressor__max_features': ['sqrt']
+    }
+]
+[-0.38527199 -0.38609741]
+[0.0257465  0.02544733]
+[1 2]
+--------------------------------------------------
+Variable: wind_max
+Mejor score: -2.1924445104210433
+Mejores parámetros: {'regressor': GradientBoostingRegressor(), 
+'regressor__learning_rate': 0.1, 'regressor__max_depth': 5, 
+'regressor__max_features': 'sqrt', 'regressor__min_samples_leaf': 15, 
+'regressor__n_estimators': 200, 'regressor__subsample': 0.8}
+[
+    {
+        'regressor': [GradientBoostingRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__learning_rate': [0.1],
+        'regressor__max_depth': [5],
+        'regressor__min_samples_leaf': [15],
+        'regressor__subsample': [0.8],
+        'regressor__max_features': ['sqrt']
+    }
+]
+[-2.19244451 -2.19927167]
+[0.13858612 0.14294685]
+[1 2]
+--------------------------------------------------
+Variable: wind_med
+Mejor score: -1.9157850551756215
+Mejores parámetros: {'regressor': GradientBoostingRegressor(), 
+'regressor__learning_rate': 0.1, 'regressor__max_depth': 5, 
+'regressor__max_features': 'sqrt', 'regressor__min_samples_leaf': 15, 
+'regressor__n_estimators': 200, 'regressor__subsample': 0.8}
+[
+    {
+        'regressor': [GradientBoostingRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__learning_rate': [0.1],
+        'regressor__max_depth': [5],
+        'regressor__min_samples_leaf': [15],
+        'regressor__subsample': [0.8],
+        'regressor__max_features': ['sqrt']
+    }
+]
+[-1.91578506 -1.92233544]
+[0.12302013 0.12249453]
+[1 2]
+--------------------------------------------------
+Variable: shww_max
+Mejor score: -0.8018164172995276
+Mejores parámetros: {'regressor': GradientBoostingRegressor(), 
+'regressor__learning_rate': 0.1, 'regressor__max_depth': 5, 
+'regressor__max_features': 'sqrt', 'regressor__min_samples_leaf': 15, 
+'regressor__n_estimators': 200, 'regressor__subsample': 0.8}
+[
+    {
+        'regressor': [GradientBoostingRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__learning_rate': [0.1],
+        'regressor__max_depth': [5],
+        'regressor__min_samples_leaf': [15],
+        'regressor__subsample': [0.8],
+        'regressor__max_features': ['sqrt']
+    }
+]
+[-0.80181642 -0.80444424]
+[0.1027613  0.10214944]
+[1 2]
+--------------------------------------------------

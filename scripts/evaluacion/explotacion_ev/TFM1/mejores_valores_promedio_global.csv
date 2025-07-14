@@ -1,0 +1,11 @@
+Variable,parameter,valor,score_promedio,modelo_origen
+dwi_sin,regressor__n_estimators,600,-0.467793176875,Random Forest
+dwi_cos,regressor__n_estimators,400,-0.405128555,Random Forest
+wind_max,regressor__n_estimators,600,-2.3237240675,Random Forest
+wind_med,regressor__n_estimators,600,-2.019381899375,Random Forest
+shww_max,regressor__n_estimators,600,-0.9078172275,Random Forest
+shww_med,regressor__n_estimators,600,-0.6909454675,Random Forest
+mdts_sin,regressor__n_estimators,600,-0.08481796625,Random Forest
+mdts_cos,regressor__n_neighbors,100,-0.098115265,KNeighborsRegressor
+shts_max,regressor__n_estimators,600,-0.545075005,Random Forest
+shts_med,regressor__min_samples_leaf,4,-0.484790345,Random Forest

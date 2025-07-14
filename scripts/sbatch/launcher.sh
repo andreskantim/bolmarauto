@@ -2,15 +2,15 @@
 
 # Lista de regresores
 #regresores=("tree" "svr" "rna" "kn")
-regresores=("tree")
+regresores=("TFM2")
 
 # Script base de SLURM
 slurm_script="cpu_sbatch.sh"
 
 # Parámetros que quieres modificar
-NUCLEOS="64"        # Número de nucleos (ej: 32)
-MEMORIA="16GB"    # Memoria por nodo (ej: 16G)
-TIEMPO="04:00:00" # Tiempo máximo de ejecución (ej: 2 horas)
+NUCLEOS="32"        # Número de nucleos (ej: 32)
+MEMORIA="32GB"    # Memoria por nodo (ej: 16G)
+TIEMPO="12:00:00" # Tiempo máximo de ejecución (ej: 2 horas)
 
 # Verificación de existencia del script sbatch
 if [ ! -f "$slurm_script" ]; then
@@ -20,7 +20,8 @@ fi
 
 # Iterar sobre cada tipo de regresor
 for reg in "${regresores[@]}"; do
-  ruta_scripts="../sk_learn/${reg}/scripts"
+  ruta_scripts="../sk_learn/${reg}"
+  # ruta_scripts="../sk_learn/${reg}/scripts"
   ruta_resultados="../sk_learn/${reg}/resultados"
 
   # Crear carpeta de resultados si no existe
@@ -36,7 +37,7 @@ for reg in "${regresores[@]}"; do
       
       sbatch --output="$salida" \
              --cpus-per-task=$NUCLEOS \
-            --mem=$MEMORIA \
+             --mem=$MEMORIA \
              --time=$TIEMPO \
              "$slurm_script" "$pyfile"
     fi

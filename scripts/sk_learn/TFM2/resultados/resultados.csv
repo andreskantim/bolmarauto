@@ -1,0 +1,11 @@
+variable,regressor,scaler,pca_components,kernel,C,epsilon,best_score
+dwi_sin,SVR,StandardScaler,0.95,rbf,0.1,0.2,-0.48227322589467636
+dwi_cos,SVR,StandardScaler,0.95,rbf,0.1,0.2,-0.3832298935946663
+wind_max,SVR,StandardScaler,0.95,rbf,1.0,0.2,-2.217195731012014
+wind_med,SVR,StandardScaler,0.95,rbf,1.0,0.2,-1.9358616661092385
+shww_max,SVR,StandardScaler,0.95,rbf,1.0,0.2,-0.815061568498891
+shww_med,SVR,StandardScaler,0.95,rbf,1.0,0.1,-0.5944877635293044
+mdts_sin,SVR,StandardScaler,0.95,rbf,1.0,0.1,-0.13381794089731572
+mdts_cos,SVR,StandardScaler,0.95,rbf,1.0,0.1,-0.11633969690782298
+shts_max,SVR,StandardScaler,0.95,rbf,0.1,0.2,-0.5448150748970739
+shts_med,SVR,StandardScaler,0.95,rbf,0.1,0.2,-0.48550737948585015

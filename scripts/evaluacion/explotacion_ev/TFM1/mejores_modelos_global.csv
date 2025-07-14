@@ -1,0 +1,10 @@
+Variable,variable,regressor,scaler,pca,regressor_C,regressor_epsilon,regressor_kernel,regressor_loss,nystroem_n_components,score,std,modelo_origen,regressor__n_estimators,regressor__max_depth,regressor__min_samples_split,regressor__min_samples_leaf,regressor__max_features,regressor__learning_rate,regressor__subsample
+dwi_sin,dwi_sin,SVR,StandardScaler,PCA,1.0,0.2,rbf,,,-0.458977,0.060344,SVR Gaussiano,,,,,,,
+dwi_cos,dwi_cos,RandomForestRegressor,,,,,,,,-0.404174,0.037515,Random Forest,100.0,,10.0,4.0,log2,,
+wind_max,wind_max,SVR,,PCA,0.1,0.2,rbf,,,-2.262005,0.398556,SVR Gaussiano,,,,,,,
+wind_med,wind_med,SVR,,PCA,1.0,0.1,rbf,,,-1.973359,0.4194,SVR Gaussiano,,,,,,,
+shww_max,shww_max,,,,,,,,,-0.893987,0.391457,GradientBoosting,100.0,5.0,,20.0,log2,0.1,0.8
+shww_med,shww_med,,,,,,,,,-0.673985,0.320976,GradientBoosting,100.0,5.0,,20.0,log2,0.1,0.8
+mdts_sin,mdts_sin,,,,,,,,,-0.084395,0.048357,GradientBoosting,200.0,5.0,,10.0,sqrt,0.05,0.8
+mdts_cos,mdts_cos,SVR,StandardScaler,PCA,0.1,0.1,rbf,,,-0.093883,0.048161,SVR Gaussiano,,,,,,,
+shts_max,shts_max,,,,,,,,,-0.537733,0.153529,GradientBoosting,200.0,5.0,,10.0,sqrt,0.05,0.8

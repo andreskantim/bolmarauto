@@ -1,0 +1,22 @@
+slurmstepd: info: Setting TMPDIR to /scratch/14382016. Previous errors about TMPDIR can be discarded
+Variable: dwi_sin
+Mejor score: -0.508420878518727
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 0.1, 'regressor__epsilon': 0.2, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.51614686 -0.51906544 -0.50842088 -0.51201803 -0.51695343 -0.51841172
+ -0.5091652  -0.51119575]
+[0.02525505 0.02784844 0.02648179 0.0290797  0.02615402 0.0275509
+ 0.02678782 0.02885484]
+[5 8 1 4 6 7 2 3]
+--------------------------------------------------

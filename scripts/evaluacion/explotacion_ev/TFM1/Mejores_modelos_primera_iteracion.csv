@@ -1,0 +1,11 @@
+Variable,Modelo,Parametro 1,Parametro 2,Parametro 3,Parametro 4,Parametro 5,Score
+dwi_sin,SVR Gaussiano,Algoritmo: SVR,Reesc.: StandartScaler,PCA: 0.95,Penalización error: 1.0,Tolerancia error: 0.2,-0.458977
+dwi_cos,Random Forest,Número de árboles: 100,Profundidad máx: No,Mín hojas división: 10,Mín muestras hoja: 4,Nº características: log2,-0.404174
+wind_max,SVR Gaussiano,Algoritmo: SVR,Reesc.: Ninguno,PCA: 0.95,Penalización error: 0.1,Tolerancia error: 0.2,-2.262005
+wind_med,SVR Gaussiano,Algoritmo: SVR,Reesc.: Ninguno,PCA: 0.95,Penalización error: 1.0,Tolerancia error: 0.1,-1.973359
+shww_max,GradientBoosting,Número de árboles: 100,Learning rate: 0.1,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: log2,-0.893987
+shww_med,GradientBoosting,Número de árboles: 100,Learning rate: 0.1,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: log2,-0.673985
+mdts_sin,GradientBoosting,Número de árboles: 200,Learning rate: 0.05,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: sqrt,-0.084395
+mdts_cos,SVR Gaussiano,Algoritmo: SVR,Reesc.: StandartScaler,PCA: 0.95,Penalización error: 0.1,Tolerancia error: 0.1,-0.093883
+shts_max,GradientBoosting,Número de árboles: 200,Learning rate: 0.05,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: sqrt,-0.537733
+shts_med,GradientBoosting,Número de árboles: 100,Learning rate: 0.1,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: log2,-0.478289

@@ -1,0 +1,262 @@
+slurmstepd: info: Setting TMPDIR to /scratch/14404475. Previous errors about TMPDIR can be discarded
+Aplicando media para variable especial: dwi_sin
+Aplicando media para variable especial: dwi_cos
+Aplicando media para variable especial: mdts_sin
+Aplicando media para variable especial: mdts_cos
+Variable: dwi_sin
+Mejor score: -0.48227322589467636
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 0.1, 'regressor__epsilon': 0.2, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.4882691  -0.49190031 -0.48227323 -0.48639786 -0.48911033 -0.49005931
+ -0.4831544  -0.4848638  -0.49151267 -0.49719974 -0.48606805 -0.49098963
+ -0.49170823 -0.49570519 -0.4863466  -0.49011761]
+[0.02503681 0.02647631 0.02642333 0.02811663 0.02637519 0.02663312
+ 0.02697474 0.02797146 0.02597898 0.02576141 0.02735587 0.02751338
+ 0.02631067 0.0257916  0.02715076 0.02711682]
+[ 7 14  1  6  8  9  2  3 12 16  4 11 13 15  5 10]
+--------------------------------------------------
+Variable: dwi_cos
+Mejor score: -0.3832298935946663
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 0.1, 'regressor__epsilon': 0.2, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.38482119 -0.38702485 -0.38322989 -0.38575288 -0.38643362 -0.38693294
+ -0.38442597 -0.38490543 -0.38961269 -0.39372558 -0.38770608 -0.39272226
+ -0.3900391  -0.39198895 -0.38790647 -0.39021024]
+[0.02652475 0.02696369 0.02674255 0.02683096 0.02573754 0.02637209
+ 0.02609667 0.02660315 0.02729588 0.02764905 0.02762706 0.02754052
+ 0.02726335 0.02763343 0.02764154 0.02791688]
+[ 3  8  1  5  6  7  2  4 11 16  9 15 12 14 10 13]
+--------------------------------------------------
+Variable: wind_max
+Mejor score: -2.217195731012014
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 1.0, 'regressor__epsilon': 0.2, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-2.23667699 -2.2473757  -2.23595045 -2.24648352 -2.21869433 -2.2250848
+ -2.21719573 -2.22300158 -2.25379703 -2.2811863  -2.2527642  -2.28024272
+ -2.23513355 -2.2565762  -2.23392782 -2.25469375]
+[0.14122118 0.14329043 0.14112222 0.14329611 0.13892438 0.1419134
+ 0.13870219 0.14166521 0.14468878 0.14372892 0.14442592 0.14376712
+ 0.14270323 0.14278741 0.14233058 0.1424878 ]
+[ 8 10  7  9  2  4  1  3 12 16 11 15  6 14  5 13]
+--------------------------------------------------
+Variable: wind_med
+Mejor score: -1.9358616661092385
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 1.0, 'regressor__epsilon': 0.2, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-1.95197309 -1.95900706 -1.95161143 -1.95890816 -1.93641643 -1.94295955
+ -1.93586167 -1.94230733 -1.96732782 -1.983836   -1.96680775 -1.983186
+ -1.95215981 -1.96720056 -1.95169306 -1.9664226 ]
+[0.12607286 0.12545005 0.1258706  0.12539551 0.12213691 0.12312229
+ 0.12264044 0.12357453 0.12639846 0.12464218 0.12657333 0.12487699
+ 0.12440296 0.12475494 0.12466492 0.12477544]
+[ 7 10  5  9  2  4  1  3 14 16 12 15  8 13  6 11]
+--------------------------------------------------
+Variable: shww_max
+Mejor score: -0.815061568498891
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 1.0, 'regressor__epsilon': 0.2, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.83635851 -0.84222339 -0.83063581 -0.83501715 -0.82093701 -0.82658149
+ -0.81506157 -0.81983862 -0.8412838  -0.84897534 -0.83498929 -0.84108998
+ -0.8282932  -0.83804295 -0.82135397 -0.83070151]
+[0.12892934 0.13161787 0.12728663 0.12993078 0.11656277 0.11985312
+ 0.11469993 0.11706314 0.12793366 0.13091846 0.12613966 0.12910452
+ 0.11783788 0.12228994 0.11590042 0.12161716]
+[11 15  7 10  3  5  1  2 14 16  9 13  6 12  4  8]
+--------------------------------------------------
+Variable: shww_med
+Mejor score: -0.5944877635293044
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 1.0, 'regressor__epsilon': 0.1, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.60781619 -0.61109819 -0.60850541 -0.61245103 -0.59448776 -0.60004975
+ -0.59499769 -0.60029603 -0.61191099 -0.61534874 -0.6122093  -0.61605112
+ -0.60053781 -0.60512796 -0.60047417 -0.6056511 ]
+[0.09458843 0.09535073 0.09329571 0.09469163 0.08544505 0.08618548
+ 0.08436794 0.08569276 0.09455879 0.09593292 0.09347    0.09534587
+ 0.08753224 0.0906195  0.08600836 0.08933955]
+[ 9 11 10 14  1  3  2  4 12 15 13 16  6  7  5  8]
+--------------------------------------------------
+Variable: mdts_sin
+Mejor score: -0.13381794089731572
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 1.0, 'regressor__epsilon': 0.1, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.1339415  -0.13420279 -0.14491725 -0.14497482 -0.13381794 -0.13422036
+ -0.14834228 -0.14892724 -0.13468703 -0.13475903 -0.14598753 -0.14589447
+ -0.13453489 -0.13510618 -0.15009488 -0.15062647]
+[0.01318707 0.01321325 0.01073449 0.01046984 0.01243432 0.01270824
+ 0.01103057 0.01100715 0.01294929 0.01278383 0.00988626 0.00993865
+ 0.01172374 0.01179295 0.01001736 0.00917878]
+[ 2  3  9 10  1  4 13 14  6  7 12 11  5  8 15 16]
+--------------------------------------------------
+Variable: mdts_cos
+Mejor score: -0.11633969690782298
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 1.0, 'regressor__epsilon': 0.1, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.11688553 -0.11771941 -0.14659413 -0.14697219 -0.1163397  -0.11746448
+ -0.14457121 -0.14611113 -0.11855069 -0.11913467 -0.14980257 -0.1499302
+ -0.11810101 -0.11869856 -0.14970031 -0.15096007]
+[0.01233677 0.01226217 0.00677704 0.00684825 0.01266157 0.01239977
+ 0.00703298 0.00690032 0.01191324 0.0119314  0.00649392 0.00636319
+ 0.01214112 0.01213809 0.00645113 0.00637274]
+[ 2  4 11 12  1  3  9 10  6  8 14 15  5  7 13 16]
+--------------------------------------------------
+Variable: shts_max
+Mejor score: -0.5448150748970739
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 0.1, 'regressor__epsilon': 0.2, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.5454996  -0.54661915 -0.54481507 -0.54567107 -0.54747771 -0.54958773
+ -0.54617195 -0.54787341 -0.55101828 -0.55308955 -0.55017468 -0.55206238
+ -0.55302585 -0.55405665 -0.55153874 -0.55249394]
+[0.05699639 0.05744708 0.05608388 0.05642419 0.0560588  0.05595624
+ 0.05474525 0.05475158 0.05803735 0.05692816 0.05740749 0.05631299
+ 0.0581714  0.05714179 0.05700498 0.05598921]
+[ 2  5  1  3  6  8  4  7 10 15  9 12 14 16 11 13]
+--------------------------------------------------
+Variable: shts_med
+Mejor score: -0.48550737948585015
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': SVR(), 
+'regressor__C': 0.1, 'regressor__epsilon': 0.2, 'regressor__kernel': 'rbf', 
+'scaler': StandardScaler()}
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[-0.48584358 -0.48634939 -0.48550738 -0.48618764 -0.48814833 -0.48828431
+ -0.48686742 -0.48697861 -0.48873961 -0.49040339 -0.48862702 -0.48980959
+ -0.49024874 -0.49060542 -0.48944668 -0.48963559]
+[0.04227886 0.04230854 0.04188224 0.04227286 0.0416922  0.04135005
+ 0.04110882 0.04072127 0.04212967 0.04120579 0.04215582 0.04103594
+ 0.04274267 0.04123333 0.04228506 0.04098194]
+[ 2  4  1  3  7  8  5  6 10 15  9 13 14 16 11 12]
+--------------------------------------------------
+✓ Archivo CSV de resultados guardado: 
+../../scripts/sk_learn/TFM2/resultados/SVR_resultados.csv
+
+Archivos guardados:
+- Predicciones: ../../predicciones/modelo/FQXX41MM/cantabria_SVR.csv
+- Mejores resultados: ../../scripts/sk_learn/TFM2/resultados/SVR_resultados.csv
+
+*****************************************************************************
+*                                                                           *
+*                    JOB EFFICIENCY REPORT (seff 14404475)                   *
+*                                                                           *
+*****************************************************************************
+
+Job ID: 14404475
+Cluster: finisterrae3
+User/Group: curso342/ulc
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 32
+CPU Utilized: 6-15:44:07
+CPU Efficiency: 77.71% of 8-13:32:48 core-walltime
+Job Wall-clock time: 06:25:24
+Memory Utilized: 27.67 GB
+Memory Efficiency: 86.47% of 32.00 GB
+
+*****************************************************************************
+

@@ -1,0 +1,11 @@
+Variable,Variable,Modelo,Parámetro,Score promedio
+dwi_sin,dwi_sin,Random Forest,Número de árboles: 600,-0.467793176875
+dwi_cos,dwi_cos,Random Forest,Número de árboles: 400,-0.405128555
+wind_max,wind_max,Random Forest,Número de árboles: 600,-2.3237240675
+wind_med,wind_med,Random Forest,Número de árboles: 600,-2.019381899375
+shww_max,shww_max,Random Forest,Número de árboles: 600,-0.9078172275
+shww_med,shww_med,Random Forest,Número de árboles: 600,-0.6909454675
+mdts_sin,mdts_sin,Random Forest,Número de árboles: 600,-0.08481796625
+mdts_cos,mdts_cos,KNeighborsRegressor,Número vecinos: 100,-0.098115265
+shts_max,shts_max,Random Forest,Número de árboles: 600,-0.545075005
+shts_med,shts_med,Random Forest,Mínimo muestras hoja: 4,-0.484790345

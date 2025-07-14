@@ -1,0 +1,272 @@
+slurmstepd: info: Setting TMPDIR to /scratch/14404474. Previous errors about TMPDIR can be discarded
+Aplicando media para variable especial: dwi_sin
+Aplicando media para variable especial: dwi_cos
+Aplicando media para variable especial: mdts_sin
+Aplicando media para variable especial: mdts_cos
+Variable: dwi_sin
+Mejor score: -0.47363684221116154
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 12, 'regressor__min_samples_split': 6, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.47445148 -0.47427581 -0.47479422 -0.474149   -0.47447016 -0.47414273
+ -0.47425596 -0.47385079 -0.47426938 -0.4738516  -0.47449957 -0.47380339
+ -0.4736762  -0.47378618 -0.47403236 -0.47363684 -0.47381996 -0.4736751 ]
+[0.03146863 0.03146236 0.03143708 0.03162332 0.03160374 0.03158224
+ 0.03143776 0.03166994 0.03132436 0.03154905 0.03161275 0.0315041
+ 0.03157934 0.03146787 0.03148154 0.03172817 0.0317723  0.03152874]
+[15 14 18 11 16 10 12  7 13  8 17  5  3  4  9  1  6  2]
+--------------------------------------------------
+Variable: dwi_cos
+Mejor score: -0.37923737705719957
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 4, 'regressor__min_samples_split': 6, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.37968949 -0.37934077 -0.37980651 -0.37923738 -0.37960492 -0.37927761
+ -0.37955654 -0.37933229 -0.37950273 -0.37931351 -0.37967979 -0.3794714
+ -0.37965925 -0.3795657  -0.37968486 -0.37961584 -0.3798975  -0.37950078]
+[0.02642877 0.02655992 0.02618383 0.02651046 0.02636899 0.02645116
+ 0.02641734 0.02647341 0.02648444 0.02645623 0.02643891 0.02645765
+ 0.02660182 0.02651269 0.02667639 0.02656903 0.02659823 0.02651447]
+[16  5 17  1 11  2  9  4  8  3 14  6 13 10 15 12 18  7]
+--------------------------------------------------
+Variable: wind_max
+Mejor score: -2.1859285805028157
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 4, 'regressor__min_samples_split': 10, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-2.18706356 -2.18728377 -2.18968086 -2.18600708 -2.18935187 -2.18592858
+ -2.18874596 -2.18710294 -2.18849658 -2.186002   -2.18878788 -2.18684318
+ -2.18805846 -2.18694227 -2.18909118 -2.18757482 -2.18846551 -2.18724341]
+[0.14038488 0.14034919 0.13935792 0.13920994 0.13885435 0.13936648
+ 0.13944437 0.14008267 0.14025436 0.14036944 0.13967128 0.13919151
+ 0.14050588 0.14036382 0.13995098 0.13982901 0.13990388 0.14059688]
+[ 6  9 18  3 17  1 14  7 13  2 15  4 11  5 16 10 12  8]
+--------------------------------------------------
+Variable: wind_med
+Mejor score: -1.9107994670222586
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 4, 'regressor__min_samples_split': 10, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-1.91235659 -1.91141209 -1.9130117  -1.91132651 -1.91254518 -1.91079947
+ -1.91277727 -1.91159715 -1.91295122 -1.91173357 -1.91290466 -1.91192479
+ -1.91289175 -1.91230459 -1.91257532 -1.91176744 -1.91335488 -1.91239965]
+[0.1240994  0.12281126 0.12326993 0.12351621 0.12300777 0.12353674
+ 0.12307938 0.12333912 0.12399141 0.12398983 0.12331467 0.12359769
+ 0.12431608 0.12397359 0.12424037 0.12370247 0.12411304 0.12449248]
+[ 9  3 17  2 11  1 13  4 16  5 15  7 14  8 12  6 18 10]
+--------------------------------------------------
+Variable: shww_max
+Mejor score: -0.7978515325593533
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 8, 'regressor__min_samples_split': 6, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.79978741 -0.79927142 -0.79842501 -0.79827249 -0.79992926 -0.79882903
+ -0.7988345  -0.79868097 -0.79905199 -0.79785153 -0.798848   -0.7984309
+ -0.79842056 -0.79787769 -0.79900812 -0.79850721 -0.79837676 -0.7988428 ]
+[0.10396533 0.103639   0.10347465 0.10325412 0.10427826 0.10370392
+ 0.10483803 0.10470163 0.10484975 0.10432575 0.10434583 0.10425603
+ 0.1048842  0.10521822 0.10518399 0.10488544 0.10455978 0.10518977]
+[17 16  6  3 18 10 11  9 15  1 13  7  5  2 14  8  4 12]
+--------------------------------------------------
+Variable: shww_med
+Mejor score: -0.5843778178074466
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 8, 'regressor__min_samples_split': 6, 
+'regressor__n_estimators': 200}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.58529408 -0.58481772 -0.58504793 -0.58461114 -0.58516137 -0.58460757
+ -0.58503213 -0.58479802 -0.58437782 -0.58445168 -0.58485694 -0.58475953
+ -0.58538747 -0.58500663 -0.58541417 -0.58498529 -0.58504402 -0.58478571]
+[0.080452   0.08068652 0.08032803 0.08090019 0.08148483 0.0809452
+ 0.08122512 0.08150794 0.08127079 0.08130686 0.08172082 0.08125905
+ 0.08213904 0.08233451 0.08155949 0.08188276 0.08164743 0.08209218]
+[16  8 14  4 15  3 12  7  1  2  9  5 17 11 18 10 13  6]
+--------------------------------------------------
+Variable: mdts_sin
+Mejor score: -0.12234986562284933
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 12, 'regressor__min_samples_split': 6, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.12277324 -0.12269017 -0.12271074 -0.12279011 -0.12277476 -0.12264049
+ -0.12261158 -0.12248251 -0.12262857 -0.12246942 -0.12251605 -0.12245415
+ -0.12251686 -0.122403   -0.12237513 -0.12234987 -0.12237552 -0.12235084]
+[0.01400957 0.0139844  0.01391328 0.01400527 0.01386607 0.01390625
+ 0.01415598 0.01394229 0.01402564 0.0139952  0.01398487 0.01400125
+ 0.01389531 0.01400363 0.0142479  0.01410932 0.01392341 0.01395282]
+[16 14 15 18 17 13 11  8 12  7  9  6 10  5  3  1  4  2]
+--------------------------------------------------
+Variable: mdts_cos
+Mejor score: -0.10568130614199697
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 12, 'regressor__min_samples_split': 6, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.10619002 -0.1060594  -0.10616105 -0.10601911 -0.10616214 -0.10601647
+ -0.10582556 -0.10590016 -0.10596831 -0.10578647 -0.105872   -0.10588388
+ -0.10574282 -0.10574129 -0.1057341  -0.10568131 -0.10574915 -0.1057098 ]
+[0.01474866 0.01476678 0.01470272 0.01468475 0.01481092 0.01471312
+ 0.01491231 0.01480984 0.01486297 0.01487225 0.01485807 0.01485621
+ 0.01493857 0.01486962 0.01491169 0.0148945  0.01493673 0.01492141]
+[18 15 16 14 17 13  8 11 12  7  9 10  5  4  3  1  6  2]
+--------------------------------------------------
+Variable: shts_max
+Mejor score: -0.5402302818695909
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 12, 'regressor__min_samples_split': 2, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.54226769 -0.54277736 -0.54306182 -0.54213286 -0.54285816 -0.54199197
+ -0.54158785 -0.54131021 -0.54130626 -0.54124907 -0.54167428 -0.54098016
+ -0.54071257 -0.54023028 -0.54061497 -0.54028746 -0.5402399  -0.54031696]
+[0.04901304 0.04950788 0.04961917 0.04930595 0.049341   0.04941332
+ 0.04942672 0.04964243 0.04935791 0.04962617 0.04969578 0.04918444
+ 0.04985837 0.04938557 0.04967745 0.04985882 0.0495313  0.04955378]
+[15 16 18 14 17 13 11 10  9  8 12  7  6  1  5  3  2  4]
+--------------------------------------------------
+Variable: shts_med
+Mejor score: -0.48284697879910043
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 12, 'regressor__min_samples_split': 2, 
+'regressor__n_estimators': 200}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.48516857 -0.48492469 -0.48535084 -0.48480106 -0.48559638 -0.48509143
+ -0.48454864 -0.48359584 -0.48404553 -0.48402663 -0.48412279 -0.48382189
+ -0.48284698 -0.48310091 -0.48294617 -0.4830113  -0.48349978 -0.48313243]
+[0.0391488  0.03905435 0.03938073 0.03914695 0.03951355 0.03911559
+ 0.03869397 0.03914653 0.03880731 0.03927964 0.03939989 0.03940306
+ 0.0395078  0.0393616  0.03915581 0.03958749 0.0392253  0.03965167]
+[16 14 17 13 18 15 12  7 10  9 11  8  1  4  2  3  6  5]
+--------------------------------------------------
+✓ Archivo CSV de resultados guardado: 
+../../scripts/sk_learn/TFM2/resultados/SVR_resultados.csv
+
+Archivos guardados:
+- Predicciones: ../../predicciones/modelo/FQXX41MM/cantabria_RF.csv
+- Mejores resultados: ../../scripts/sk_learn/TFM2/resultados/SVR_resultados.csv
+
+*****************************************************************************
+*                                                                           *
+*                    JOB EFFICIENCY REPORT (seff 14404474)                   *
+*                                                                           *
+*****************************************************************************
+
+Job ID: 14404474
+Cluster: finisterrae3
+User/Group: curso342/ulc
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 32
+CPU Utilized: 3-18:21:46
+CPU Efficiency: 70.77% of 5-07:40:48 core-walltime
+Job Wall-clock time: 03:59:24
+Memory Utilized: 26.83 GB
+Memory Efficiency: 83.84% of 32.00 GB
+
+*****************************************************************************
+

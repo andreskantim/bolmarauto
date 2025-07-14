@@ -1,0 +1,61 @@
+slurmstepd: info: Setting TMPDIR to /scratch/14381537. Previous errors about TMPDIR can be discarded
+Variable: dwi_sin
+Mejor score: -0.4965058630833047
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 4, 'regressor__min_samples_split': 2, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2],
+        'regressor__min_samples_leaf': [4],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.49687143 -0.49650586]
+[0.03107966 0.0309751 ]
+[2 1]
+--------------------------------------------------
+Variable: dwi_cos
+Mejor score: -0.38614390589902015
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 4, 'regressor__min_samples_split': 2, 
+'regressor__n_estimators': 400}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2],
+        'regressor__min_samples_leaf': [4],
+        'regressor__max_features': ['log2']
+    }
+]
+[-0.3862865  -0.38614391]
+[0.02718339 0.02724474]
+[2 1]
+--------------------------------------------------
+Variable: wind_max
+Mejor score: -2.187539286035094
+Mejores parámetros: {'regressor': RandomForestRegressor(), 
+'regressor__max_depth': 20, 'regressor__max_features': 'log2', 
+'regressor__min_samples_leaf': 4, 'regressor__min_samples_split': 2, 
+'regressor__n_estimators': 200}
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2],
+        'regressor__min_samples_leaf': [4],
+        'regressor__max_features': ['log2']
+    }
+]
+[-2.18753929 -2.18768519]
+[0.13933436 0.14036522]
+[1 2]
+--------------------------------------------------

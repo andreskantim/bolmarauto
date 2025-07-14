@@ -1,0 +1,42 @@
+[
+    {
+        'regressor': [RandomForestRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__max_depth': [20],
+        'regressor__min_samples_split': [2, 6, 10],
+        'regressor__min_samples_leaf': [4, 8, 12],
+        'regressor__max_features': ['log2']
+    }
+]
+[
+    {
+        'regressor': [SVR()],
+        'scaler': [StandardScaler(), RobustScaler()],
+        'pca': [PCA(n_components=0.95), PCA(n_components=0.9)],
+        'regressor__kernel': ['rbf'],
+        'regressor__C': [0.1, 1.0],
+        'regressor__epsilon': [0.1, 0.2]
+    }
+]
+[
+    {
+        'regressor': [GradientBoostingRegressor()],
+        'regressor__n_estimators': [200, 400],
+        'regressor__learning_rate': [0.05, 0.075, 0.1],
+        'regressor__max_depth': [5, 10, 15],
+        'regressor__min_samples_leaf': [15],
+        'regressor__subsample': [0.8],
+        'regressor__max_features': ['sqrt']
+    }
+]
+[
+    {
+        'regressor': [KNeighborsRegressor()],
+        'regressor__n_neighbors': [100, 120, 150, 175, 200, 250, 300, 400],
+        'pca': [PCA(n_components=0.98), PCA(n_components=0.95)],
+        'scaler': [RobustScaler(), MinMaxScaler()],
+        'regressor__weights': ['distance'],
+        'regressor__metric': ['manhattan']
+    }
+]
+

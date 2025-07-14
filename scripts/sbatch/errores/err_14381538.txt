@@ -1,0 +1,3 @@
+/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/bolmarauto/scripts/sbatch/../sk_learn/TFM2/Mejores_SVR.py:71: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df_copy[col] = df_copy[col].fillna(method='ffill').fillna(method='bfill')
+slurmstepd: error: *** JOB 14381538 ON ilk-151 CANCELLED AT 2025-07-11T05:02:22 DUE TO TIME LIMIT ***

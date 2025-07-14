@@ -1,0 +1,11 @@
+Variable,Modelo,Parametro 1,Parametro 2,Parametro 3,Parametro 4,Parametro 5,Score
+dwi_sin,Random Forest,Número de árboles: 400,Profundidad máx: 20,Mín hojas división: 6,Mín muestras hoja: 12,Nº características: log2,-0.473637
+dwi_cos,GradientBoosting,Número de árboles: 400,Learning rate: 0.05,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: sqrt,-0.378441
+wind_max,GradientBoosting,Número de árboles: 400,Learning rate: 0.05,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: sqrt,-2.184056
+wind_med,GradientBoosting,Número de árboles: 400,Learning rate: 0.05,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: sqrt,-1.907909
+shww_max,Random Forest,Número de árboles: 400,Profundidad máx: 20,Mín hojas división: 6,Mín muestras hoja: 8,Nº características: log2,-0.797851
+shww_med,GradientBoosting,Número de árboles: 200,Learning rate: 0.05,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: sqrt,-0.584145
+mdts_sin,Random Forest,Número de árboles: 400,Profundidad máx: 20,Mín hojas división: 6,Mín muestras hoja: 12,Nº características: log2,-0.122349
+mdts_cos,GradientBoosting,Número de árboles: 200,Learning rate: 0.05,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: sqrt,-0.105635
+shts_max,GradientBoosting,Número de árboles: 200,Learning rate: 0.05,Profundidad máx: 5.0,Fracc. datos usados: 0.8,Nº características: sqrt,-0.539651
+shts_med,Random Forest,Número de árboles: 200,Profundidad máx: 20,Mín hojas división: 2,Mín muestras hoja: 12,Nº características: log2,-0.482846

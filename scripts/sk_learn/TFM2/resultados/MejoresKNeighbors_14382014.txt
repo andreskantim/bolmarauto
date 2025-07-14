@@ -1,0 +1,30 @@
+slurmstepd: info: Setting TMPDIR to /scratch/14382014. Previous errors about TMPDIR can be discarded
+Variable: dwi_sin
+Mejor score: -0.5020711385631806
+Mejores parámetros: {'pca': PCA(n_components=0.95), 'regressor': 
+KNeighborsRegressor(), 'regressor__metric': 'manhattan', 
+'regressor__n_neighbors': 250, 'regressor__weights': 'distance', 'scaler': 
+MinMaxScaler()}
+[
+    {
+        'regressor': [KNeighborsRegressor()],
+        'regressor__n_neighbors': [100, 120, 150, 200, 250, 300, 400],
+        'pca': [PCA(n_components=0.98), PCA(n_components=0.95)],
+        'scaler': [RobustScaler(), MinMaxScaler()],
+        'regressor__weights': ['distance'],
+        'regressor__metric': ['manhattan']
+    }
+]
+[-0.5068299  -0.50274253 -0.50658461 -0.50260565 -0.50621351 -0.50269252
+ -0.50592285 -0.50253189 -0.50593471 -0.50255844 -0.50599843 -0.50280768
+ -0.50637891 -0.50340092 -0.51066857 -0.50318367 -0.51031526 -0.50291895
+ -0.50988114 -0.50263575 -0.50966413 -0.50223802 -0.50961892 -0.50207114
+ -0.50982589 -0.50215111 -0.51015283 -0.50244892]
+[0.03342557 0.03075586 0.03325087 0.03064688 0.03306821 0.03066139
+ 0.0328749  0.03074102 0.03267964 0.03064995 0.03256735 0.03061741
+ 0.03251062 0.0306716  0.03407569 0.03072772 0.0340256  0.03072576
+ 0.03399583 0.03061912 0.03392934 0.03071153 0.0339105  0.03062027
+ 0.03378134 0.03067052 0.03379057 0.03065177]
+[21 10 20  7 18  9 15  5 16  6 17 11 19 14 28 13 27 12 25  8 23  3 22  1
+ 24  2 26  4]
+--------------------------------------------------

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/mnt/netapp2/Home_FT2/home/ulc/cursos/curso342/bolmarauto/scripts/sbatch/../sk_learn/TFM2/Mejores_SVR.py", line 90, in <module>
+    grid_search.fit(input, y)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/model_selection/_search.py", line 928, in fit
+    X, y = indexable(X, y)
+           ^^^^^^^^^^^^^^^
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/utils/validation.py", line 532, in indexable
+    check_consistent_length(*result)
+  File "/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/miniconda3/envs/genhpc/lib/python3.12/site-packages/sklearn/utils/validation.py", line 475, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [65754, 65358]
